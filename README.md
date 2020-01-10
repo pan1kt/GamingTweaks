@@ -6,6 +6,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 *Read this in other languages: [English](README.md), [Portuguese](README.pt.md).*
 
 ## Table of Contents
+  -
     - [Custom ISOs](#custom-isos)
     - [Windows Timers](#windows-timers)
     - [MSI-Mode](#msi-mode)
@@ -18,7 +19,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
     - [BIOS](#bios)
     - [Overclocks](#overclocks)
     - [Extras](#extras)
-
+  -
 ## GitHub
 ### Custom ISOs
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
