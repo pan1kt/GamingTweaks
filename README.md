@@ -18,8 +18,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [BIOS](#bios)
  - [Overclocks](#overclocks)
  - [Extras](#extras)
- 
-## GitHub
+
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
@@ -51,7 +50,7 @@ But its commonly recommended that you stay on TSC, with HPET enabled on BIOS.
 
 You can try see if your system is different from others and works best on HPET disabled on BIOS, but wont be most likely.
 
-For best configuration, use this in Command Promt:
+#### For best configuration, use this in Command Promt:
 
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
