@@ -147,15 +147,12 @@ I have a script that installs everything you need and this On/Off is based on wh
 
 This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers
 
+**Set to show only hidden/detached devices**<br/>
 ![wake](/img/device1.png)<br/>
+**Remove all**<br/>
 ![wake](/img/device2.png)<br/>
 
-**Remove hidden/detached devices like in the two images**<br/>
-
-**Optionally delete sermouse, Print Spooler, i8024prt**<br/>
-
 **Disable some devices:**
-
 ![AFF](/img/devices.png)<br/>
 
 ###   Services
