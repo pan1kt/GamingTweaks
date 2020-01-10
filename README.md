@@ -155,27 +155,9 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 **Delete sermouse, Print Spooler, i8024prt**<br/>
 
-**Disable:**
-HID-compliant consumer control device<br/>
-HID-compliant device<br/>
-Generic PnP Monitor<br/>
-WAN Miniport (IKEv2)<br/>
-WAN Miniport (IP)<br/>
-WAN Miniport (IPv6)<br/>
-WAN Miniport (L2TP)<br/>
-WAN Miniport (Network Monitor)<br/>
-WAN Miniport (PPPOE)<br/>
-WAN Miniport (PPTP)<br/>
-WAN Miniport (SSTP)<br/>
-Composite Bus Enumerator<br/>
-High Defenition Audio Controler(NVIDIA)<br/>
-Intel(R) Management Engine Interface<br/>
-Microsoft System Management BIOS Driver<br/>
-Microsoft Virtual Drive Enumerator Driver<br/>
-System timer<br/>
-Terminal Server Keyboard Driver<br/>
-Terminal Server Mouse Driver<br/>
-UMBus Root Bus Enumerator
+**Disable some devices:**
+
+![AFF](/img/devices.png)<br/>
 
 ###   Services
 
