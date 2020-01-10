@@ -21,13 +21,13 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  
 ## GitHub
 ### Custom ISOs
-Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
+This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
-![Diff without whitespace](https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67)
+![ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
 
-[*Read more about GitHub secrets.*](https://github.com/blog/967-github-secrets)
+[*Read more about their isos in Revision discord.*](https://discordapp.com/invite/CCxWegZ)
 
-### Adjust Tab Space
+### Windows Timers
 Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
 
 Here is a Go source file before adding `?ts=4`:
