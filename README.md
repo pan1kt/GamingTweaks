@@ -1,4 +1,4 @@
-# Felipe 8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
+# Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks for OS and programs. This is heavily inspired by Revision Os and Fr33thy discords. Also i have to mention some places and guys that helped me through this process, which is n1kobg,dreamjow,ailurus and more.
 
 *Shortlink: [`https://git.io/Jvvxe`](https://git.io/Jvvxe)*
@@ -29,7 +29,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [Boost and Unboost.bat](#boost-and-unboost.bat)
 
 ### Custom ISOs
-This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
+This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
 [ISO for Windows 7 by unlimitedOSgang](link)
 
@@ -74,13 +74,13 @@ If you still see stuttering/problems, you can try HPET disabled on BIOS.
 ### MSI-Mode
 
 MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode. <br/>
-TL;DR it makes your devices "faster" and improve latencys, better explanation soon.
+**TL;DR** it makes your devices "faster" and improve latencys, better explanation soon.
 
 **Set everything that is not a "problematic" Sata into MSI-Mode**
 
 ![MSI](/img/msi1.png)<br/>
 
-Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
+Old Sata drivers usually doesnt support MSI, check if your Sata is compatible. If you do this wrong you BSOD till format. <br/>
 You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
 [*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/) <br/>
@@ -90,8 +90,8 @@ You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear
 
 This is extremely important for input devices, 
 
-**Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
-**GPU and correspondent PCI to another single CPU (I use CPU3)**
+**Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
+**GPU and correspondent PCI to a different one single CPU (I use CPU3)**
 
 ![AFF](/img/aff1.png)<br/>
 
@@ -99,7 +99,7 @@ This is extremely important for input devices,
 
 ###  Process Scheduling
 There is different opinions about what is the best value and IF THERE IS a best value, <br/>
-TL;DR of what is Win32Priority:
+**TL;DR** of what is Win32Priority:
 
 is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
@@ -266,11 +266,99 @@ Space
 
 ###   Unpark Cores
 
-Space
+There is many ways to unpark your cores,<br/>
+Editing all regedit 0cc5b647-c1df-4637-891a-dec35c318583 found keys to ValueMax and ValueMin to 0<br/>
+Installing a custom powerplan like mine<br/>
+Using 3rd party program like Unpark CPU App<br/>
+[*Download Unpark CPU App*](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ###   ContextMenu
 
-Space
+`reg delete "hkcr\desktopbackground\shell" /f ` <br/>
+`reg add "hkcr\desktopbackground\shell\11nv" /v "icon" /t reg_sz /d "c:\program files\nvidia corporation\display.nvcontainer\nvdisplay.container.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\11nv" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\11nv" /ve /t reg_sz /d "Restore NVIDIA Control Panel" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\11nv\command" /ve /t reg_sz /d "sc start NVDisplay.ContainerLocalSystem" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\12steamnobrowser" /v "icon" /t reg_sz /d "c:\program files (x86)\steam\steam.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\12steamnobrowser" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\12steamnobrowser" /ve /t reg_sz /d "Launch Steam -nobrowser" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\12steamnobrowser\command" /ve /t reg_sz /d "powerrun steamnobrowser.bat" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\13notepad" /v "icon" /t reg_sz /d "c:\program files\notepad++\notepad++.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\13notepad" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\13notepad" /v "separatorbefore" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\13notepad" /ve /t reg_sz /d "Notepad++" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\13notepad\command" /ve /t reg_sz /d "c:\program files\notepad++\notepad++.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas" /v "hasluashield" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas" /v "icon" /t reg_sz /d "cmd.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas" /v "separatorbefore" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas" /ve /t reg_sz /d "CMD Promt" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\14runas\command" /ve /t reg_sz /d "cmd.exe /s /k pushd \"%%v\"" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns" /v "icon" /t reg_sz /d "imageres.dll,20" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns" /v "muiverb" /t reg_sz /d "Set DNS" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns" /v "subcommands" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns" /v "icon" /t reg_sz /d "shell32.dll,135" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns" /v "muiverb" /t reg_sz /d "open dns - 208.67.222.220" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("208.67.222.220","208.67.222.222") /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare" /v "icon" /t reg_sz /d "shell32.dll,135" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare" /v "muiverb" /t reg_sz /d "cloudflare - 1.1.1.1" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("1.1.1.1","1.0.0.1") /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns" /v "icon" /t reg_sz /d "shell32.dll,135" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns" /v "muiverb" /t reg_sz /d "ultra dns - 156.154.71.1" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("156.154.71.1","156.154.71.22") /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\04google" /v "icon" /t reg_sz /d "shell32.dll,135" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\04google" /v "muiverb" /t reg_sz /d "google - 8.8.8.8" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\5dns\shell\04google\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("8.8.8.8","8.8.4.4") /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "icon" /t reg_sz /d "powercpl.dll" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "muiverb" /t reg_sz /d "Power Plans" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "subcommands" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\01highperformance" /v "icon" /t reg_sz /d "powercpl.dll" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\01highperformance" /v "muiverb" /t reg_sz /d "Idle Disabled (performance)" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\01highperformance\command" /ve /t reg_sz /d "powercfg.exe /setactive 66666666-6666-6666-6666-666666666666" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\02balanced" /v "icon" /t reg_sz /d "powercpl.dll" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\02balanced" /v "muiverb" /t reg_sz /d "Idle Enabled (power saving)" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\02balanced\command" /ve /t reg_sz /d "powercfg.exe /setactive 77777777-7777-7777-7777-777777777777" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\03openpoweroptions" /v "icon" /t reg_sz /d "powercpl.dll" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\03openpoweroptions" /v "muiverb" /t reg_sz /d "Power Options" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\6powerplanconfig\shell\03openpoweroptions\command" /ve /t reg_sz /d "control.exe powercfg.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio" /v "commandflags" /t reg_sz /d "32" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio" /v "icon" /t reg_sz /d "imageres.dll,102" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio" /v "muiverb" /t reg_sz /d "Win32PrioritySeparation" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio" /v "subcommands" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\01w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\01w32p" /ve /t reg_sz /d "  42 dec / 2a hex = short, fixed, 3:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\01w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\02w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\02w32p" /ve /t reg_sz /d "  40 dec / 28 hex = short, fixed, 1:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\02w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000040 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\03w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\03w32p" /ve /t reg_sz /d "  26 dec / 1a hex = long, fixed, 3:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\03w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000026 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\04w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\04w32p" /ve /t reg_sz /d "  38 dec / 26 hex = short, variable, 3:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\04w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000038 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\05w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\05w32p" /ve /t reg_sz /d "  37 dec / 25 hex = short, variable, 2:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\05w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000037 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\06w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\06w32p" /ve /t reg_sz /d "  36 dec / 24 hex = short, variable, 1:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\06w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000036 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\07w32p" /v "icon" /t reg_sz /d "main.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\07w32p" /ve /t reg_sz /d "  22 dec / 16 hex = long, variable, 3:1 boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\7changewin32prio\shell\07w32p\command" /ve /t reg_sz /d "reg add "hklm\system\currentcontrolset\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost" /v "icon" /t reg_sz /d "joy.cpl" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost" /v "muiverb" /t reg_sz /d "Game Boost" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost" /v "position" /t reg_sz /d "top" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost" /v "subcommands" /t reg_sz /d "" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\01boost" /v "icon" /t reg_sz /d "cmmon32.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\01boost" /ve /t reg_sz /d "  on" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\01boost\command" /ve /t reg_sz /d "powerrun boost.bat" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\02unboost" /v "icon" /t reg_sz /d "cmstp.exe" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\02unboost" /ve /t reg_sz /d "  off" /f` <br/>
+`reg add "hkcr\desktopbackground\shell\9gameboost\shell\02unboost\command" /ve /t reg_sz /d "powerrun unboost.bat" /f` <br/>
 
 ###   Network tweaks
 
