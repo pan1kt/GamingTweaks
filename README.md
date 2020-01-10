@@ -106,6 +106,8 @@ This is extremely important for input devices,
 
 ![AFF](/img/affy.png)<br/>
 
+![AFF](/img/affy2.png)<br/>
+
 [*Download Affinity Policy Tool.*](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
 
 ###  Process Scheduling
