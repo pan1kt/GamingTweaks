@@ -362,24 +362,32 @@ Using 3rd party program like Unpark CPU App<br/>
 
 ###   Network tweaks
 
-Space
+Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt much your connection. <br/>
+[*Download Network.bat*](files/network.bat)
 
 ###   Ethernet Adapter tweaks
 
-This is for Intel Ethernet drivers,
+This is for Intel Ethernet drivers, <br/>
 [*Download Adapter.bat*](files/adapter.bat)
 
 ###   Hosts file
 
-Space
+You can block internet adresses from windows hosts file, <br/>
+Here i try to block some minimal telemetry without hurt any connection <br/>
+[*Download Hosts.bat*](files/hosts.bat)
 
 ###   Schtasks's tasks removal
 
-Space
+[*Download Windows 7 Schtasks Removal.bat*](files/7tasks.bat)
+
+[*Download Windows 8.1 Schtasks Removal.bat*](files/8tasks.bat)
+
+[*Download Windows 10 Schtasks Removal.bat*](files/10tasks.bat)
 
 ###   Memory tweaks
 
-Space
+This is basic memory tweaks, <br/>
+[*Download Memory.bat*](files/memory.bat)
 
 ###   NVIDIA settings
 
@@ -391,4 +399,7 @@ Space
 
 ###  Boost and Unboost.bat
 
-Space
+This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA VERSION**<br/>
+Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
+[*Download Boost.bat*](files/Boost.bat)<br/>
+[*Download UnBoost.bat*](files/UnBoost.bat)
