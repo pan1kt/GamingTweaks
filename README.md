@@ -178,132 +178,127 @@ Your Power Options should now look like this:
 
 ###  Device Remover
 
-```
-https://github.com/{user}/{repo}/compare/{foreign-user}:{branch}...{own-branch}
-```
+This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers, even unatached ones.
 
-For example:
+![wake](/img/device1.png)<br/>
+![wake](/img/device2.png)<br/>
+![wake](/img/device3.png)<br/>
 
-```
-https://github.com/rails/rails/compare/byroot:master...master
-```
+#### Remove hidden/detached devices<br/>
 
-![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
+#### Delete sermouse<br/>
+#### Delete Print Spooler<br/>
+#### Delete i8024prt<br/>
+
+Things to disable from Device Manager:
+
+HID-compliant consumer control device<br/>
+HID-compliant device<br/>
+Generic PnP Monitor<br/>
+WAN Miniport (IKEv2)<br/>
+WAN Miniport (IP)<br/>
+WAN Miniport (IPv6)<br/>
+WAN Miniport (L2TP)<br/>
+WAN Miniport (Network Monitor)<br/>
+WAN Miniport (PPPOE)<br/>
+WAN Miniport (PPTP)<br/>
+WAN Miniport (SSTP)<br/>
+Composite Bus Enumerator<br/>
+High Defenition Audio Controler(NVIDIA)<br/>
+Intel(R) Management Engine Interface<br/>
+Microsoft System Management BIOS Driver<br/>
+Microsoft Virtual Drive Enumerator Driver<br/>
+System timer<br/>
+Terminal Server Keyboard Driver<br/>
+Terminal Server Mouse Driver<br/>
+UMBus Root Bus Enumerator
 
 ###   Services.msc
 
+For Windows 7 i usually follow the famous BlackViper tweaked list <br/>
+[*Download Services Tweak for Windows 7*](link)
 
-Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the *HTML-only* version suitable for embedding in any other site.
+For Windows 8.1 i just made my own list <br/>
+[*Download Services Tweak for Windows 8.1*](link)
 
-Gists can be treated as a repository so they can be cloned like any other:
-
-```bash
-$ git clone https://gist.github.com/tiimgreen/10545817
-```
-
-![Gists](http://i.imgur.com/BcFzabp.png)
-
-This means you also can modify and push updates to Gists:
-
-```bash
-$ git commit
-$ git push
-Username for 'https://gist.github.com':
-Password for 'https://tiimgreen@gist.github.com':
-```
-
-However, Gists do not support directories. All files need to be added to the repository root.
-[*Read more about creating Gists.*](https://help.github.com/articles/creating-gists/)
+For Windows 10 there is n1ko extreme list or a safer list <br/>
+[*Download Safer Services Tweak for Windows 10*](link) <br/>
+[*Download Extreme Services Tweak for Windows 10*](link)
 
 ###   BIOS
 
+This is very important for your system, <br/>
+Check all your bios settings, remove all protections and power savings, enable max performance/power <br/>
+Everything not listed is Auto/Default: <br/>
 
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
-
-You can also use it via pure HTTP using Curl:
-
-```bash
-$ curl -i http://git.io -F "url=https://github.com/..."
-HTTP/1.1 201 Created
-Location: http://git.io/abc123
-
-$ curl -i http://git.io/abc123
-HTTP/1.1 302 Found
-Location: https://github.com/...
-```
-
-[*Read more about Git.io.*](https://github.com/blog/985-git-io-github-url-shortener)
+Internal PLL Overvoltage Disabled<br/>
+Spread Sprectum Disabled<br/>
+BCLK Recovery Disabled<br/>
+Intel Rapid Start Disabled<br/>
+Intel Smart Connect Disabled<br/>
+EPU Power Saving mode Disabled<br/>
+CPU Load-line Calibration(LLC) Auto **(Need more test)**<br/>
+CPU Power Phase Control Extreme<br/>
+CPU Power Duty Control Extreme<br/>
+CPU Current Capability 140%<br/>
+CPU Frequency Tuning Mode +6%<br/>
+CPU Frequency Switch 1000<br/>
+DRAM Frequency Switch 1000<br/>
+DRAM Current Capability 130%<br/>
+DRAM Power Phase Control Extreme<br/>
+Termination Anti-Aliasing Enabled<br/>
+Enhanced Intel SpeedStep Technology Disabled<br/>
+Long Duration Package Power Limit 9999<br/>
+Short Duration Package Power Limit 9999<br/>
+CPU Integrated VR Current Limit 9999<br/>
+Package Power Time Window 9999<br/>
+Idle Power-in Response Auto **(Need more test)** (Could try using the recommended Regular)<br/>
+Idle Power-out Responde Auto **(Need more test)** (Recommended is Fast but could try Regular)<br/>
+Power Current Slope Level-4<br/>
+Power Current Offset -100%<br/>
+Power Fast Ramp Response 1.5 **(Need more test)**<br/>
+CPU C-States Disabled<br/>
+CFG Lock Enabled<br/>
+High Precision Timer Disabled<br/>
+Intel Adaptive Thermal Monitor Disabled<br/>
+Hyper-threading Disabled<br/>
+Execute Disable Bit Disabled<br/>
+Intel Virtualization Technology Disabled<br/>
+Disable USB xHCI **(My preference/own choice)**<br/>
+Disable USB EHCI Hand-Off **(My preference/own choice)**<br/>
+Disable Legacy USB **(My preference/own choice)**<br/>
 
 ###   Overclocks
 
+Overclocks increase system performance and decreases latency,<br/>
+At least CPU overclock is mandatory in 2020
 
- - Pressing `t` will bring up a file explorer.
- - Pressing `w` will bring up the branch selector.
- - Pressing `s` will focus the search field for the current repository. Pressing Backspace to delete the “This repository” pill changes the field to search all of GitHub.
- - Pressing `l` will edit labels on existing Issues.
- - Pressing `y` **when looking at a file** (e.g., `https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md`) will change your URL to one which, in effect, freezes the page you are looking at. If this code changes, you will still be able to see what you saw at that current time.
-
-To see all of the shortcuts for the current page press `?`:
-
-![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
-
-[Read more about search syntax you can use.](https://help.github.com/articles/search-syntax/)
+Space
+Space
+Space
+Space
+Space
+Space
 
 ###   Extras
-It also works with ranges, e.g., `#L53-L60`, to select ranges, hold `shift` and click two lines:
 
-```
-https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
-```
-
-![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+Space
+Space
+Space
+Space
+Space
+Space
+Space
+Space
 
 ###  TO-DO-LIST
-In Issues and Pull requests check boxes can be added with the following syntax (notice the space):
 
-```
-- [ ] Be awesome
-- [ ] Prepare dinner
-  - [ ] Research recipe
-  - [ ] Buy ingredients
-  - [ ] Cook recipe
-- [ ] Sleep
-```
-
-![Task List](http://i.imgur.com/jJBXhsY.png)
-
-When they are clicked, they will be updated in the pure Markdown:
-
-```
-- [x] Be awesome
-- [ ] Prepare dinner
-  - [x] Research recipe
-  - [x] Buy ingredients
-  - [ ] Cook recipe
-- [ ] Sleep
-```
-
-[*Read more about task lists.*](https://help.github.com/articles/writing-on-github/#task-lists)
-
-#### Task Lists in Markdown Documents
-In full Markdown documents **read-only** checklists can now be added using the following syntax:
-
-```
-- [ ] Mercury
-- [x] Venus
-- [x] Earth
-  - [x] Moon
-- [x] Mars
-  - [ ] Deimos
-  - [ ] Phobos
-```
-
-- [ ] Mercury
-- [x] Venus
-- [x] Earth
-  - [x] Moon
-- [x] Mars
-  - [ ] Deimos
-  - [ ] Phobos
-
-[*Read more about task lists in markdown documents.*](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+Space
+Space
+Space
+Space
+Space
+Space
+Space
+Space
+Space
