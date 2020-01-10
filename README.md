@@ -49,13 +49,13 @@ Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TS
 But its recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
 You can try see if your system is different from others and works best on HPET disabled on BIOS, but will be something less common.
 
-**For best configuration, use this in Command Promt:**
+**For best configuration, paste this in Command Promt:**
 
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
 
-**You can optionally add those commands too for system improvement,**
+**You can optionally paste those commands too for system improvement,**
 
 `bcdedit /set bootmenupolicy standard` <br/>
 `bcdedit /set bootux disabled` <br/>
@@ -120,7 +120,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 ![w](/img/win32p.png)
 
-**Paste this command to set Win32PrioritySeparation to 16 Hex,** <br/>
+**To set Win32PrioritySeparation to 16 Hex, paste this to Command Promt:** <br/>
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
 [*Read more about Process Scheduling and Win32PS.*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
@@ -128,7 +128,9 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 ###  Power Options
 
 You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
-I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance.
+I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance. <br/>
+
+**To import my profiles, paste this to Command Promt:**
 
 `powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a` <br/>
 `powercfg -h off` <br/>
@@ -166,8 +168,6 @@ I have a script that installs everything you need and this On/Off is based on wh
 `reg add "hklm\system\controlset001\control\power\user\powerschemes\77777777-7777-7777-7777-777777777777\54533251-82be-4824-96c1-47b60b740d00\bc5038f7-23e0-4960-96da-33abaf5935ec" /v "acsettingindex" /t reg_dword /d "100" /f` <br/>
 `reg add "hklm\system\controlset001\control\power\user\powerschemes\77777777-7777-7777-7777-777777777777\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e" /v "acsettingindex" /t reg_dword /d "0" /f` <br/>
 `reg add "hklm\system\controlset001\control\power\user\powerschemes\77777777-7777-7777-7777-777777777777\7516b95f-f776-4464-8c53-06167f40cc99\aded5e82-b909-4619-9949-f5d71dac0bcb" /v "acsettingindex" /t reg_dword /d "100" /f` <br/>
-
-Your Power Options should now look like this:
 
 ![p](/img/power1.png)
 
