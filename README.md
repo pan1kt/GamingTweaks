@@ -75,15 +75,21 @@ You can try see if your system is different from others and works best on HPET d
 `bcdedit /set x2apicpolicy enable` <br/>
 
 ### MSI-Mode
-To view all commits on a repo by author add `?author={user}` to the URL.
 
-```
-https://github.com/rails/rails/commits/master?author=dhh
-```
+MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode.
+
+TL;DR it makes your devices "faster", better explanation soon.
+
+#### Set everything that is not a "problematic" Sata into MSI-Mode
+
+![MSI](/img/msi1.png)<br/>
+
+Extra: Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD.
+Extra2: You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
 ![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
-[*Read more about the differences between commits views.*](https://help.github.com/articles/differences-between-commit-views/)
+[*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
 ### Affinity Policy Tool
 When cloning a repository the `.git` can be left off the end.
