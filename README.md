@@ -93,8 +93,8 @@ Extra2: You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make the
 
 This is extremely important for input devices, 
 
-Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)
-GPU and correspondent PCI to another single CPU (I use CPU3)
+#### Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)  <br/>
+#### GPU and correspondent PCI to another single CPU (I use CPU3) <br/>
 
 ![AFF](/img/aff1.png)<br/>
 
@@ -102,17 +102,33 @@ GPU and correspondent PCI to another single CPU (I use CPU3)
 
 ###  Process Scheduling
 
-If you go to the repo's [Branches](https://github.com/tiimgreen/github-cheat-sheet/branches) page, next to the Commits button:
+TL;DR of what is Win32Priority:
 
-```
-https://github.com/{user}/{repo}/branches
-```
+`is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum.` <br/>
 
-... you would see a list of all branches which are not merged into the main branch.
+`2A Hex = Short, Fixed , High foreground boost. <br/>
+29 Hex = Short, Fixed , Medium foreground boost. <br/>
+28 Hex = Short, Fixed , No foreground boost. <br/>
 
-From here you can access the compare page or delete a branch with a click of a button.
+26 Hex = Short, Variable , High foreground boost. <br/>
+25 Hex = Short, Variable , Medium foreground boost. <br/>
+24 Hex = Short, Variable , No foreground boost. <br/>
 
-![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
+1A Hex = Long, Fixed, High foreground boost. <br/>
+19 Hex = Long, Fixed, Medium foreground boost. <br/>
+18 Hex = Long, Fixed, No foreground boost. <br/>
+
+16 Hex = Long, Variable, High foreground boost. <br/>
+15 Hex = Long, Variable, Medium foreground boost. <br/>
+14 Hex = Long, Variable, No foreground boost.` <br/>
+
+![w](/img/w32.png)
+
+#### I recommend 22 Decimal value, but there is a mistery about if there IS a best value and what value is.<br/>
+
+[*Read more about Process Scheduling and Win32PS.*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
+
+[*Download Win32PrioritySeparation=22 Registry File.*](link)
 
 ####  Power Options
 
