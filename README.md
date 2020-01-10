@@ -147,12 +147,16 @@ I have a script that installs everything you need and this On/Off is based on wh
 
 This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers
 
-**Set to show only hidden/detached devices**<br/>
-![wake](/img/device1.png)<br/>
+**Set to show only hidden/detached devices**
+
+![wake](/img/device1.png)
+
 **Remove all**<br/>
+
 ![wake](/img/device2.png)
 
-**Disable some devices:** <br/>
+**Disable some devices:**
+
 ![AFF](/img/devices.png)
 
 ###   Services
