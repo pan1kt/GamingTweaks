@@ -43,28 +43,18 @@ If you play games at fullscreen windowed mode, use Windows 7 or you will have to
 Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
 
 ### Windows Timers
-All windows versions 1809+ have a forced synthetic QPC timer of 10mhz. <br/> 
-Previous versions are true TSC between 2-4mhz (give or take) depending on the CPU speed. <br/>
-As far as low latency and high performance, an older version under 1809 is the way to go. <br/>
-The choice must be based on your preference, compatibility and needs. <br/>
-**Usually you should: Win7, Win10 v1709 or later.**
+After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, thats why its recommended to use something older, <br/>
+if you dont have compatibility issues or the needs of DX12/RTX for example. <br/> 
+Previous versions are true TSC timer between 2-4mhz and gives the best performance and lowest latency. <br/>
+If you still see stuttering/problems, you can try HPET disabled on BIOS.
 
-Windows 1809 or later "qpc timer" <br/>
-![1](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc1.png) <br/>
-Windows 1803 or earlier "qpc timer" <br/>
-![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
-
-Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET <br/>
-But its recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
-You can try see if your system is different from others and works best on HPET disabled on BIOS, but will be something less common.
-
-**For best configuration, paste this in Command Promt:**
+**For best common configuration, paste this in Command Promt:**
 
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
 
-**You can optionally paste those commands too for system improvement,**
+**You can optionally paste those commands for system improvement,**
 
 `bcdedit /set bootmenupolicy standard` <br/>
 `bcdedit /set bootux disabled` <br/>
@@ -76,7 +66,6 @@ You can try see if your system is different from others and works best on HPET d
 `bcdedit /set {globalsettings} custom:16000068 true` <br/>
 `bcdedit /set {globalsettings} custom:16000069 true` <br/>
 `bcdedit /timeout 0` <br/>
-`bcdedit /set disabledynamictick yes` <br/>
 `bcdedit /set uselegacyapicmode no` <br/>
 `bcdedit /set usefirmwarepcisettings no` <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
@@ -127,7 +116,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 15 Hex = Long, Variable, Medium foreground boost. <br/>
 14 Hex = Long, Variable, No foreground boost. <br/>
 
-![w](/img/win32p.png)
+![w](/img/w32p.png)
 
 **To set Win32PrioritySeparation to 16 Hex, paste this to Command Promt:** <br/>
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
