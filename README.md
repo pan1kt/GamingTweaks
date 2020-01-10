@@ -1,7 +1,6 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks for OS and programs. <br/>
-This is heavily inspired by Revision Os and Fr33thy discords. Credits to those communitys and n1kobg,dreamjow,ailurus and more.
-
+This is heavily inspired by Revision Os and Fr33thy discords. Credits to those communitys and n1kobg,dreamjow,ailurus
 *Shortlink: [`https://git.io/Jvvxe`](https://git.io/Jvvxe)*
 
 *Read this in other languages: [English](README.md), [Portuguese](README.pt.md).*
@@ -198,8 +197,8 @@ Long Duration Package Power Limit 9999<br/>
 Short Duration Package Power Limit 9999<br/>
 CPU Integrated VR Current Limit 9999<br/>
 Package Power Time Window 9999<br/>
-Idle Power-in Response Auto **(Need more test)** (Could try using the recommended Regular)<br/>
-Idle Power-out Responde Auto **(Need more test)** (Recommended is Fast but could try Regular)<br/>
+Idle Power-in Response Auto **(Need more test)**<br/>
+Idle Power-out Responde Auto **(Need more test)**<br/>
 Power Current Slope Level-4<br/>
 Power Current Offset -100%<br/>
 Power Fast Ramp Response 1.5 **(Need more test)**<br/>
