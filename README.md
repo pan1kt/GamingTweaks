@@ -116,12 +116,12 @@ TL;DR of what is Win32Priority:
 `24 Hex = Short, Variable , No foreground boost.` <br/>
 `1A Hex = Long, Fixed, High foreground boost.` <br/>
 `19 Hex = Long, Fixed, Medium foreground boost.` <br/>
-`18 Hex = Long, Fixed, No foreground boost.` <br/>
-#### `16 Hex = Long, Variable, High foreground boost.` <br/>
+`18 Hex = Long, Fixed, No foreground boost.`
+#### `16 Hex = Long, Variable, High foreground boost.`
 `15 Hex = Long, Variable, Medium foreground boost.` <br/>
 `14 Hex = Long, Variable, No foreground boost.` <br/>
 
-![w](/img/w32.png)
+![w](/img/win32p.png)
 
 #### I recommend 16 Hex value, but there is a mistery about if there IS a best value and what value is.<br/>
 
