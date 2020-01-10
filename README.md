@@ -51,7 +51,7 @@ But its commonly recommended that you stay on TSC, with HPET enabled on BIOS.
 
 You can try see if your system is different from others and works best on HPET disabled on BIOS, but wont be most likely.
 
-...For best configuration, use this in Command Promt:
+For best configuration, use this in Command Promt:
 
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
@@ -59,35 +59,21 @@ You can try see if your system is different from others and works best on HPET d
 
 Extra: You can optionally add those commands that i like doing too,
 
-`bcdedit /set bootmenupolicy standard`
-
-`bcdedit /set bootux disabled`
-
-`bcdedit /set hypervisorlaunchtype off`
-
-`bcdedit /set nx optout`
-
-`bcdedit /set quietboot yes`
-
-`bcdedit /set tpmbootentropy forcedisable`
-
-`bcdedit /set {globalsettings} custom:16000067 true`
-
-`bcdedit /set {globalsettings} custom:16000068 true`
-
-`bcdedit /set {globalsettings} custom:16000069 true`
-
-`bcdedit /timeout 0`
-
-`bcdedit /set disabledynamictick yes`
-
-`bcdedit /set uselegacyapicmode no`
-
-`bcdedit /set usefirmwarepcisettings no`
-
-`bcdedit /set tscsyncpolicy Legacy`
-
-`bcdedit /set x2apicpolicy enable`
+`bcdedit /set bootmenupolicy standard` <br/>
+`bcdedit /set bootux disabled` <br/>
+`bcdedit /set hypervisorlaunchtype off` <br/>
+`bcdedit /set nx optout` <br/>
+`bcdedit /set quietboot yes` <br/>
+`bcdedit /set tpmbootentropy forcedisable` <br/>
+`bcdedit /set {globalsettings} custom:16000067 true` <br/>
+`bcdedit /set {globalsettings} custom:16000068 true` <br/>
+`bcdedit /set {globalsettings} custom:16000069 true` <br/>
+`bcdedit /timeout 0` <br/>
+`bcdedit /set disabledynamictick yes` <br/>
+`bcdedit /set uselegacyapicmode no` <br/>
+`bcdedit /set usefirmwarepcisettings no` <br/>
+`bcdedit /set tscsyncpolicy Legacy` <br/>
+`bcdedit /set x2apicpolicy enable` <br/>
 
 ### Commit History by Author
 To view all commits on a repo by author add `?author={user}` to the URL.
