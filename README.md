@@ -27,8 +27,7 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 
 [ISO for Windows 8.1 by me](link)
 
-[ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
-
+[ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this.
