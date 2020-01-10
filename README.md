@@ -27,6 +27,8 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
+Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this.
+
 ### Windows Timers
 All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
 
