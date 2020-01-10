@@ -54,6 +54,10 @@ If you still see stuttering/problems, you can try HPET disabled on BIOS.
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
 
+**Install SetTimerResolutionService, IMPORTANT!!**
+
+sPACE
+
 **You can optionally paste those commands for system improvement,**
 
 `bcdedit /set bootmenupolicy standard` <br/>
