@@ -22,10 +22,9 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 ## GitHub
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
-
-![ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
-
-[*Read more about their isos in Revision discord.*](https://discordapp.com/invite/CCxWegZ)
+<image x="10" y="20" width="80" height="80" xlink:href="https://lh6.googleusercontent.com/fiB7gJ883xxwXunb5Kq6RhNzNBpi4TRf8hWhjaKE-TR24FsyWbzzV6zdCrLfL477piMbXCmqUFQzqFDkjwv4lfGVbmnybJcGC3lgpsRdMNH1vAbJEVT5=w1280" />
+[ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
+[*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 ### Windows Timers
 Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
