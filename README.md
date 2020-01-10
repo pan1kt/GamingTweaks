@@ -32,9 +32,9 @@ This is heavily inspired by Revision Os and Fr33thy discords. Credits to those c
 ### Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
-[ISO for Windows 7 by unlimitedOSgang](link)
+[ISO for Windows 7 by unlimitedOSgang 0.2.0](https://drive.google.com/file/d/1XlaT1gwsdYq5ecTpM3zqOOd668K3yOY_/view?usp=sharing)
 
-[ISO for Windows 8.1 by me](link)
+[ISO for Windows 8.1 by me SOON](link)
 
 [ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
@@ -282,9 +282,12 @@ This is basic memory tweaks, <br/>
 ###   NVIDIA settings
 
 **MANDATORY to unninstall current driver with DDU and install Tweaked 441.41!**
-[*Download Windows 7/8 Tweaked 441.41*](limk) <br/>
-[*Download Windows 10 Tweaked 441.41*](limk) <br/><br/>
-![MSI](/img/nvidiaset.png)<br/>
+
+[*Download Windows 7/8 Tweaked 441.41*](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
+
+[*Download Windows 10 Tweaked 441.41*](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
+
+![MSI](/img/nvidiaset.png)
 
 ###   GPU tweaks
 
