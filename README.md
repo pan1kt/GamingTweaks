@@ -104,7 +104,7 @@ This is extremely important for input devices,
 **Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
 **GPU and correspondent PCI to a different one single CPU (I use CPU3)**
 
-![AFF](/img/aff1.png)<br/>
+![AFF](/img/affy.png)<br/>
 
 [*Download Affinity Policy Tool.*](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
 
