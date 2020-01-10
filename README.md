@@ -39,12 +39,10 @@ Extra3: Windows 7 is by far the best for performance even in 2020, but theres mu
 ### Windows Timers
 All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
 
-Windows 1809 or later "qpc timer"
-
+Windows 1809 or later "qpc timer" <br/>
 ![1](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc1.png) 
 
-Windows 1803 or earlier "qpc timer"
-
+Windows 1803 or earlier "qpc timer" <br/>
 ![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
 
 Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET
@@ -55,11 +53,9 @@ You can try see if your system is different from others and works best on HPET d
 
 ...For best configuration, use this in Command Promt:
 
-`bcdedit /set disabledynamictick true`
-
-`bcdedit /set useplatformclock false`
-
-`bcdedit /set useplatformtick false`
+`bcdedit /set disabledynamictick true` <br/>
+`bcdedit /set useplatformclock false` <br/>
+`bcdedit /set useplatformtick false` <br/>
 
 Extra: You can optionally add those commands that i like doing too,
 
