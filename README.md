@@ -281,6 +281,9 @@ This is basic memory tweaks, <br/>
 
 ###   NVIDIA settings
 
+**MANDATORY to unninstall current driver with DDU and install Tweaked 441.41!**
+[*Download Windows 7/8 Tweaked 441.41*](limk) <br/>
+[*Download Windows 10 Tweaked 441.41*](limk) <br/><br/>
 ![MSI](/img/nvidiaset.png)<br/>
 
 ###   GPU tweaks
