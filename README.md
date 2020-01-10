@@ -12,8 +12,8 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [MSI-Mode](#msi-mode)
  - [Affinity Policy Tool](#affinity-policy-tool)
  - [Process Scheduling](#process-scheduling)
- - [Power Options](#powerplan)
- - [Device Remover](#devices)
+ - [Power Options](#power-options)
+ - [Device Remover](#device-remover)
  - [Services.msc](#services)
  - [BIOS](#bios)
  - [Overclocks](#overclocks)
@@ -44,10 +44,8 @@ Windows 1809 or later "qpc timer" <br/>
 Windows 1803 or earlier "qpc timer" <br/>
 ![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
 
-Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET
-
-But its commonly recommended that you stay on TSC, with HPET enabled on BIOS.
-
+Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET <br/>
+But its commonly recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
 You can try see if your system is different from others and works best on HPET disabled on BIOS, but wont be most likely.
 
 #### For best configuration, use this in Command Promt:
@@ -84,8 +82,10 @@ TL;DR it makes your devices "faster" and improve latencys, better explanation so
 
 ![MSI](/img/msi1.png)<br/>
 
-Extra: Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
-Extra2: You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
+Extra: 
+
+Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
+You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
 [*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
@@ -117,7 +117,7 @@ TL;DR of what is Win32Priority:
 `1A Hex = Long, Fixed, High foreground boost.` <br/>
 `19 Hex = Long, Fixed, Medium foreground boost.` <br/>
 `18 Hex = Long, Fixed, No foreground boost.`
-#### `16 Hex = Long, Variable, High foreground boost.`
+##### `16 Hex = Long, Variable, High foreground boost.`
 `15 Hex = Long, Variable, Medium foreground boost.` <br/>
 `14 Hex = Long, Variable, No foreground boost.` <br/>
 
