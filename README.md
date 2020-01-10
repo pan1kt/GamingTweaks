@@ -274,7 +274,7 @@ This is basic memory tweaks, <br/>
 
 ###   NVIDIA settings
 
-Space
+![MSI](/img/nvidiaset.png)<br/>
 
 ###   GPU tweaks
 
