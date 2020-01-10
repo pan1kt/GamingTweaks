@@ -106,20 +106,20 @@ This is extremely important for input devices,
 There is different opinions about what is the best value and IF THERE IS a best value, <br/>
 TL;DR of what is Win32Priority:
 
-`is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum.` <br/>
+is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
-`2A Hex = Short, Fixed , High foreground boost.` <br/>
-`29 Hex = Short, Fixed , Medium foreground boost.` <br/>
-`28 Hex = Short, Fixed , No foreground boost.` <br/>
-`26 Hex = Short, Variable , High foreground boost.` <br/>
-`25 Hex = Short, Variable , Medium foreground boost.` <br/>
-`24 Hex = Short, Variable , No foreground boost.` <br/>
-`1A Hex = Long, Fixed, High foreground boost.` <br/>
-`19 Hex = Long, Fixed, Medium foreground boost.` <br/>
-`18 Hex = Long, Fixed, No foreground boost.`
-##### `16 Hex = Long, Variable, High foreground boost.`
-`15 Hex = Long, Variable, Medium foreground boost.` <br/>
-`14 Hex = Long, Variable, No foreground boost.` <br/>
+2A Hex = Short, Fixed , High foreground boost. <br/>
+29 Hex = Short, Fixed , Medium foreground boost. <br/>
+28 Hex = Short, Fixed , No foreground boost. <br/>
+26 Hex = Short, Variable , High foreground boost. <br/>
+25 Hex = Short, Variable , Medium foreground boost. <br/>
+24 Hex = Short, Variable , No foreground boost. <br/>
+1A Hex = Long, Fixed, High foreground boost. <br/>
+19 Hex = Long, Fixed, Medium foreground boost. <br/>
+18 Hex = Long, Fixed, No foreground boost.
+##### 16 Hex = Long, Variable, High foreground boost.
+15 Hex = Long, Variable, Medium foreground boost. <br/>
+14 Hex = Long, Variable, No foreground boost. <br/>
 
 ![w](/img/win32p.png)
 
