@@ -172,34 +172,9 @@ I have a script that installs everything you need and this On/Off is based on wh
 `reg add "hklm\system\controlset001\control\power\user\powerschemes\77777777-7777-7777-7777-777777777777\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e" /v "acsettingindex" /t reg_dword /d "0" /f` <br/>
 `reg add "hklm\system\controlset001\control\power\user\powerschemes\77777777-7777-7777-7777-777777777777\7516b95f-f776-4464-8c53-06167f40cc99\aded5e82-b909-4619-9949-f5d71dac0bcb" /v "acsettingindex" /t reg_dword /d "100" /f` <br/>
 
+Your Power Options should now look like this:
 
-For example:
-
-```
-https://github.com/rails/rails/compare/master...4-1-stable
-```
-
-![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
-
-`{range}` can be changed to things like:
-
-```
-https://github.com/rails/rails/compare/master@{1.day.ago}...master
-https://github.com/rails/rails/compare/master@{2014-10-04}...master
-```
-
-*Here, dates are in the format `YYYY-MM-DD`*
-
-![Another compare example](http://i.imgur.com/5dtzESz.png)
-
-Branches can also be compared in `diff` and `patch` views:
-
-```
-https://github.com/rails/rails/compare/master...4-1-stable.diff
-https://github.com/rails/rails/compare/master...4-1-stable.patch
-```
-
-[*Read more about comparing commits across time.*](https://help.github.com/articles/comparing-commits-across-time/)
+![p](/img/power1.png)
 
 ###  Device Remover
 
