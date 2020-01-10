@@ -14,7 +14,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [Process Scheduling](#process-scheduling)
  - [Power Options](#power-options)
  - [Device Remover](#device-remover)
- - [Services.msc](#services)
+ - [Services](#services)
  - [BIOS](#bios)
  - [Overclocks](#overclocks)
  - [Extras](#extras)
@@ -213,7 +213,7 @@ Terminal Server Keyboard Driver<br/>
 Terminal Server Mouse Driver<br/>
 UMBus Root Bus Enumerator
 
-###   Services.msc
+###   Services
 
 For Windows 7 i usually follow the famous BlackViper tweaked list <br/>
 [*Download Services Tweak for Windows 7*](link)
