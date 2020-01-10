@@ -29,24 +29,25 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 [ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
-Extra: 
-
 Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this. <br/>
 If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance. <br/>
 Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
 
 ### Windows Timers
-All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
+All windows versions 1809+ have a forced synthetic QPC timer of 10mhz. <br/> 
+Previous versions are true TSC between 2-4mhz (give or take) depending on the CPU speed. <br/>
+As far as low latency and high performance, an older version under 1809 is the way to go. <br/>
+The choice must be based on your preference, compatibility and needs. <br/>
+**Usually you should: Win7, Win10 v1709 or later.**
 
 Windows 1809 or later "qpc timer" <br/>
-![1](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc1.png) 
-
+![1](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc1.png) <br/>
 Windows 1803 or earlier "qpc timer" <br/>
 ![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
 
 Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET <br/>
-But its commonly recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
-You can try see if your system is different from others and works best on HPET disabled on BIOS, but wont be most likely.
+But its recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
+You can try see if your system is different from others and works best on HPET disabled on BIOS, but will be something less common.
 
 #### For best configuration, use this in Command Promt:
 
@@ -80,8 +81,6 @@ TL;DR it makes your devices "faster" and improve latencys, better explanation so
 #### Set everything that is not a "problematic" Sata into MSI-Mode
 
 ![MSI](/img/msi1.png)<br/>
-
-Extra: 
 
 Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
 You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
