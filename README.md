@@ -49,13 +49,13 @@ Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TS
 But its recommended that you stay on TSC, with HPET enabled on BIOS. <br/>
 You can try see if your system is different from others and works best on HPET disabled on BIOS, but will be something less common.
 
-#### For best configuration, use this in Command Promt:
+**For best configuration, use this in Command Promt:**
 
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
 
-#### You can optionally add those commands too for system improvement,
+**You can optionally add those commands too for system improvement,**
 
 `bcdedit /set bootmenupolicy standard` <br/>
 `bcdedit /set bootux disabled` <br/>
@@ -78,7 +78,7 @@ You can try see if your system is different from others and works best on HPET d
 MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode. <br/>
 TL;DR it makes your devices "faster" and improve latencys, better explanation soon.
 
-#### Set everything that is not a "problematic" Sata into MSI-Mode
+**Set everything that is not a "problematic" Sata into MSI-Mode**
 
 ![MSI](/img/msi1.png)<br/>
 
@@ -92,8 +92,8 @@ You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear
 
 This is extremely important for input devices, 
 
-#### Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)
-#### GPU and correspondent PCI to another single CPU (I use CPU3)
+**Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
+**GPU and correspondent PCI to another single CPU (I use CPU3)**
 
 ![AFF](/img/aff1.png)<br/>
 
@@ -120,7 +120,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 ![w](/img/win32p.png)
 
-#### Paste this command to set Win32PrioritySeparation to 16 Hex,<br/>
+**Paste this command to set Win32PrioritySeparation to 16 Hex,** <br/>
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
 [*Read more about Process Scheduling and Win32PS.*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
@@ -179,13 +179,11 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 ![wake](/img/device2.png)<br/>
 ![wake](/img/device3.png)<br/>
 
-#### Remove hidden/detached devices<br/>
+**Remove hidden/detached devices**<br/>
 
-#### Delete sermouse<br/>
-#### Delete Print Spooler<br/>
-#### Delete i8024prt<br/>
+**Delete sermouse, Print Spooler, i8024prt**<br/>
 
-Things to disable from Device Manager:
+**Disable:**
 
 HID-compliant consumer control device<br/>
 HID-compliant device<br/>
@@ -222,9 +220,9 @@ For Windows 10 there is n1ko extreme list or a safer list <br/>
 
 ###   BIOS
 
-This is very important for your system, <br/>
-Check all your bios settings, remove all protections and power savings, enable max performance/power <br/>
-Everything not listed is Auto/Default: <br/>
+This is very important for your system, make sure to check every setting <br/>
+
+**Remove all protections and power savings, enable max performance/power** <br/>
 
 Internal PLL Overvoltage Disabled<br/>
 Spread Sprectum Disabled<br/>
