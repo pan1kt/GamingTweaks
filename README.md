@@ -1,5 +1,6 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
-A collection of cool hidden and not so hidden tweaks for OS and programs. This is heavily inspired by Revision Os and Fr33thy discords. Also i have to mention some places and guys that helped me through this process, which is n1kobg,dreamjow,ailurus and more.
+A collection of cool hidden and not so hidden tweaks for OS and programs. <br/>
+This is heavily inspired by Revision Os and Fr33thy discords. Credits to those communitys and n1kobg,dreamjow,ailurus and more.
 
 *Shortlink: [`https://git.io/Jvvxe`](https://git.io/Jvvxe)*
 
@@ -56,7 +57,12 @@ If you still see stuttering/problems, you can try HPET disabled on BIOS.
 
 **Install SetTimerResolutionService, IMPORTANT!!**
 
-sPACE
+Drop this file in C:/ folder, the file must be there to service work <br/>
+Open command promt and type: <br/>
+`cd..` <br/>
+`cd..` <br/>
+`SetTimerResolutionService -install` <br/>
+[*Download SetTimerResolutionService*](files/SetTimerResolutionService.exe)
 
 **You can optionally paste those commands for system improvement,**
 
