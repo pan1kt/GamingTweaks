@@ -206,7 +206,7 @@ UMBus Root Bus Enumerator
 ###   Services
 
 For Windows 7 i usually follow the famous BlackViper tweaked list <br/>
-[*Download Services Tweak for Windows 7*](link)
+[*Download Services Tweak for Windows 7*](files/7services.bat)
 
 For Windows 8.1 i just made my own list <br/>
 [*Download Services Tweak for Windows 8.1*](link)
@@ -366,7 +366,8 @@ Space
 
 ###   Ethernet Adapter tweaks
 
-Space
+This is for Intel Ethernet drivers,
+[*Download Adapter.bat*](files/adapter.bat)
 
 ###   Hosts file
 
