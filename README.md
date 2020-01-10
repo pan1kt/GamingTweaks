@@ -6,7 +6,6 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 *Read this in other languages: [English](README.md), [Portuguese](README.pt.md).*
 
 ## Table of Contents
-  - [GitHub](#github)
     - [Custom ISOs](#custom-isos)
     - [Windows Timers](#windows-timers)
     - [MSI-Mode](#msi-mode)
