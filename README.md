@@ -22,16 +22,18 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 ## GitHub
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
-<image x="10" y="20" width="80" height="80" xlink:href="https://lh6.googleusercontent.com/fiB7gJ883xxwXunb5Kq6RhNzNBpi4TRf8hWhjaKE-TR24FsyWbzzV6zdCrLfL477piMbXCmqUFQzqFDkjwv4lfGVbmnybJcGC3lgpsRdMNH1vAbJEVT5=w1280" />
+
 [ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
+
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 ### Windows Timers
-Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wide instead of the default 8. The number after `ts` can be adjusted to suit your preference. This does not work on Gists, or raw file views, but a [Chrome extension](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) can automate this.
+All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
 
-Here is a Go source file before adding `?ts=4`:
+Windows 1809 or later "qpc timer"				Windows 1803 or earlier "qpc timer"
+![1](https://github.com/Felipe8581/GamingTweaks/img/qpc1.png) ![2](https://github.com/Felipe8581/GamingTweaks/img/qpc1.png)
 
-![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+![1](http://i.imgur.com/GIT1Fr0.png)
 
 ...and this is after adding `?ts=4`:
 
