@@ -32,7 +32,9 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this.
+
 Extra2: If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance.
+
 Extra3: Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference.
 
 ### Windows Timers
@@ -60,7 +62,23 @@ You can try see if your system is different from others and works best on HPET d
 
 `bcdedit /set useplatformtick false`
 
-![After, tab space example](http://i.imgur.com/70FL4H9.png)
+Extra: You can optionally add those commands that i like doing too,
+
+`bcdedit /set bootmenupolicy standard`
+`bcdedit /set bootux disabled`
+`bcdedit /set hypervisorlaunchtype off`
+`bcdedit /set nx optout`
+`bcdedit /set quietboot yes`
+`bcdedit /set tpmbootentropy forcedisable`
+`bcdedit /set {globalsettings} custom:16000067 true`
+`bcdedit /set {globalsettings} custom:16000068 true`
+`bcdedit /set {globalsettings} custom:16000069 true`
+`bcdedit /timeout 0`
+`bcdedit /set disabledynamictick yes`
+`bcdedit /set uselegacyapicmode no`
+`bcdedit /set usefirmwarepcisettings no`
+`bcdedit /set tscsyncpolicy Legacy`
+`bcdedit /set x2apicpolicy enable`
 
 ### Commit History by Author
 To view all commits on a repo by author add `?author={user}` to the URL.
