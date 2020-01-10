@@ -54,9 +54,11 @@ You can try see if your system is different from others and works best on HPET d
 
 ...For best configuration, use this in Command Promt:
 
-`bcdedit /set disabledynamictick true <br/>
-bcdedit /set useplatformclock false <br/>
-bcdedit /set useplatformtick false`
+`bcdedit /set disabledynamictick true`
+
+`bcdedit /set useplatformclock false`
+
+`bcdedit /set useplatformtick false`
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
