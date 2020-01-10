@@ -173,7 +173,7 @@ I have a script that installs everything you need and this On/Off is based on wh
 
 ###  Device Remover
 
-This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers, even unatached ones.
+This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers
 
 ![wake](/img/device1.png)<br/>
 ![wake](/img/device2.png)<br/>
@@ -184,7 +184,6 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 **Delete sermouse, Print Spooler, i8024prt**<br/>
 
 **Disable:**
-
 HID-compliant consumer control device<br/>
 HID-compliant device<br/>
 Generic PnP Monitor<br/>
@@ -265,22 +264,40 @@ Disable Legacy USB **(My preference/own choice)**<br/>
 
 Overclocks increase system performance and decreases latency,<br/>
 At least CPU overclock is mandatory in 2020
-
-Space
-Space
-Space
-Space
-Space
 Space
 
-###  TO-DO LIST
+###   ContextMenu
 
-Boost.bat
-Unboost.bat
-ContextMenu
-Memory tweaks
-Network tweaks
-Hosts file
-Schtasks removal
-Ethernet Adapter tweaks
+Space
+
+###   Network tweaks
+
+Space
+
+###   Ethernet Adapter tweaks
+
+Space
+
+###   Hosts file
+
+Space
+
+###   Schtasks's tasks removal
+
+Space
+
+###   Memory tweaks
+
+Space
+
+###   NVIDIA settings
+
+Space
+
+###   GPU tweaks
+
+Space
+
+###  Boost and Unboost.bat
+
 Space
