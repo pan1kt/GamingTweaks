@@ -395,7 +395,8 @@ Space
 
 ###   GPU tweaks
 
-Space
+This is sets your card to P0 State and enable K-boost, <br/>
+[*Download GPU.bat*](files/gpu.bat)
 
 ###  Boost and Unboost.bat
 
