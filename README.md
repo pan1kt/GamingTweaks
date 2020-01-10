@@ -31,9 +31,8 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
 
 Windows 1809 or later "qpc timer"				Windows 1803 or earlier "qpc timer"
-![1](https://github.com/Felipe8581/GamingTweaks/img/qpc1.png) ![2](https://github.com/Felipe8581/GamingTweaks/img/qpc1.png)
+![1](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc1.png) ![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
 
-![1](http://i.imgur.com/GIT1Fr0.png)
 
 ...and this is after adding `?ts=4`:
 
