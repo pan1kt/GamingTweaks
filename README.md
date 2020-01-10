@@ -150,10 +150,10 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 **Set to show only hidden/detached devices**<br/>
 ![wake](/img/device1.png)<br/>
 **Remove all**<br/>
-![wake](/img/device2.png)<br/>
+![wake](/img/device2.png)
 
-**Disable some devices:**
-![AFF](/img/devices.png)<br/>
+**Disable some devices:** <br/>
+![AFF](/img/devices.png)
 
 ###   Services
 
