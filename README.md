@@ -23,11 +23,17 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
+[ISO for Windows 7 by unlimitedOSgang](link)
+
+[ISO for Windows 8.1 by me](link)
+
 [ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0)
 
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this.
+Extra2: If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance.
+Extra3: Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference.
 
 ### Windows Timers
 All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
@@ -40,8 +46,16 @@ Windows 1803 or earlier "qpc timer"
 
 ![2](https://github.com/Felipe8581/GamingTweaks/blob/master/img/qpc2.png)
 
+Using BCDEDIT commands you can try all those timers: TSC / TSC+LAPIC Backup / TSC+HPET Backup / HPET
 
-...and this is after adding `?ts=4`:
+But its commonly recommended that you stay on TSC, with HPET enabled on BIOS.
+
+You can try see if your system is different from others and works best on HPET disabled on BIOS, but wont be most likely.
+
+...For best configuration, use this in Command Promt:
+`bcdedit /set disabledynamictick true
+bcdedit /set useplatformclock false
+bcdedit /set useplatformtick false`
 
 ![After, tab space example](http://i.imgur.com/70FL4H9.png)
 
