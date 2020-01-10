@@ -17,7 +17,7 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [Services](#services)
  - [BIOS](#bios)
  - [Overclocks](#overclocks)
- - [Extras](#extras)
+ - [TO-DO LIST](#to-do-list)
 
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
@@ -74,8 +74,7 @@ You can try see if your system is different from others and works best on HPET d
 
 ### MSI-Mode
 
-MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode.
-
+MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode. <br/>
 TL;DR it makes your devices "faster" and improve latencys, better explanation soon.
 
 #### Set everything that is not a "problematic" Sata into MSI-Mode
@@ -87,16 +86,15 @@ Extra:
 Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
 You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
-[*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
-
+[*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/) <br/>
 [*Download MSI-mode utility v2.*](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file)
 
 ### Affinity Policy Tool
 
 This is extremely important for input devices, 
 
-#### Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)  <br/>
-#### GPU and correspondent PCI to another single CPU (I use CPU3) <br/>
+#### Set Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)
+#### GPU and correspondent PCI to another single CPU (I use CPU3)
 
 ![AFF](/img/aff1.png)<br/>
 
@@ -130,8 +128,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 ###  Power Options
 
-You basically want to disable power saving features and the ability to control CPU Idle On and Off.
-
+You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
 I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance.
 
 `powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a` <br/>
@@ -279,25 +276,14 @@ Space
 Space
 Space
 
-###   Extras
+###  TO-DO LIST
 
-Space
-Space
-Space
-Space
-Space
-Space
-Space
-Space
-
-###  TO-DO-LIST
-
-Space
-Space
-Space
-Space
-Space
-Space
-Space
-Space
+Boost.bat
+Unboost.bat
+ContextMenu
+Memory tweaks
+Network tweaks
+Hosts file
+Schtasks removal
+Ethernet Adapter tweaks
 Space
