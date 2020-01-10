@@ -149,11 +149,10 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 ![wake](/img/device1.png)<br/>
 ![wake](/img/device2.png)<br/>
-![wake](/img/device3.png)<br/>
 
-**Remove hidden/detached devices**<br/>
+**Remove hidden/detached devices like in the two images**<br/>
 
-**Delete sermouse, Print Spooler, i8024prt**<br/>
+**Optionally delete sermouse, Print Spooler, i8024prt**<br/>
 
 **Disable some devices:**
 
