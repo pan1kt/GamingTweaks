@@ -17,7 +17,16 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
  - [Services](#services)
  - [BIOS](#bios)
  - [Overclocks](#overclocks)
- - [TO-DO LIST](#to-do-list)
+ - [Unpark Cores](#unpark-cores)
+ - [ContextMenu](#contextmenu)
+ - [Network tweaks](#network-tweaks)
+ - [Ethernet Adapter tweaks](#ethernet-adapter-tweaks)
+ - [Hosts file](#hosts-file)
+ - [Schtasks's tasks removal](#schtasks's-tasks-removal)
+ - [Memory tweaks](#memory-tweaks)
+ - [NVIDIA settings](#nvidia-settings)
+ - [GPU tweaks](#gpu-tweaks)
+ - [Boost and Unboost.bat](#boost-and-unboost.bat)
 
 ### Custom ISOs
 This is such a important move, TL;DR this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
@@ -264,6 +273,10 @@ Disable Legacy USB **(My preference/own choice)**<br/>
 
 Overclocks increase system performance and decreases latency,<br/>
 At least CPU overclock is mandatory in 2020
+Space
+
+###   Unpark Cores
+
 Space
 
 ###   ContextMenu
