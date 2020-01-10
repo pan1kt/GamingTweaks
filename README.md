@@ -29,11 +29,9 @@ This is such a important move, TL;DR this will make `50%` of work done. This is 
 [ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
-Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this.
-
-Extra2: If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance.
-
-Extra3: Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference.
+Extra: Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this. <br/>
+Extra2: If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance. <br/>
+Extra3: Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
 
 ### Windows Timers
 All windows versions `1809+` have a forced synthetic QPC timer of 10mhz. Previous versions are true TSC between `2-4mhz` (give or take) depending on the CPU speed. As far as low latency and high performance, an older version under 1809 is the way to go. It is commonly recommended to either go Windows 7 or 8.1 if you dont have compatibility issues, or using 1709 Windows 10.
@@ -78,27 +76,29 @@ You can try see if your system is different from others and works best on HPET d
 
 MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode.
 
-TL;DR it makes your devices "faster", better explanation soon.
+TL;DR it makes your devices "faster" and improve latencys, better explanation soon.
 
 #### Set everything that is not a "problematic" Sata into MSI-Mode
 
 ![MSI](/img/msi1.png)<br/>
 
-Extra: Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD.
+Extra: Old Sata drivers usually doesnt support MSI, check if your Sata and sata driver is compatible. If you do this wrong you BSOD. <br/>
 Extra2: You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
-
-![DHH commit history](http://i.imgur.com/S7AE29b.png)
 
 [*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
+[*Download MSI-mode utility v2.*](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file)
+
 ### Affinity Policy Tool
-When cloning a repository the `.git` can be left off the end.
 
-```bash
-$ git clone https://github.com/tiimgreen/github-cheat-sheet
-```
+This is extremely important for input devices, 
 
-[*Read more about the Git `clone` command.*](http://git-scm.com/docs/git-clone)
+Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)
+GPU and correspondent PCI to another single CPU (I use CPU3)
+
+![AFF](/img/aff1.png)<br/>
+
+[*Download Affinity Policy Tool.*](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
 
 ###  Process Scheduling
 
