@@ -6,20 +6,20 @@ A collection of cool hidden and not so hidden tweaks for OS and programs. This i
 *Read this in other languages: [English](README.md), [Portuguese](README.pt.md).*
 
 ## Table of Contents
-  -
-    - [Custom ISOs](#custom-isos)
-    - [Windows Timers](#windows-timers)
-    - [MSI-Mode](#msi-mode)
-    - [Affinity Policy Tool](#affinity-policy-tool)
-    - [Process Scheduling](#process-scheduling)
-    - [Devices, Services and Processes](#devices-services-processes)
-      - [Removing useless and unatached devices](#devices)
-      - [Disabling useless services](#services)
-      - [Terminating useless processes](#processes)
-    - [BIOS](#bios)
-    - [Overclocks](#overclocks)
-    - [Extras](#extras)
-  -
+
+ - [Custom ISOs](#custom-isos)
+ - [Windows Timers](#windows-timers)
+ - [MSI-Mode](#msi-mode)
+ - [Affinity Policy Tool](#affinity-policy-tool)
+ - [Process Scheduling](#process-scheduling)
+ - [Devices, Services and Processes](#devices-services-processes)
+   - [Removing useless and unatached devices](#devices)
+   - [Disabling useless services](#services)
+   - [Terminating useless processes](#processes)
+ - [BIOS](#bios)
+ - [Overclocks](#overclocks)
+ - [Extras](#extras)
+ 
 ## GitHub
 ### Custom ISOs
 Adding `?w=1` to any diff URL will remove any changes only in whitespace, enabling you to see only the code that has changed.
