@@ -324,7 +324,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*IO Bit Unlocker*](files/IO%20Bit%20Unlocker.7z) </br>
 [*Power Run*](files/PowerRun.7z) </br>
 [*KMS Activator Script*](files/KMS.7z) </br>
-[*Cracked NT LITE*](files/NT LITE.7z) </br>
+[*Cracked NT LITE*](files/NT%20LITE.7z) </br>
 [*CPU-Z GPU-Z HWINFO*](files/Tools.7z) </br>
 [*Autoruns*](files/Autoruns.7z) <br/>
 [*DNSBenchmark*](files/DNSBench.7z) <br/>
