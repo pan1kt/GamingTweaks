@@ -21,7 +21,6 @@ This is heavily inspired by RevisionOS and Fr33thy discords. Credits to EVERYONE
  - [Overclocks](#overclocks)
  - [ContextMenu](#contextmenu)
  - [Network tweaks](#network-tweaks)
- - [Ethernet Adapter tweaks](#ethernet-adapter-tweaks)
  - [Hosts file](#hosts-file)
  - [Schtasks's tasks removal](#schtasks's-tasks-removal)
  - [Memory tweaks](#memory-tweaks)
@@ -239,14 +238,10 @@ My own right click to desktop<br/>
 ![p](/img/contextmenu.png)<br/>
 [Download ContextMenu.bat](files/contextmenu.bat)
 
-##   Network tweaks
+##   Network tweaks + Intel Ethernet Adapter tweaks
 
 Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt much your connection. <br/>
-[Download Network.bat](files/network.bat)
-
-##   Ethernet Adapter tweaks
-
-This is for Intel Ethernet drivers<br/>
+[Download Network.bat](files/network.bat) <br/>
 [Download Adapter.bat](files/adapter.bat)
 
 ##   Hosts file
