@@ -276,7 +276,7 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 [Download Windows 10 Tweaked 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
 
-![MSI](/img/nvidiaset.png)
+![MSI](/img/nvid.png)
 
 ##   GPU tweaks
 
