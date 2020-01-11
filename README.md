@@ -189,8 +189,8 @@ CPU Power Phase Control Extreme<br/>
 CPU Power Duty Control Extreme<br/>
 CPU Current Capability 140%<br/>
 CPU Frequency Tuning Mode +6%<br/>
-CPU Frequency Switch 1000<br/>
-DRAM Frequency Switch 1000<br/>
+CPU Frequency Switch Max<br/>
+DRAM Frequency Switch Max<br/>
 DRAM Current Capability 130%<br/>
 DRAM Power Phase Control Extreme<br/>
 Termination Anti-Aliasing Enabled<br/>
