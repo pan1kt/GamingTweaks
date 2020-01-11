@@ -303,7 +303,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*Fr33thy Youtube*](https://www.youtube.com/user/chrisfreeth/videos) </br>
 [*Fr33thy old-Guide*](https://drive.google.com/file/d/1iUrqcEY4WyEXsDsgKkEFrNwolXl0Pa0J/view?usp=sharing) </br>
 [*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
-[*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/)
+[*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/) </br>
 [*The-Eye.eu*](https://the-eye.eu/public/MSDN/) </br>
 [*PrivacyTools.io*](https://www.privacytools.io) </br>
 [*CHEF-KOCH github*](https://github.com/CHEF-KOCH) </br>
