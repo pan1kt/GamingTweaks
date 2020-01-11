@@ -20,11 +20,18 @@ powercfg -devicedisablewake "HID-compliant mouse"
 powercfg -devicedisablewake "HID keyboard Device"
 powercfg -devicedisablewake "Intel(R) Ethernet Connection (2) I218-V"
 powercfg.exe /setactive 66666666-6666-6666-6666-666666666666
-sc stop NVDisplay.ContainerLocalSystem
-sc stop sppsvc
 taskkill /f /im explorer.exe
 taskkill /f /im NVDisplay.Container.exe
 taskkill /f /im ProcessGovernor.exe
 taskkill /f /im ProcessLasso.exe
 taskkill /f /im ProcessLassoPortable.exe
 taskkill /f /im ProcessHacker.exe
+sc stop NVDisplay.ContainerLocalSystem
+sc stop sppsvc
+sc stop nsi
+sc stop NlaSvc
+sc stop netprofm
+sc stop Netman
+sc stop AeLookupSvc
+sc stop seclogon
+
