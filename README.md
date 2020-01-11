@@ -27,6 +27,7 @@ This is heavily inspired by Revision Os and Fr33thy discords. Credits to those c
  - [NVIDIA settings](#nvidia-settings)
  - [GPU tweaks](#gpu-tweaks)
  - [Boost and Unboost.bat](#boost-and-unboost.bat)
+ - [Usefull list of discords/pages/files](#usefull-list)
 
 ## Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
@@ -287,3 +288,23 @@ This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA
 Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
 [*Download Boost.bat*](files/Boost.bat)<br/>
 [*Download UnBoost.bat*](files/UnBoost.bat)
+
+## Usefull list of discords/pages/files
+
+**OS/System Tweaks**
+[*Revision OS discord*](https://discord.gg/CCxWegZ) </br>
+[*Fr33thy discord*](https://discord.gg/pTc37y7) </br>
+[*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
+[*The Perfect Input discord*](https://discord.gg/PfsdHaP)
+
+**Peripherals/Aiming**
+[*Sparky Aim discord*](https://discord.gg/sparky) </br>
+[*Setup tips page*](https://docs.google.com/document/d/1MkLeg229GXdOju2iEsKlKjYIvOUnTmHhwJ6MqR44ye0/edit) </br>
+[*Sensitivity calculator*](https://aiming.pro/mouse-sensitivity-calculator)
+[*Overclock.net/mices*](http://www.overclock.net/f/375/mice)
+[*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/)
+[*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/)
+
+
+
+
