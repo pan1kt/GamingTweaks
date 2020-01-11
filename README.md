@@ -50,7 +50,7 @@ If you still see stuttering/problems, you can try HPET disabled on BIOS.
 
 **For best common configuration, paste this in Command Promt:**
 
-HPET on BIOS enabled
+HPET on BIOS enabled <br/>
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
