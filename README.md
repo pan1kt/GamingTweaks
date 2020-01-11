@@ -300,7 +300,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 **Peripherals/Aiming** </br>
 [*Sparky Aim discord*](https://discord.gg/sparky) </br>
 [*Setup tips page*](https://docs.google.com/document/d/1MkLeg229GXdOju2iEsKlKjYIvOUnTmHhwJ6MqR44ye0/edit) </br>
-[*Sensitivity calculator*](https://aiming.pro/mouse-sensitivity-calculator)
-[*Overclock.net/mices*](http://www.overclock.net/f/375/mice)
-[*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/)
+[*Sensitivity calculator*](https://aiming.pro/mouse-sensitivity-calculator) </br>
+[*Overclock.net/mices*](http://www.overclock.net/f/375/mice) </br>
+[*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/) </br>
 [*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/)
