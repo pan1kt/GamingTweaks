@@ -131,7 +131,8 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 ![w](/img/w32p.png)
 
-**To set Win32PrioritySeparation to 16 Hex, paste this to Command Promt:** <br/>
+**To set Win32PrioritySeparation to 16 Hex, paste this to Command Promt:**
+
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
 [*Read more about Process Scheduling and Win32PS.*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
@@ -202,7 +203,7 @@ Idle Power-in Response Auto **(Need more test)**<br/>
 Idle Power-out Responde Auto **(Need more test)**<br/>
 Power Current Slope Level-4<br/>
 Power Current Offset -100%<br/>
-Power Fast Ramp Response 1.5 **(Need more test)**<br/>
+Power Fast Ramp Response 1.5<br/>
 CPU C-States Disabled<br/>
 CFG Lock Enabled<br/>
 High Precision Timer Disabled<br/>
@@ -279,8 +280,9 @@ This is basic memory tweaks, <br/>
 
 ##   GPU tweaks
 
-This is sets your card to P0 State and enable K-boost, <br/>
-[*Download GPU.bat*](files/gpu.bat)
+This .bat sets your card to P0 State and enable K-boost, <br/>
+[*Download GPU.bat*](files/gpu.bat) <br/>
+Optionally you can also install a custom GPU Bios to improve stability/performance
 
 ##  Boost and Unboost.bat
 
