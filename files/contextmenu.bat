@@ -24,16 +24,16 @@ reg add "hkcr\desktopbackground\shell\5dns" /v "position" /t reg_sz /d "top" /f
 reg add "hkcr\desktopbackground\shell\5dns" /v "subcommands" /t reg_sz /d "" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns" /v "icon" /t reg_sz /d "shell32.dll,135" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns" /v "muiverb" /t reg_sz /d "open dns - 208.67.222.220" /f
-reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("208.67.222.220","208.67.222.222") /f
+reg add "hkcr\desktopbackground\shell\5dns\shell\01opendns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("208.67.222.220","208.67.222.222")" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare" /v "icon" /t reg_sz /d "shell32.dll,135" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare" /v "muiverb" /t reg_sz /d "cloudflare - 1.1.1.1" /f
-reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("1.1.1.1","1.0.0.1") /f
+reg add "hkcr\desktopbackground\shell\5dns\shell\02cloudflare\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("1.1.1.1","1.0.0.1")" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns" /v "icon" /t reg_sz /d "shell32.dll,135" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns" /v "muiverb" /t reg_sz /d "ultra dns - 156.154.71.1" /f
-reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("156.154.71.1","156.154.71.22") /f
+reg add "hkcr\desktopbackground\shell\5dns\shell\03ultradns\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("156.154.71.1","156.154.71.22")" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\04google" /v "icon" /t reg_sz /d "shell32.dll,135" /f
 reg add "hkcr\desktopbackground\shell\5dns\shell\04google" /v "muiverb" /t reg_sz /d "google - 8.8.8.8" /f
-reg add "hkcr\desktopbackground\shell\5dns\shell\04google\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("8.8.8.8","8.8.4.4") /f
+reg add "hkcr\desktopbackground\shell\5dns\shell\04google\command" /ve /t reg_sz /d "wmic nicconfig where ipenabled=true call setdnsserversearchorder ("8.8.8.8","8.8.4.4")" /f
 reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "icon" /t reg_sz /d "powercpl.dll" /f
 reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "muiverb" /t reg_sz /d "Power Plans" /f
 reg add "hkcr\desktopbackground\shell\6powerplanconfig" /v "position" /t reg_sz /d "top" /f
