@@ -291,20 +291,16 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 
 ## Usefull list of discords/pages/files
 
-**OS/System Tweaks**
+**OS/System Tweaks** </br>
 [*Revision OS discord*](https://discord.gg/CCxWegZ) </br>
 [*Fr33thy discord*](https://discord.gg/pTc37y7) </br>
 [*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
 [*The Perfect Input discord*](https://discord.gg/PfsdHaP)
 
-**Peripherals/Aiming**
+**Peripherals/Aiming** </br>
 [*Sparky Aim discord*](https://discord.gg/sparky) </br>
 [*Setup tips page*](https://docs.google.com/document/d/1MkLeg229GXdOju2iEsKlKjYIvOUnTmHhwJ6MqR44ye0/edit) </br>
 [*Sensitivity calculator*](https://aiming.pro/mouse-sensitivity-calculator)
 [*Overclock.net/mices*](http://www.overclock.net/f/375/mice)
 [*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/)
 [*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/)
-
-
-
-
