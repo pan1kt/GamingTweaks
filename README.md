@@ -57,7 +57,7 @@ If you still see stuttering/problems, you can try changing HPET in bios
 **Install SetTimerResolutionService, IMPORTANT!!**
 
 Drop this file in C:/ folder, the file must be there to service work <br/>
-Open command promt and type: <br/>
+Open command promt and paste: <br/>
 
 `cd C:/` <br/>
 `SetTimerResolutionService -install` <br/>
