@@ -306,7 +306,8 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/)
 [*The-Eye.eu*](https://the-eye.eu/public/MSDN/) </br>
 [*PrivacyTools.io*](https://www.privacytools.io) </br>
-[*CHEF-KOCH github*](https://github.com/CHEF-KOCH)
+[*CHEF-KOCH github*](https://github.com/CHEF-KOCH) </br>
+[*KMS_VL_ALL github*](https://github.com/kkkgo/KMS_VL_ALL)
 
 **Peripherals/Aiming/Gaming Stuff** </br>
 [*Sparky Aim discord*](https://discord.gg/sparky) </br>
@@ -323,8 +324,6 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*NVIDIA Inspector Pack*](files/InspectorPack.7z) </br>
 [*IO Bit Unlocker*](files/IO%20Bit%20Unlocker.7z) </br>
 [*Power Run*](files/PowerRun.7z) </br>
-[*KMS Activator Script*](files/KMS.7z) </br>
-[*Cracked NT LITE*](files/NT%20LITE.7z) </br>
 [*CPU-Z GPU-Z HWINFO*](files/Tools.7z) </br>
 [*Autoruns*](files/Autoruns.7z) <br/>
 [*DNSBenchmark*](files/DNSBench.7z) <br/>
