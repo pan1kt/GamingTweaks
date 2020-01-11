@@ -36,7 +36,7 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 
 [ISO for Windows 8.1 by me SOON](link)
 
-[ISOs for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
+[ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
 Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this. <br/>
@@ -265,7 +265,6 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 ##   Memory tweaks
 
-This is basic memory tweaks, <br/>
 [Download Memory.bat](files/memory.bat)
 
 ##   NVIDIA settings
