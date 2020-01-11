@@ -20,7 +20,7 @@ This is heavily inspired by RevisionOS and Fr33thy discords. Credits to EVERYONE
  - [**Unpark Cores**](#unpark-cores)
  - [Overclocks](#overclocks)
  - [ContextMenu](#contextmenu)
- - [Network tweaks](#network-tweaks)
+ - [Network tweaks](#network-tweaks--intel-ethernet-adapter-tweaks)
  - [Hosts file](#hosts-file)
  - [Schtasks's tasks removal](#schtasks's-tasks-removal)
  - [Memory tweaks](#memory-tweaks)
