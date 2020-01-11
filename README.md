@@ -28,7 +28,7 @@ This is heavily inspired by Revision Os and Fr33thy discords. Credits to those c
  - [GPU tweaks](#gpu-tweaks)
  - [Boost and Unboost.bat](#boost-and-unboost.bat)
 
-### Custom ISOs
+## Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
 [ISO for Windows 7 by unlimitedOSgang 0.2.0](https://drive.google.com/file/d/1XlaT1gwsdYq5ecTpM3zqOOd668K3yOY_/view?usp=sharing)
@@ -42,7 +42,7 @@ Installing them in either MBR or GPT doesnt make a difference, or shouldnt make 
 If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance. <br/>
 Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
 
-### Windows Timers
+## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, thats why its recommended to use something older, <br/>
 if you dont have compatibility issues or the needs of DX12/RTX for example. <br/> 
 Previous versions are true TSC timer between 2-4mhz and gives the best performance and lowest latency. <br/>
