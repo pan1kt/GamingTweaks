@@ -254,6 +254,7 @@ Here i try to block some minimal telemetry without hurt any connection <br/>
 
 ##   Schtasks's tasks removal
 
+In windows 7 you can actually force-disable the service without problems. <br/>
 [*Download Windows 7 Schtasks Removal.bat*](files/7tasks.bat)
 
 [*Download Windows 8.1 Schtasks Removal.bat*](files/8tasks.bat)
