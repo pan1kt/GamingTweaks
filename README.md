@@ -159,7 +159,7 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 ![wake](/img/device2.png)
 
-**Disable some devices:**
+**I actually disable every device that dont cause me problems here**
 
 ![AFF](/img/devices.png)
 
