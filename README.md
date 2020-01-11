@@ -141,8 +141,10 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 ##  Power Options
 
 You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
-I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance. <br/>
+I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance. 
+
 ![p](/img/power1.png)
+
 [Download Power Plans](files/powerplan.bat)
 
 ###  Device Remover
