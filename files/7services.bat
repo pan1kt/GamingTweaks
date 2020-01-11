@@ -1,6 +1,6 @@
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 1 /f
-reg add "HKLM\SYSTEM\CurrentControlSet\services\AudioSrv" /v DependOnService /t REG_MULTI_SZ /d AudioEndpointBuilder\0RpcSs /f
 reg add "HKLM\SYSTEM\CurrentControlSet\services\Dhcp" /v DependOnService /t REG_MULTI_SZ /d NSI\0Afd /f
+reg add "HKLM\SYSTEM\CurrentControlSet\services\AudioSrv" /v "DependOnService" /t REG_MULTI_SZ /d "AudioEndpointBuilder\0RpcSs" /f
 sc config "Steam Client Service" start= disabled
 sc config ALG start= disabled
 sc config AeLookupSvc start= demand
@@ -30,8 +30,8 @@ sc config EventLog start= demand
 sc config EventSYSTEM start= demand
 sc config FDResPub start= disabled
 sc config Fax start= disabled
-sc config FontCache start= demand
-sc config FontCache3.0.0.0 start= demand
+sc config FontCache start= disabled
+sc config FontCache3.0.0.0 start= disabled
 sc config GoogleChromeElevationService start= disabled
 sc config HomeGroupListener start= demand
 sc config HomeGroupProvider start= demand
@@ -165,7 +165,7 @@ sc config pla start= demand
 sc config seclogon start= demand
 sc config simptcp start= disabled
 sc config spoolsv start= disabled
-sc config sppsvc start= demand
+sc config sppsvc start= auto
 sc config sppuinotify start= demand
 sc config swprv start= demand
 sc config upnphost start= demand
