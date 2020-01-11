@@ -298,13 +298,13 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*Fr33thy discord*](https://discord.gg/pTc37y7) </br>
 [*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
 [*The Perfect Input discord*](https://discord.gg/PfsdHaP) </br>
-[*PrivacyTools.io*](https://www.privacytools.io)
-[*The-Eye.eu Windows ISO Repository*](https://the-eye.eu/public/MSDN/)
-[*Revision BIOS Tweaking Guide*](https://docs.google.com/document/d/1-izZaWrXaKIncYXDwmdY32YwdGCU5mDLJE6TW1Opnv8/edit)
-[*Hydro Device Manager Guide*](https://docs.google.com/document/d/1y9PG71osCksYZSZ2I-z4WpqMOVUu5Q4fFH0TOC29MCs/edit)
-[*Calypto Tweak Guide*](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit?usp=sharing)
-[*Fr33thy Youtube*](https://www.youtube.com/user/chrisfreeth/videos)
-[*Fr33thy outdated Guide*](https://drive.google.com/file/d/1iUrqcEY4WyEXsDsgKkEFrNwolXl0Pa0J/view?usp=sharing)
+[*PrivacyTools.io*](https://www.privacytools.io) </br>
+[*The-Eye.eu Windows ISO Repository*](https://the-eye.eu/public/MSDN/) </br>
+[*Revision BIOS Tweaking Guide*](https://docs.google.com/document/d/1-izZaWrXaKIncYXDwmdY32YwdGCU5mDLJE6TW1Opnv8/edit) </br>
+[*Hydro Device Manager Guide*](https://docs.google.com/document/d/1y9PG71osCksYZSZ2I-z4WpqMOVUu5Q4fFH0TOC29MCs/edit) </br>
+[*Calypto Tweak Guide*](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit?usp=sharing) </br>
+[*Fr33thy Youtube*](https://www.youtube.com/user/chrisfreeth/videos) </br>
+[*Fr33thy outdated Guide*](https://drive.google.com/file/d/1iUrqcEY4WyEXsDsgKkEFrNwolXl0Pa0J/view?usp=sharing) </br>
 [*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/)
 
 **Peripherals/Aiming/Gaming Stuff** </br>
