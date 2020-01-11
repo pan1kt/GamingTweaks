@@ -136,7 +136,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
-[*Read more about Process Scheduling and Win32PS*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
+[*Read more about Process Scheduling and Win32PrioritySeparation*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
 
 ##  Power Options
 
