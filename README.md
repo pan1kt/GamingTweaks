@@ -1,7 +1,7 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks for OS and programs. <br/>
 This is heavily inspired by Revision Os and Fr33thy discords. Credits to those communitys and n1kobg,dreamjow,ailurus
-*Shortlink: [https://git.io/JvfJ6](https://git.io/JvfJ6)*
+*Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
 *Read this in other languages: [English](README.md), [Portuguese](README.pt.md).*
 
@@ -63,7 +63,7 @@ Open command promt and paste: <br/>
 `cd C:/` <br/>
 `SetTimerResolutionService -install` <br/>
 
-[*Download SetTimerResolutionService*](files/SetTimerResolutionService.exe)
+[Download SetTimerResolutionService](files/SetTimerResolutionService.exe)
 
 **You can optionally paste those commands for system improvement,**
 
@@ -94,8 +94,8 @@ MSI is Message Signaled-Based Interrupts, a faster and better method that replac
 Old Sata drivers usually doesnt support MSI, check if your Sata is compatible. If you do this wrong you BSOD till format. <br/>
 You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
-[*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/) <br/>
-[*Download MSI-mode utility v2.*](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file)
+[Download MSI-mode utility v2](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file) <br/>
+[*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
 
 ## Affinity Policy Tool
 
@@ -108,7 +108,7 @@ This is extremely important for input devices,
 
 ![AFF](/img/affy2.png)<br/>
 
-[*Download Affinity Policy Tool.*](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
+[Download Affinity Policy Tool](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
 
 ##  Process Scheduling
 There is different opinions about what is the best value and IF THERE IS a best value, <br/>
@@ -135,14 +135,14 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
-[*Read more about Process Scheduling and Win32PS.*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
+[*Read more about Process Scheduling and Win32PS*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
 
 ##  Power Options
 
 You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
 I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance. <br/>
 ![p](/img/power1.png)
-[*Download Power Plans.*](files/powerplan.bat)
+[Download Power Plans](files/powerplan.bat)
 
 ###  Device Remover
 
@@ -163,14 +163,14 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 ##   Services
 
 For Windows 7 i usually follow the famous BlackViper tweaked list <br/>
-[*Download Services Tweak for Windows 7*](files/7services.bat)
+[Download Services Tweak for Windows 7](files/7services.bat)
 
 For Windows 8.1 i just made my own list <br/>
-[*Download Services Tweak for Windows 8.1*](files/8services.bat)
+[Download Services Tweak for Windows 8.1](files/8services.bat)
 
 For Windows 10 there is n1ko extreme list or a safer list <br/>
-[*Download Safer Services Tweak for Windows 10*](files/10safeservices.bat) <br/>
-[*Download Extreme Services Tweak for Windows 10*](files/10extremeservices.bat)
+[Download Safer Services Tweak for Windows 10](files/10safeservices.bat) <br/>
+[Download Extreme Services Tweak for Windows 10](files/10extremeservices.bat)
 
 ##   BIOS
 
@@ -221,8 +221,8 @@ Overclocks increase system performance and decreases latency,<br/>
 At least CPU overclock is mandatory in 2020 <br/>
 No secret right? BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
 Test stability with: <br/>
-[*Download OCCT 5.4.2*](https://www.ocbase.com/download.php) <br/>
-[*Download MEMTest64*](https://drive.google.com/file/d/12ga7LsEogbp8yQIUhPKRHTmxNh8fFS5s/view?usp=sharing)
+[Download OCCT 5.4.2](https://www.ocbase.com/download.php) <br/>
+[Download MEMTest64](https://drive.google.com/file/d/12ga7LsEogbp8yQIUhPKRHTmxNh8fFS5s/view?usp=sharing)
 
 ##   Unpark Cores
 
@@ -230,66 +230,66 @@ There is many ways to unpark your cores,<br/>
 Editing all regedit 0cc5b647-c1df-4637-891a-dec35c318583 found keys to ValueMax and ValueMin to 0<br/>
 Installing a custom powerplan like mine<br/>
 Using 3rd party program like Unpark CPU App<br/>
-[*Download Unpark CPU App*](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
+[Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   ContextMenu
 
 My own right click to desktop,<br/>
 ![p](/img/contextmenu.png)
-[*Download ContextMenu.bat*](files/contextmenu.bat)
+[Download ContextMenu.bat](files/contextmenu.bat)
 
 ##   Network tweaks
 
 Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt much your connection. <br/>
-[*Download Network.bat*](files/network.bat)
+[Download Network.bat](files/network.bat)
 
 ##   Ethernet Adapter tweaks
 
 This is for Intel Ethernet drivers, <br/>
-[*Download Adapter.bat*](files/adapter.bat)
+[Download Adapter.bat](files/adapter.bat)
 
 ##   Hosts file
 
 You can block internet adresses from windows hosts file, <br/>
 Here i try to block some minimal telemetry without hurt any connection <br/>
-[*Download Hosts.bat*](files/hosts.bat)
+[Download Hosts.bat](files/hosts.bat)
 
 ##   Schtasks's tasks removal
 
 In windows 7 you can actually force-disable the service without problems. <br/>
-[*Download Windows 7 Schtasks Removal.bat*](files/7tasks.bat)
+[Download Windows 7 Schtasks Removal.bat](files/7tasks.bat)
 
-[*Download Windows 8.1 Schtasks Removal.bat*](files/8tasks.bat)
+[Download Windows 8.1 Schtasks Removal.bat](files/8tasks.bat)
 
-[*Download Windows 10 Schtasks Removal.bat*](files/10tasks.bat)
+[Download Windows 10 Schtasks Removal.bat](files/10tasks.bat)
 
 ##   Memory tweaks
 
 This is basic memory tweaks, <br/>
-[*Download Memory.bat*](files/memory.bat)
+[Download Memory.bat](files/memory.bat)
 
 ##   NVIDIA settings
 
 **MANDATORY to unninstall current driver with DDU and install Tweaked 441.41!**
 
-[*Download Windows 7/8 Tweaked 441.41*](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
+[Download Windows 7/8 Tweaked 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
 
-[*Download Windows 10 Tweaked 441.41*](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
+[Download Windows 10 Tweaked 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
 
 ![MSI](/img/nvidiaset.png)
 
 ##   GPU tweaks
 
 This .bat sets your card to P0 State and enable K-boost, <br/>
-[*Download GPU.bat*](files/gpu.bat) <br/>
+[Download GPU.bat](files/gpu.bat) <br/>
 Optionally you can also install a custom GPU Bios to improve stability/performance
 
 ##  Boost and Unboost.bat
 
 This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA VERSION**<br/>
 Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
-[*Download Boost.bat*](files/Boost.bat)<br/>
-[*Download UnBoost.bat*](files/UnBoost.bat)
+[Download Boost.bat](files/Boost.bat)<br/>
+[Download UnBoost.bat](files/UnBoost.bat)
 
 ## Usefull list of discords/pages/files
 
