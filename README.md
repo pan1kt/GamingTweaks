@@ -306,6 +306,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/)
 [*The-Eye.eu*](https://the-eye.eu/public/MSDN/) </br>
 [*PrivacyTools.io*](https://www.privacytools.io) </br>
+[*CHEF-KOCH github*](https://github.com/CHEF-KOCH)
 
 **Peripherals/Aiming/Gaming Stuff** </br>
 [*Sparky Aim discord*](https://discord.gg/sparky) </br>
