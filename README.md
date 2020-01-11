@@ -272,7 +272,7 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 **MANDATORY to unninstall current driver with DDU and install Tweaked 441.41!**
 
-[Download Windows 7/8 Tweaked 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
+[Download Windows 7/8.1 Tweaked 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
 
 [Download Windows 10 Tweaked 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
 
