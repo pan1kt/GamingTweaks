@@ -46,11 +46,10 @@ Windows 7 is by far the best for performance even in 2020, but theres much more 
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, why its recommended to use something older, <br/>
 if you dont have compatibility issues or the needs of DX12/RTX for example. <br/> 
 Previous versions are true TSC timer between 2-4mhz and gives the best performance and lowest latency. <br/>
-If you still see stuttering/problems, you can try HPET disabled on BIOS.
+If you still see stuttering/problems, you can try changing HPET in bios
 
 **For best common configuration, paste this in Command Promt:**
 
-HPET on BIOS enabled <br/>
 `bcdedit /set disabledynamictick true` <br/>
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
