@@ -291,7 +291,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 
 ## Usefull list of discords/pages/files
 
-**OS/System Tweaks** </br>
+**Tweaks** </br>
 [*Revision OS discord*](https://discord.gg/CCxWegZ) </br>
 [*Fr33thy discord*](https://discord.gg/pTc37y7) </br>
 [*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
