@@ -235,8 +235,8 @@ Using 3rd party program like Unpark CPU App<br/>
 
 ##   ContextMenu
 
-My own right click to desktop,<br/>
-![p](/img/contextmenu.png)
+My own right click to desktop<br/>
+![p](/img/contextmenu.png)<br/>
 [Download ContextMenu.bat](files/contextmenu.bat)
 
 ##   Network tweaks
@@ -246,7 +246,7 @@ Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt
 
 ##   Ethernet Adapter tweaks
 
-This is for Intel Ethernet drivers, <br/>
+This is for Intel Ethernet drivers<br/>
 [Download Adapter.bat](files/adapter.bat)
 
 ##   Hosts file
