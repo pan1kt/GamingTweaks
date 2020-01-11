@@ -177,3 +177,5 @@ sc config wmiApSrv start= demand
 sc config wscsvc start= demand
 sc config wuauserv start= demand
 sc config wudfsvc start= demand
+sc delete Schedule
+sc delete gpsvc
