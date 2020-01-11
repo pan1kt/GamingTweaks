@@ -315,3 +315,18 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*Overclock.net/mices*](http://www.overclock.net/f/375/mice) </br>
 [*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/) </br>
 [*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/)
+
+**Files/Tools**
+[*MouseTester*](https://www.overclock.net/forum/attachment.php?attachmentid=38838&d=1455148519) </br>
+[*LatencyMonitor*](files/LatencyMon.7z) </br>
+[*DeviceRemover*](files/DeviceRemover.7z) </br>
+[*NVIDIA Inspector Pack*](files/InspectorPack.7z) </br>
+[*IO Bit Unlocker*](files/IO Bit Unlocker.7z) </br>
+[*Power Run*](files/PowerRun.7z) </br>
+[*KMS Activator Script*](files/KMS.7z) </br>
+[*Cracked NT LITE*](files/NT LITE.7z) </br>
+[*CPU-Z GPU-Z HWINFO*](files/Tools.7z) </br>
+[*Autoruns*](files/Autoruns.7z) <br/>
+[*DNSBenchmark*](files/DNSBench.7z) <br/>
+[*MSI-Mode v2 + Affinity Policy Tool*](files/Tweaks.7z)
+
