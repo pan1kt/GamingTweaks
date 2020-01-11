@@ -1,6 +1,6 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks for OS and programs. <br/>
-This is heavily inspired by Revision Os and Fr33thy discords. Credits to EVERYONE in those communitys
+This is heavily inspired by RevisionOS and Fr33thy discords. Credits to EVERYONE in those communitys
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
@@ -33,9 +33,9 @@ This is heavily inspired by Revision Os and Fr33thy discords. Credits to EVERYON
 ## Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
-[ISO for Windows 7 by unlimitedOSgang 0.2.0](https://drive.google.com/file/d/1XlaT1gwsdYq5ecTpM3zqOOd668K3yOY_/view?usp=sharing)
+[ISO for Windows 7 by unlimitedOS 0.2.0](https://drive.google.com/file/d/1XlaT1gwsdYq5ecTpM3zqOOd668K3yOY_/view?usp=sharing)
 
-[ISO for Windows 8.1 by me SOON](link)
+[ISO for Windows 8.1 by canardo-TeamOS](https://www.teamos-hkrg.com/index.php?threads/windows-8-1-x64-ultra-lite-october-2019-net-4-8-no-softwares-original-theme.89903/)
 
 [ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
@@ -296,7 +296,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 ## Usefull list of discords/pages/files
 
 **PC/Windows Stuff** </br>
-[*Revision OS discord*](https://discord.gg/CCxWegZ) </br>
+[*RevisionOS discord*](https://discord.gg/CCxWegZ) </br>
 [*Revision BIOS Tweaking Guide*](https://docs.google.com/document/d/1-izZaWrXaKIncYXDwmdY32YwdGCU5mDLJE6TW1Opnv8/edit) </br>
 [*Hydro Device Manager Guide*](https://docs.google.com/document/d/1y9PG71osCksYZSZ2I-z4WpqMOVUu5Q4fFH0TOC29MCs/edit) </br>
 [*Calypto discord*](https://discord.gg/PfsdHaP) </br>
