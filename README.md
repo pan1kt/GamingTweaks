@@ -241,8 +241,9 @@ My own right click to desktop<br/>
 ##   Network tweaks + Intel Ethernet Adapter tweaks
 
 Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt much your connection. <br/>
-[Download Network.bat](files/network.bat) <br/>
-[Download Adapter.bat](files/adapter.bat)
+[Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
+[Download Windows 8.1 Network+Adapter.bat](files/net8.bat) <br/>
+[Download Windows 10 Network+Adapter.bat](files/net10.bat)
 
 ##   Hosts file
 
