@@ -40,14 +40,14 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 [ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
-Installing them in either MBR or GPT doesnt make a difference, or shouldnt make it. Dont worry about this. <br/>
-If you play games at fullscreen windowed mode, use Windows 7 or you will have to deal with problems in performance. <br/>
+Installing them in MBR or GPT shouldnt make a difference. Dont worry about this. <br/>
+If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
 Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, why its recommended to use something older, <br/>
 if you dont have compatibility issues or the needs of DX12/RTX for example. <br/> 
-Previous versions are true TSC timer between 2-4mhz and gives the best performance and lowest latency. <br/>
+Previous versions are true TSC timer between 2-4mhz and gives the best performance/latency. <br/>
 If you still see stuttering/problems, you can try changing HPET in bios
 
 **For best common configuration, paste this in Command Promt:**
@@ -100,7 +100,7 @@ You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear
 
 ## Affinity Policy Tool
 
-This is extremely important for input devices, 
+This is extremely important for input devices, better explanation soon.
 
 **Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
 **GPU and correspondent PCI to a different one single CPU (I use CPU3)**
@@ -165,13 +165,11 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 ##   Services
 
-For Windows 7 i usually follow the famous BlackViper tweaked list <br/>
+Super bareboned, combine with boost7.bat and you have 19- processes.<br/>
 [Download Services Tweak for Windows 7](files/7services.bat)
 
-For Windows 8.1 i just made my own list <br/>
 [Download Services Tweak for Windows 8.1](files/8services.bat)
 
-For Windows 10 there is n1ko extreme list or a safer list <br/>
 [Download Safer Services Tweak for Windows 10](files/10safeservices.bat) <br/>
 [Download Extreme Services Tweak for Windows 10](files/10extremeservices.bat)
 
@@ -286,12 +284,12 @@ This .bat sets your card to P0 State and enable K-boost, <br/>
 [Download GPU.bat](files/gpu.bat) <br/>
 Optionally you can also install a custom GPU Bios to improve stability/performance
 
-##  Boost and Unboost.bat
+##  Boost and Unboost.bat (Currently for Windows 7)
 
 This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA VERSION**<br/>
 Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
-[Download Boost.bat](files/Boost.bat)<br/>
-[Download UnBoost.bat](files/UnBoost.bat)
+[Download Boost7.bat](files/Boost.bat)<br/>
+[Download UnBoost7.bat](files/UnBoost.bat)
 
 ## Usefull list of discords/pages/files
 
