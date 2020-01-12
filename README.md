@@ -83,7 +83,7 @@ Open command promt and paste: <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
 You can also try playing with `bcdedit /set useplatformtick true`, but most of the time is not the best for your pc. <br/>
-In some cases lowered latency
+In some cases lowered latency, check with LatencyMon
 
 ## MSI-Mode
 
