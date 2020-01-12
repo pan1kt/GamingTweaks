@@ -167,8 +167,7 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 Super bareboned, combine with boost7.bat and you have 19- processes.<br/>
 [Download Services Tweak for Windows 7](files/7services.bat) <br/>
 [Download Services Tweak for Windows 8.1](files/8services.bat) <br/>
-[Download Safer Services Tweak for Windows 10](files/10safeservices.bat) <br/>
-[Download Extreme Services Tweak for Windows 10](files/10extremeservices.bat)
+[Download Services Tweak for Windows 10](files/10services.bat)
 
 ##   BIOS
 
