@@ -273,6 +273,8 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 ![MSI](/img/nvid.png)
 
+![MSI](/img/scaling.png)
+
 ##   GPU tweaks
 
 This .bat sets your card to P0 State and enable K-boost, <br/>
