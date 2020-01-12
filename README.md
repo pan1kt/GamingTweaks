@@ -138,7 +138,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
 To set Win32PrioritySeparation to 42 Decimal(2A Hex) FOR EXAMPLE, paste this to Command Promt:**
 
-`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 000000**42** /f`
+`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f`
 
 [*Read more about Process Scheduling and Win32PrioritySeparation*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
 
