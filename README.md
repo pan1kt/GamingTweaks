@@ -227,9 +227,8 @@ Test stability with: <br/>
 ##   Unpark Cores
 
 There is many ways to unpark your cores,<br/>
-Editing all regedit 0cc5b647-c1df-4637-891a-dec35c318583 found keys to ValueMax and ValueMin to 0<br/>
-Installing a custom powerplan like mine<br/>
-Using 3rd party program like Unpark CPU App<br/>
+I like to use this App, he searches the key 0cc5b647-c1df-4637-891a-dec35c318583 in registry<br/>
+and changes ValueMax and ValueMin to 0<br/>
 [Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   ContextMenu
