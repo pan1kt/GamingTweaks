@@ -119,24 +119,26 @@ There is different opinions about what is the best value and IF THERE IS a best 
 
 is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
-2A Hex = Short, Fixed , High foreground boost. <br/>
-29 Hex = Short, Fixed , Medium foreground boost. <br/>
-28 Hex = Short, Fixed , No foreground boost. <br/>
-26 Hex = Short, Variable , High foreground boost. <br/>
-25 Hex = Short, Variable , Medium foreground boost. <br/>
-24 Hex = Short, Variable , No foreground boost. <br/>
-1A Hex = Long, Fixed, High foreground boost. <br/>
-19 Hex = Long, Fixed, Medium foreground boost. <br/>
-18 Hex = Long, Fixed, No foreground boost. <br/>
-**16 Hex = Long, Variable, High foreground boost.** <br/>
-15 Hex = Long, Variable, Medium foreground boost. <br/>
-14 Hex = Long, Variable, No foreground boost. <br/>
+**42 Decimal** = Short, Fixed , High foreground boost. 2A Hex<br/>
+**41 Decimal** = Short, Fixed , Medium foreground boost. 29 Hex<br/>
+**40 Decimal** = Short, Fixed , No foreground boost. 28 Hex<br/>
+**38 Decimal** = Short, Variable , High foreground boost. 26 Hex<br/>
+**37 Decimal** = Short, Variable , Medium foreground boost. 25 Hex<br/>
+**36 Decimal** = Short, Variable , No foreground boost. 24 Hex<br/>
+**26 Decimal** = Long, Fixed, High foreground boost. 1A Hex<br/>
+**25 Decimal** = Long, Fixed, Medium foreground boost. 19 Hex<br/>
+**24 Decimal** = Long, Fixed, No foreground boost. 18 Hex<br/>
+**22 Decimal** = Long, Variable, High foreground boost. 16 Hex<br/>
+**21 Decimal** = Long, Variable, Medium foreground boost. 15 Hex<br/>
+**20 Decimal** = Long, Variable, No foreground boost. 14 Hex<br/>
 
 ![w](/img/w32p.png)
 
-**To set Win32PrioritySeparation to 16 Hex, paste this to Command Promt:**
+**Try to understand the values, try to test the values, choose your desired value.<br/>
+I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
+To set Win32PrioritySeparation to 42 Decimal(2A Hex) FOR EXAMPLE, paste this to Command Promt:**
 
-`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
+`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 000000**42** /f`
 
 [*Read more about Process Scheduling and Win32PrioritySeparation*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
 
