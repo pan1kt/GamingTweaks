@@ -132,7 +132,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 **21 Decimal** = Long, Variable, Medium foreground boost. 15 Hex<br/>
 **20 Decimal** = Long, Variable, No foreground boost. 14 Hex<br/>
 
-![w](/img/w32p.png)
+![w](/img/w32.png)
 
 **Try to understand the values, try to test the values, choose your desired value.<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
