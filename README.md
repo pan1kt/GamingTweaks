@@ -165,10 +165,8 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 ##   Services
 
 Super bareboned, combine with boost7.bat and you have 19- processes.<br/>
-[Download Services Tweak for Windows 7](files/7services.bat)
-
-[Download Services Tweak for Windows 8.1](files/8services.bat)
-
+[Download Services Tweak for Windows 7](files/7services.bat) <br/>
+[Download Services Tweak for Windows 8.1](files/8services.bat) <br/>
 [Download Safer Services Tweak for Windows 10](files/10safeservices.bat) <br/>
 [Download Extreme Services Tweak for Windows 10](files/10extremeservices.bat)
 
@@ -253,10 +251,8 @@ Here i try to block some minimal telemetry without hurt any connection <br/>
 ##   Schtasks's tasks removal
 
 In windows 7 you can actually force-disable the service without problems. <br/>
-[Download Windows 7 Schtasks Removal.bat](files/7tasks.bat)
-
-[Download Windows 8.1 Schtasks Removal.bat](files/8tasks.bat)
-
+[Download Windows 7 Schtasks Removal.bat](files/7tasks.bat) <br/>
+[Download Windows 8.1 Schtasks Removal.bat](files/8tasks.bat) <br/>
 [Download Windows 10 Schtasks Removal.bat](files/10tasks.bat)
 
 ##   Memory tweaks
@@ -267,8 +263,7 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 **You should use NVSlimmer on any of those drivers: 391.35 419.35 425.31 441.41!**
 
-[Download Windows 7/8.1 NVSlimmed 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing)
-
+[Download Windows 7/8.1 NVSlimmed 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing) <br/>
 [Download Windows 10 NVSlimmed 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
 
 ![MSI](/img/nvid.png)
