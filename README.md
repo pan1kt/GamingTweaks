@@ -186,7 +186,7 @@ BCLK Recovery Disabled<br/>
 Intel Rapid Start Disabled<br/>
 Intel Smart Connect Disabled<br/>
 EPU Power Saving mode Disabled<br/>
-CPU Load-line Calibration(LLC) Auto **(Need more test)**<br/>
+CPU Load-line Calibration(LLC) 7<br/>
 CPU Power Phase Control Extreme<br/>
 CPU Power Duty Control Extreme<br/>
 CPU Current Capability 140%<br/>
@@ -201,8 +201,8 @@ Long Duration Package Power Limit 9999<br/>
 Short Duration Package Power Limit 9999<br/>
 CPU Integrated VR Current Limit 9999<br/>
 Package Power Time Window 9999<br/>
-Idle Power-in Response Auto **(Need more test)**<br/>
-Idle Power-out Responde Auto **(Need more test)**<br/>
+Idle Power-in Response Fast<br/>
+Idle Power-out Responde Regular<br/>
 Power Current Slope Level-4<br/>
 Power Current Offset -100%<br/>
 Power Fast Ramp Response 1.5<br/>
