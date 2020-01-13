@@ -134,7 +134,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 **Try to understand the values, try to test the values, choose your desired value.<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
-To set Win32PrioritySeparation to 42 Decimal(2A Hex) FOR EXAMPLE, paste this to Command Promt:**
+To set Win32PrioritySeparation to 42 Decimal (2A Hex) for example, paste this to Command Promt:**
 
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f`
 
@@ -143,7 +143,7 @@ To set Win32PrioritySeparation to 42 Decimal(2A Hex) FOR EXAMPLE, paste this to 
 ##  Power Options
 
 You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
-I have a script that installs everything you need and this On/Off is based on what you choose, Power Saving or Performance. 
+I have a script that installs everything you need and this On/Off you can easily change. 
 
 ![p](/img/power1.png)
 
@@ -167,7 +167,6 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 ##   Services
 
-Super bareboned, combine with boost7.bat and you have 19- processes.<br/>
 [Download Services Tweak for Windows 7](files/7services.bat) <br/>
 [Download Services Tweak for Windows 8.1](files/8services.bat) <br/>
 [Download Services Tweak for Windows 10](files/10services.bat)
@@ -227,8 +226,7 @@ Test stability with: <br/>
 ##   Unpark Cores
 
 There is many ways to unpark your cores,<br/>
-I like to use this App, he searches the key 0cc5b647-c1df-4637-891a-dec35c318583 in registry<br/>
-and changes ValueMax and ValueMin to 0<br/>
+This is very important for Windows 7<br/>
 [Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   ContextMenu
@@ -239,7 +237,7 @@ My own right click to desktop<br/>
 
 ##   Network tweaks + Intel Ethernet Adapter tweaks
 
-Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt much your connection. <br/>
+Covers all TCPOptimizer tweaks and aditional ones, made for gaming but wont hurt your browsing/DL connection. <br/>
 [Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
 [Download Windows 8.1 Network+Adapter.bat](files/net8.bat) <br/>
 [Download Windows 10 Network+Adapter.bat](files/net10.bat)
@@ -252,7 +250,6 @@ Here i try to block some minimal telemetry without hurt any connection <br/>
 
 ##   Schtasks's tasks removal
 
-In windows 7 you can actually force-disable the service without problems. <br/>
 [Download Windows 7 Schtasks Removal.bat](files/7tasks.bat) <br/>
 [Download Windows 8.1 Schtasks Removal.bat](files/8tasks.bat) <br/>
 [Download Windows 10 Schtasks Removal.bat](files/10tasks.bat)
@@ -279,7 +276,7 @@ This .bat sets your card to P0 State and enable K-boost, <br/>
 [Download GPU.bat](files/gpu.bat) <br/>
 Optionally you can also install a custom GPU Bios to improve stability/performance
 
-##  Boost and Unboost.bat (Currently for Windows 7)
+##  Boost and Unboost.bat (Currently only for Windows 7)
 
 This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA VERSION**<br/>
 Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
