@@ -321,3 +321,6 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*Autoruns*](files/Autoruns.7z) <br/>
 [*CPU-Z + GPU-Z + HWINFO*](files/Tools.7z) </br>
 [*MSI-Mode v2 + Affinity Policy Tool*](files/Tweaks.7z)
+
+**Game Configs** </br>
+[*Quake Live Config*](files/fe.7z)
