@@ -81,7 +81,6 @@ Open command promt and paste: <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
-You can also try playing with `bcdedit /set useplatformtick true`, but most of the time this is not correct. Test it.
 If you still see stuttering/problems, you can try changing useplatformtick or HPET (BIOS)
 
 ## MSI-Mode
