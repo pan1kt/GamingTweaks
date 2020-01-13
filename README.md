@@ -5,7 +5,7 @@ Credits to everyone in those communitys
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
-*Read this in other languages: [English](README.md), [Portuguese].*
+*Read this in other languages: [English](README.md), Portuguese.*
 
 ## Table of Contents
 
