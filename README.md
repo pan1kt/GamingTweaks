@@ -1,5 +1,5 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
-A collection of cool hidden and not so hidden tweaks for OS and programs. <br/>
+A collection of cool hidden and not so hidden tweaks <br/>
 This is heavily inspired by RevisionOS and Fr33thy discords. Credits to EVERYONE in those communitys
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
