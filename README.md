@@ -47,8 +47,6 @@ Windows 7 is by far the best for performance, but theres more to care about and 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
 If you dont have compatibility issues or the needs of DX12/RTX its recommended to use previous versions. <br/> 
-The commands i will show will usually be the best, but you could fit in a special case.. Test it. <br/>
-If you still see stuttering/problems, you can try changing: HPET(BIOS) / useplatformtick
 
 **For best common configuration, paste this in Command Promt:**
 
@@ -84,6 +82,7 @@ Open command promt and paste: <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
 You can also try playing with `bcdedit /set useplatformtick true`, but most of the time this is not correct. Test it.
+If you still see stuttering/problems, you can try changing useplatformtick or HPET (BIOS)
 
 ## MSI-Mode
 
