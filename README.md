@@ -265,7 +265,8 @@ In windows 7 you can actually force-disable the service without problems. <br/>
 
 ##   NVIDIA settings
 
-**You should use NVSlimmer on any of those drivers: 391.35 419.35 425.31 441.41**
+**Uninstall current driver with DisplayDriverUninstaller(DDU)** <br/>
+**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41**
 
 [Download Windows 7/8.1 NVSlimmed 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing) <br/>
 [Download Windows 10 NVSlimmed 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
