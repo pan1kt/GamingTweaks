@@ -41,13 +41,13 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 
 Installing them in MBR or GPT shouldnt make a difference. Dont worry about this. <br/>
 If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
-Windows 7 is by far the best for performance even in 2020, but theres much more to care about, also user preference. <br/>
+Windows 7 is by far the best for performance, but theres more to care about and user preference. <br/>
 
 ## Windows Timers
-After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, why its recommended to use something older, <br/>
-if you dont have compatibility issues or the needs of DX12/RTX for example. <br/> 
-Previous versions are true TSC timer between 2-4mhz and gives the best performance/latency. <br/>
-If you still see stuttering/problems, you can try changing HPET in bios
+After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
+If you dont have compatibility issues or the needs of DX12/RTX its recommended to use previous versions. <br/> 
+The commands i will show will usually be the best, but you could fit in a special case.. Test it. <br/>
+If you still see stuttering/problems, you can try changing: HPET(BIOS) / useplatformtick
 
 **For best common configuration, paste this in Command Promt:**
 
