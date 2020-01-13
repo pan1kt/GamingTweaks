@@ -213,9 +213,9 @@ Intel Adaptive Thermal Monitor Disabled<br/>
 Hyper-threading Disabled<br/>
 Execute Disable Bit Disabled<br/>
 Intel Virtualization Technology Disabled<br/>
-Disable USB xHCI **(My preference/own choice)**<br/>
-Disable USB EHCI Hand-Off **(My preference/own choice)**<br/>
-Disable Legacy USB **(My preference/own choice)**<br/>
+Disable USB xHCI<br/>
+Disable USB EHCI Hand-Off<br/>
+Disable Legacy USB
 
 ##   Overclocks
 
