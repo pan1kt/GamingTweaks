@@ -191,7 +191,7 @@ reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002b
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enablepme" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "itr" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "loglinkstateevent" /t reg_sz /d "16" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "4" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "8" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "receivescalingmode" /t reg_sz /d "1" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "reducespeedonpowerdown" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "sipsenabled" /t reg_sz /d "0" /f
@@ -202,7 +202,11 @@ reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002b
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "wakeonslot" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "3" /t reg_sz /d "3 queues" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "4" /t reg_sz /d "4 queues" /f
-reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "4" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "5" /t reg_sz /d "5 queues" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "6" /t reg_sz /d "6 queues" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "7" /t reg_sz /d "7 queues" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "8" /t reg_sz /d "8 queues" /f
+reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "8" /f
 reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "rssbasecpu" /t reg_dword /d "0" /f
 ::new
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*txabsintdelay" /t reg_sz /d "1" /f
@@ -215,7 +219,7 @@ reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002b
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*eee" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*speedduplex" /t reg_sz /d "6" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*rssprofile" /t reg_sz /d "4" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*numrssqueues" /t reg_sz /d "2" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*numrssqueues" /t reg_sz /d "8" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*alternatesemaphoredelay" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "masterslave" /t reg_sz /d "1" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "waitautonegcomplete" /t reg_sz /d "0" /f
@@ -230,6 +234,6 @@ reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002b
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "rxabsintdelay" /t reg_dword /d "1" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "alternatesemaphoredelay" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enable9kjftpt" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "2" /f
-reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "2" /f
+reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "8" /f
+reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "8" /f
 reg delete "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpinitialrtt" /f
