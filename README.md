@@ -239,33 +239,33 @@ My own right click to desktop<br/>
 
 **Paste netsh stuff in Command Promt:**
 
-`netsh winsock set autotuning off`
-`netsh int teredo set state disabled`
-`netsh int 6to4 set state disabled`
-`netsh int isatap set state disabled`
-`netsh int ip set global taskoffload=disabled`
-`netsh int ip set global neighborcachelimit=4096`
-`netsh int tcp set heuristics disabled`
-`netsh int tcp set global congestionprovider=ctcp`
-`netsh int tcp set supplemental Internet congestionprovider=ctcp`
-`netsh int tcp set supplemental custom congestionprovider=ctcp`
-`netsh int tcp set supplemental InternetCustom congestionprovider=ctcp`
-`netsh int tcp set global rss=enabled`
-`netsh int tcp set global rsc=disabled`
-`netsh int tcp set global dca=enabled`
-`netsh int tcp set global netdma=enabled`
-`netsh int tcp set global chimney=disabled`
-`netsh int tcp set global timestamps=disabled`
-`netsh int tcp set global nonsackrttresiliency=disabled`
-`netsh int tcp set global maxsynretransmissions=2`
-`netsh int tcp set global autotuninglevel=disabled`
-`netsh int tcp set global ecncapability=enabled`
-`netsh int tcp set global fastopen=enabled`
+`netsh winsock set autotuning off` <br/>
+`netsh int teredo set state disabled` <br/>
+`netsh int 6to4 set state disabled` <br/>
+`netsh int isatap set state disabled` <br/>
+`netsh int ip set global taskoffload=disabled` <br/>
+`netsh int ip set global neighborcachelimit=4096` <br/>
+`netsh int tcp set heuristics disabled` <br/>
+`netsh int tcp set global congestionprovider=ctcp` <br/>
+`netsh int tcp set supplemental Internet congestionprovider=ctcp` <br/>
+`netsh int tcp set supplemental custom congestionprovider=ctcp` <br/>
+`netsh int tcp set supplemental InternetCustom congestionprovider=ctcp` <br/>
+`netsh int tcp set global rss=enabled` <br/>
+`netsh int tcp set global rsc=disabled` <br/>
+`netsh int tcp set global dca=enabled` <br/>
+`netsh int tcp set global netdma=enabled` <br/>
+`netsh int tcp set global chimney=disabled` <br/>
+`netsh int tcp set global timestamps=disabled` <br/>
+`netsh int tcp set global nonsackrttresiliency=disabled` <br/>
+`netsh int tcp set global maxsynretransmissions=2` <br/>
+`netsh int tcp set global autotuninglevel=disabled` <br/>
+`netsh int tcp set global ecncapability=enabled` <br/>
+`netsh int tcp set global fastopen=enabled` <br/>
 
 **Use the file for referent your Windows version:**
 
 [Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
-[Download Windows 8.1 Network.reg](files/net8.reg) <br/>
+[Download Windows 8.1 Network.reg](files/net8.reg) + 
 [Download Windows 8.1 Adapter.reg](files/adapter8.reg) <br/>
 [Download Windows 10 Network+Adapter.bat](files/net10.bat)
 
