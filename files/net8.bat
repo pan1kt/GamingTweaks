@@ -236,4 +236,14 @@ reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002b
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enable9kjftpt" /t reg_sz /d "0" /f
 reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "8" /f
 reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "8" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*RSSProfile" /t REG_SZ /d "3" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "ParamDesc" /t REG_SZ /d "RSS load balancing profile" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "default" /t REG_SZ /d "1" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "type" /t REG_SZ /d "enum" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "1" /t REG_SZ /d "ClosestProcessor" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "2" /t REG_SZ /d "ClosestProcessorStatic" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "3" /t REG_SZ /d "NUMAScaling" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "4" /t REG_SZ /d "NUMAScalingStatic" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "5" /t REG_SZ /d "ConservativeScaling" /f
+
 reg delete "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpinitialrtt" /f
