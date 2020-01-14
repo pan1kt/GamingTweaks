@@ -266,7 +266,7 @@ My own right click to desktop<br/>
 
 [Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
 [Download Windows 8.1 Network.reg](files/net8.reg) + 
-[Download Windows 8.1 Adapter.reg](files/adapter8.reg) <br/>
+[Windows 8.1 Adapter.reg](files/adapter8.reg) <br/>
 [Download Windows 10 Network+Adapter.bat](files/net10.bat)
 
 ##   Hosts file
