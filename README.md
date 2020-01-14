@@ -28,7 +28,7 @@ Credits to everyone in those communitys
  - [NVIDIA settings](#nvidia-settings)
  - [GPU tweaks](#gpu-tweaks)
  - [Boost and Unboost.bat](#boost-and-unboostbat-currently-for-windows-7)
- - [Usefull list of discords/pages/files](#usefull-list-of-discordspagesfiles)
+ - [Useful links](#useful-links)
 
 ## Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
@@ -310,7 +310,7 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [Download Boost7.bat](files/Boost.bat)<br/>
 [Download UnBoost7.bat](files/UnBoost.bat)
 
-## Usefull list of discords/pages/files
+## Useful links
 
 **PC/Windows Stuff** </br>
 [*RevisionOS discord*](https://discord.gg/CCxWegZ) </br>
