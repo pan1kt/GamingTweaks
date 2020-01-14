@@ -34,4 +34,5 @@ sc stop netprofm
 sc stop Netman
 sc stop AeLookupSvc
 sc stop seclogon
-
+sc config kbdclass start=boot
+sc config mouhid start=boot
