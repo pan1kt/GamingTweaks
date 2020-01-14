@@ -56,6 +56,7 @@ echo >> ctcp.reg ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 regedit.exe /s ctcp.reg 
 del ctcp.reg 
 goto TCP
+for /F %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do set guid1=%%i
 reg add "hkey_local_machine\system\currentcontrolset\services\lanmanworkstation\parameters" /v "disablebandwidththrottling" /t reg_dword /d "00000001" /f
 reg add "hkey_local_machine\system\currentcontrolset\services\lanmanworkstation\parameters" /v "disablelargemtu" /t reg_dword /d "00000000" /f
 reg add "hkey_local_machine\system\currentcontrolset\services\lanmanworkstation\parameters" /v "keepconn" /t reg_dword /d "00015180" /f
@@ -121,13 +122,13 @@ reg add "hklm\system\currentcontrolset\services\tcpip\parameters" /v qualifyingd
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters" /v tcpmaxdataretransmissions /t reg_dword /d "00000005" /f
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters" /v tcpcreateandconnecttcbratelimitdepth /t reg_dword /d "00000000" /f
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters" /v tcpnumconnections /t reg_dword /d "00000500" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "ipautoconfigurationenabled" /t reg_dword /d "0" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "mtu" /t reg_dword /d "1492" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "performrouterdiscovery" /t reg_dword /d "0" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpnodelay" /t reg_dword /d "1" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpackfrequency" /t reg_dword /d "1" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpdelackticks" /t reg_dword /d "0" /f
-reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpwindowsize" /t reg_dword /d "65340" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "ipautoconfigurationenabled" /t reg_dword /d "0" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "mtu" /t reg_dword /d "1492" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "performrouterdiscovery" /t reg_dword /d "0" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "tcpnodelay" /t reg_dword /d "1" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "tcpackfrequency" /t reg_dword /d "1" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "tcpdelackticks" /t reg_dword /d "0" /f
+reg add "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "tcpwindowsize" /t reg_dword /d "65340" /f
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters\winsock" /v "maxsockaddrlength" /t reg_dword /d "16" /f
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters\winsock" /v "minsockaddrlength" /t reg_dword /d "16" /f
 reg add "hklm\system\currentcontrolset\services\tcpip\parameters\winsock" /v "usedelayedacceptance" /t reg_dword /d "0" /f
@@ -167,83 +168,70 @@ reg add "hklm\software\microsoft\internet explorer\main\featurecontrol\feature_m
 reg add "hklm\software\microsoft\internet explorer\main\featurecontrol\feature_maxconnectionsperserver" /v "iexplore.exe" /t reg_dword /d "10" /f
 reg add "hku\.default\software\microsoft\windows\currentversion\internet settings" /v "maxconnectionsper1_0server" /t reg_dword /d "10" /f
 reg add "hku\.default\software\microsoft\windows\currentversion\internet settings" /v "maxconnectionsperserver" /t reg_dword /d "10" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*flowcontrol" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*interruptmoderation" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*ipchecksumoffloadipv4" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*jumbopacket" /t reg_sz /d "1514" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*lsov2ipv4" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*lsov2ipv6" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*pmarpoffload" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*pmnsoffload" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*priorityvlantag" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*receivebuffers" /t reg_sz /d "2048" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*rss" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*speedduplex" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*tcpchecksumoffloadipv4" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*tcpchecksumoffloadipv6" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*transmitbuffers" /t reg_sz /d "2048" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*udpchecksumoffloadipv4" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*udpchecksumoffloadipv6" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*wakeonmagicpacket" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*wakeonpattern" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "eeelinkadvertisement" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enablemsi" /t reg_sz /d "00000001" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enablepme" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "itr" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "loglinkstateevent" /t reg_sz /d "16" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "8" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "receivescalingmode" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "reducespeedonpowerdown" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "sipsenabled" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "txintdelay" /t reg_sz /d "28" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "ulpmode" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "masterslave" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "wakeonlink" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "wakeonslot" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "3" /t reg_sz /d "3 queues" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "4" /t reg_sz /d "4 queues" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "5" /t reg_sz /d "5 queues" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "6" /t reg_sz /d "6 queues" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "7" /t reg_sz /d "7 queues" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\ndi\params\numrssqueues\enum" /v "8" /t reg_sz /d "8 queues" /f
-reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "8" /f
+reg delete "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\%guid1%" /v "tcpinitialrtt" /f
+for /f "usebackq tokens=6 delims=\" %%a in (`reg query hklm\system\controlset001\control\class /s /f "Network adapters"`) do set guid2=%%a
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*flowcontrol" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*interruptmoderation" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*ipchecksumoffloadipv4" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*jumbopacket" /t reg_sz /d "1514" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*lsov2ipv4" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*lsov2ipv6" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*pmarpoffload" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*pmnsoffload" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*priorityvlantag" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*receivebuffers" /t reg_sz /d "2048" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*rss" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*speedduplex" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*tcpchecksumoffloadipv4" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*tcpchecksumoffloadipv6" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*transmitbuffers" /t reg_sz /d "2048" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*udpchecksumoffloadipv4" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*udpchecksumoffloadipv6" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*wakeonmagicpacket" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*wakeonpattern" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "eeelinkadvertisement" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "enablemsi" /t reg_sz /d "00000001" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "enablepme" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "itr" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "loglinkstateevent" /t reg_sz /d "16" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "numrssqueues" /t reg_sz /d "4" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "receivescalingmode" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "reducespeedonpowerdown" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "sipsenabled" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "txintdelay" /t reg_sz /d "28" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "ulpmode" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "masterslave" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "wakeonlink" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "wakeonslot" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000\ndi\params\numrssqueues\enum" /v "3" /t reg_sz /d "3 queues" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000\ndi\params\numrssqueues\enum" /v "4" /t reg_sz /d "4 queues" /f
+reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "4" /f
 reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "rssbasecpu" /t reg_dword /d "0" /f
 ::new
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*txabsintdelay" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*rxabsintdelay" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*rxintdelay" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*llipush" /t reg_sz /d "1472" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*llisize" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*intmode" /t reg_sz /d "2" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*enablemsi" /t reg_dword /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*eee" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*speedduplex" /t reg_sz /d "6" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*rssprofile" /t reg_sz /d "4" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*numrssqueues" /t reg_sz /d "8" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*alternatesemaphoredelay" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "masterslave" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "waitautonegcomplete" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "txintdelay" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "eee" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "loglinkstateevent" /t reg_sz /d "14" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "node" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "llipush" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "llisize" /t reg_sz /d "1472" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "intmode" /t reg_dword /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "txabsintdelay" /t reg_sz /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "rxabsintdelay" /t reg_dword /d "1" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "alternatesemaphoredelay" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "enable9kjftpt" /t reg_sz /d "0" /f
-reg add "hklm\system\controlset001\control\class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "numrssqueues" /t reg_sz /d "8" /f
-reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "8" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000" /v "*RSSProfile" /t REG_SZ /d "3" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "ParamDesc" /t REG_SZ /d "RSS load balancing profile" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "default" /t REG_SZ /d "1" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile" /v "type" /t REG_SZ /d "enum" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "1" /t REG_SZ /d "ClosestProcessor" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "2" /t REG_SZ /d "ClosestProcessorStatic" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "3" /t REG_SZ /d "NUMAScaling" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "4" /t REG_SZ /d "NUMAScalingStatic" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*RSSProfile\Enum" /v "5" /t REG_SZ /d "ConservativeScaling" /f
-
-reg delete "hklm\system\currentcontrolset\services\tcpip\parameters\interfaces\{0A21087F-330E-485C-8E14-994C1F397879}" /v "tcpinitialrtt" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*txabsintdelay" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*rxabsintdelay" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*rxintdelay" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*llipush" /t reg_sz /d "1472" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*llisize" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*intmode" /t reg_sz /d "2" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*enablemsi" /t reg_dword /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*eee" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*speedduplex" /t reg_sz /d "6" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*rssprofile" /t reg_sz /d "4" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*numrssqueues" /t reg_sz /d "2" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "*alternatesemaphoredelay" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "masterslave" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "waitautonegcomplete" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "txintdelay" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "eee" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "loglinkstateevent" /t reg_sz /d "14" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "node" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "llipush" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "llisize" /t reg_sz /d "1472" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "intmode" /t reg_dword /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "txabsintdelay" /t reg_sz /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "rxabsintdelay" /t reg_dword /d "1" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "alternatesemaphoredelay" /t reg_sz /d "0" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "enable9kjftpt" /t reg_sz /d "0" /f
+reg add "hklm\system\currentcontrolset\services\ndis\parameters" /v "maxnumrsscpus" /t reg_dword /d "2" /f
+reg add "hklm\system\controlset001\control\class\%guid2%\0000" /v "numrssqueues" /t reg_sz /d "2" /f
