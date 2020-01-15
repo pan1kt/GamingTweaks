@@ -142,12 +142,12 @@ To set Win32PrioritySeparation to 42 Decimal (2A Hex) for example, paste this to
 
 ##  Power Options
 
-You basically want to disable power saving features and the ability to control CPU Idle On and Off. <br/>
-I have a script that installs everything you need and this On/Off you can easily change. 
+Custom Power Plans: <br/>
+Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings and more. <br/>
 
 ![p](/img/power1.png)
 
-[Download Power Plans](files/powerplan.bat)
+[Download Power Plans](files/power.reg)
 
 ###  Device Remover
 
