@@ -337,7 +337,10 @@ Here i try to stop maximum of services, terminate some services, set prioritys w
 [*Sensitivity calculator*](https://aiming.pro/mouse-sensitivity-calculator) </br>
 [*Overclock.net/mices*](http://www.overclock.net/f/375/mice) </br>
 [*Reddit/MouseReview*](https://www.reddit.com/r/MouseReview/) </br>
-[*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/)
+[*Reddit/MousepadReview*](https://www.reddit.com/r/MousepadReview/) </br>
+[*TFT Central Monitor Reviews*](https://www.tftcentral.co.uk/) </br>
+[*RTings Monitor Reviews*](https://www.rtings.com/monitor) </br>
+[*Blurbusters Monitor Stuff*](https://blurbusters.com/)
 
 **Files/Tools** </br>
 [*MouseTester*](files/MouseTester.7z) </br>
