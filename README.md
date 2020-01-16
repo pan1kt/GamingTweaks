@@ -50,9 +50,9 @@ If you dont have compatibility issues or the needs of DX12/RTX its recommended t
 
 **For best common configuration, paste this in Command Promt:**
 
-`bcdedit /set disabledynamictick true` <br/>
-`bcdedit /set useplatformclock false` <br/>
-`bcdedit /set useplatformtick false` <br/>
+`bcdedit /set disabledynamictick yes` <br/>
+`bcdedit /set useplatformclock no` <br/>
+`bcdedit /set useplatformtick no` <br/>
 
 **Install SetTimerResolutionService**
 
