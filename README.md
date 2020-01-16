@@ -118,12 +118,12 @@ Using only one CPU affinity for usb and gpu make improvement in performance and 
 
 is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
-**42 Decimal** = Short, Fixed , High foreground boost. 2A Hex<br/>
-**41 Decimal** = Short, Fixed , Medium foreground boost. 29 Hex<br/>
-**40 Decimal** = Short, Fixed , No foreground boost. 28 Hex<br/>
-**38 Decimal** = Short, Variable , High foreground boost. 26 Hex<br/>
-**37 Decimal** = Short, Variable , Medium foreground boost. 25 Hex<br/>
-**36 Decimal** = Short, Variable , No foreground boost. 24 Hex<br/>
+**42 Decimal** = Short, Fixed, High foreground boost. 2A Hex<br/>
+**41 Decimal** = Short, Fixed, Medium foreground boost. 29 Hex<br/>
+**40 Decimal** = Short, Fixed, No foreground boost. 28 Hex<br/>
+**38 Decimal** = Short, Variable, High foreground boost. 26 Hex<br/>
+**37 Decimal** = Short, Variable, Medium foreground boost. 25 Hex<br/>
+**36 Decimal** = Short, Variable, No foreground boost. 24 Hex<br/>
 **26 Decimal** = Long, Fixed, High foreground boost. 1A Hex<br/>
 **25 Decimal** = Long, Fixed, Medium foreground boost. 19 Hex<br/>
 **24 Decimal** = Long, Fixed, No foreground boost. 18 Hex<br/>
@@ -163,7 +163,7 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 ![wake](/img/device2.png)
 
-**Disable every device that dont cause problems**
+**Delete devices that dont cause problems**
 
 ![AFF](/img/devices.png)
 
@@ -219,7 +219,6 @@ Disable Legacy USB
 ##   Overclocks
 
 Overclocks increase system performance and decreases latency,<br/>
-At least CPU overclock is mandatory in 2020 <br/>
 No secret right? BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
 Test stability with: <br/>
 [Download OCCT 5.4.2](https://www.ocbase.com/download.php) <br/>
@@ -227,13 +226,15 @@ Test stability with: <br/>
 
 ##   Unpark Cores
 
-There is many ways to unpark your cores,<br/>
-This is very important for Windows 7<br/>
+Core parking allows an operating system to completely shut off a core, <br/>
+so that it no longer performs any function, and draws little to no power. <br/>
+This is a power saving feature and should be disabled
 [Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   ContextMenu
 
-My own right click to desktop<br/>
+My own right click to desktop,<br/>
+Features: Easy switch of Power Plans and Game Booster
 ![p](/img/contextmenu.png)<br/>
 [Download ContextMenu.bat](files/contextmenu.bat)
 
