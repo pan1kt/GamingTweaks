@@ -54,8 +54,9 @@ If you dont have compatibility issues or the needs of DX12/RTX its recommended t
 `bcdedit /set useplatformclock false` <br/>
 `bcdedit /set useplatformtick false` <br/>
 
-**Install SetTimerResolutionService, IMPORTANT!!**
+**Install SetTimerResolutionService**
 
+This service increases the resolution of the Windows kernel timer, which will significantly lower latency <br/>
 Drop this file in C:/ folder, the file must be there to service work <br/>
 Open command promt and paste: <br/>
 
@@ -81,18 +82,18 @@ Open command promt and paste: <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
-If you still see stuttering/problems, you can try changing useplatformtick or HPET (BIOS)
+If you still see stuttering/problems, you can try changing HPET (BIOS) to ON/OFF. Default is ON
 
 ## MSI-Mode
 
 MSI is Message Signaled-Based Interrupts, a faster and better method that replaces Windows Line-Based interrupt mode. <br/>
-**TL;DR** it makes your devices "faster" and improve latencys, better explanation soon.
+Some drivers default to using legacy pin-triggered interrupts, which are now emulated and are slower than using MSI.
 
-**Set everything that is not a "problematic" Sata into MSI-Mode**
+**Only set sata if you have sure its compatible, if you set it wrong you will BSOD** <br/>
+**KILLER Ethernet cards are reported to be bad with MSI-mode**
 
 ![MSI](/img/msi1.png)<br/>
 
-Old Sata drivers usually doesnt support MSI, check if your Sata is compatible. If you do this wrong you BSOD till format. <br/>
 You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
 
 [Download MSI-mode utility v2](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file) <br/>
@@ -100,7 +101,8 @@ You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear
 
 ## Affinity Policy Tool
 
-This is extremely important for input devices, better explanation soon.
+This tool sets affinity for a driver’s interrupts, <br/>
+Using only one CPU affinity for usb and gpu make improvement in performance and responsiveness
 
 **Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
 **GPU and correspondent PCI to a different one single CPU (I use CPU3)**
@@ -112,7 +114,6 @@ This is extremely important for input devices, better explanation soon.
 [Download Affinity Policy Tool](https://download.microsoft.com/download/9/2/0/9200a84d-6c21-4226-9922-57ef1dae939e/interrupt_affinity_policy_tool.msi)
 
 ##  Process Scheduling
-There is different opinions about what is the best value and IF THERE IS a best value, <br/>
 **TL;DR** of what is Win32Priority:
 
 is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
@@ -134,7 +135,8 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 **Try to understand the values, try to test the values, choose your desired value.<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
-To set Win32PrioritySeparation to 42 Decimal (2A Hex) for example, paste this to Command Promt:**
+But seems like those values are the ones people like more: 42, 37, 26, 22
+To set Win32PrioritySeparation to 42 Decimal (2A Hex), paste this to Command Promt:**
 
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f`
 
