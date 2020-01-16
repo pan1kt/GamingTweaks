@@ -234,8 +234,8 @@ This is a power saving feature and should be disabled
 ##   ContextMenu
 
 My own right click to desktop,<br/>
-Features: Easy switch of Power Plans and Game Booster
-![p](/img/contextmenu.png)<br/>
+Features: Easy switch of Power Plans and Game Booster<br/>
+![p](/img/contextmenu.png)
 [Download ContextMenu.bat](files/contextmenu.bat)
 
 ##   Network tweaks + Intel Ethernet Adapter tweaks
