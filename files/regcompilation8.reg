@@ -1109,7 +1109,7 @@ ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
 "SecondLevelDataCache"=dword:00000200
 
-[HKLM\SYSTEM\CurrentControlSet\services\TCPIP6\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\TCPIP6\Parameters]
 "EnableICSIPv6"=dword:00000000
 "DisabledComponents"=dword:00000255
 
