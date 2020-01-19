@@ -165,65 +165,65 @@ ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 "MaxCacheTTL"=dword:00003600
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000]
-"LogLinkStateEvent"="14"
-"ITR"="0"
-"TxIntDelay"="1"
-"EnableMSI"="00000001"
-"Enable9KJFTpt"="0"
-"*LsoV1IPv4"="0"
-"LinkNegotiationProcess"="1"
-"WakeOnSlot"="0"
+"*AlternateSemaphoreDelay"="0"
 "*DeviceSleepOnDisconnect"="0"
-"ReceiveScalingMode"="1"
-"EnableTss"="0"
+"*EEE"="0"
+"*EnableMSI"=dword:00000001
 "*FlowControl"="0"
-"*InterruptModeration"="0"
 "*IPChecksumOffloadIPv4"="1"
+"*IntMode"="2"
+"*InterruptModeration"="0"
 "*JumboPacket"="1514"
+"*LLIPush"="1472"
+"*LLISize"="1"
+"*LsoV1IPv4"="0"
 "*LsoV2IPv4"="0"
 "*LsoV2IPv6"="0"
 "*NumRssQueues"="8"
 "*PMARPOffload"="0"
 "*PMNSOffload"="0"
 "*PriorityVLANTag"="0"
-"*ReceiveBuffers"="2048"
 "*RSS"="1"
+"*ReceiveBuffers"="2048"
+"*RssProfile"="3"
+"*RxAbsintDelay"="1"
+"*RxIntDelay"="1"
 "*SpeedDuplex"="6"
 "*TCPChecksumOffloadIPv4"="0"
 "*TCPChecksumOffloadIPv6"="0"
 "*TransmitBuffers"="2048"
+"*TxAbsIntDelay"="1"
 "*UDPChecksumOffloadIPv4"="0"
 "*UDPChecksumOffloadIPv6"="0"
 "*WakeOnMagicPacket"="0"
 "*WakeOnPattern"="0"
 "AdaptiveIFS"="0"
-"EEELinkAdvertisement"="0"
-"EnablePME"="0"
-"MasterSlave"="1"
-"ReduceSpeedOnPowerDown"="0"
-"SipsEnabled"="0"
-"WaitAutoNegComplete"="0"
-"WakeOnLink"="0"
-"NumRssQueues"="8"
-"Ulpmode"="0"
-"*TxAbsIntDelay"="1"
-"*RxAbsintDelay"="1"
-"*RxIntDelay"="1"
-"*LLIPush"="1472"
-"*LLISize"="1"
-"*IntMode"="2"
-"*EnableMSI"=dword:00000001
-"*EEE"="0"
-"*RssProfile"="3"
-"*AlternateSemaphoreDelay"="0"
+"AlternateSemaphoreDelay"="0"
 "EEE"="0"
-"Node"="0"
+"EEELinkAdvertisement"="0"
+"Enable9KJFTpt"="0"
+"EnableMSI"="1"
+"EnablePME"="0"
+"EnableTss"="0"
+"ITR"="0"
+"IntMode"=dword:00000001
 "LLIPush"="1"
 "LLISize"="1472"
-"IntMode"=dword:00000001
-"TxAbsIntDelay"="1"
+"LinkNegotiationProcess"="1"
+"LogLinkStateEvent"="14"
+"MasterSlave"="1"
+"Node"="0"
+"NumRssQueues"="4"
+"ReceiveScalingMode"="1"
+"ReduceSpeedOnPowerDown"="0"
 "RxAbsIntDelay"=dword:00000001
-"AlternateSemaphoreDelay"="0"
+"SipsEnabled"="0"
+"TxAbsIntDelay"="1"
+"TxIntDelay"="1"
+"Ulpmode"="0"
+"WaitAutoNegComplete"="0"
+"WakeOnLink"="0"
+"WakeOnSlot"="0"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}\0000\Ndi\Params\*NumRssQueues]
 "ParamDesc"="Maximum Number of RSS Queues"
@@ -337,14 +337,10 @@ ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\BD3B718A-0680-4D9D-8AB2-E1D2B4AC806D\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e]
 "DcSettingIndex"=dword:00000001
 "AcSettingIndex"=dword:00000001
-"SKUACSettingIndex"=dword:00000001
-"SKUDCSettingIndex"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\BD3B718A-0680-4D9D-8AB2-E1D2B4AC806D\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
 "DcSettingIndex"=dword:00000001
 "AcSettingIndex"=dword:00000001
-"SKUACSettingIndex"=dword:00000001
-"SKUDCSettingIndex"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\d4c1d4c8-d5cc-43d3-b83e-fc51215cb04d\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e]
 "DCSettingIndex"=dword:00000001
@@ -517,8 +513,6 @@ ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e]
 "DcSettingIndex"=dword:00000064
 "AcSettingIndex"=dword:00000064
-"SKUACSettingIndex"=dword:0000000a
-"SKUDCSettingIndex"=dword:0000000a
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c]
 "DcSettingIndex"=dword:00000064
@@ -1050,22 +1044,22 @@ ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 "ACSettingIndex"=dword:00000000
 
 [HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
-“Flags”=”506”
+"Flags"="506"
  
 [HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
-“Flags”=”122”
+"Flags"="122"
  
 [HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
-“Flags”=”58”
+"Flags"="58"
  
 [HKEY_USERS\.DEFAULT\Control Panel\Accessibility\StickyKeys]
-“Flags”=”506”
+"Flags"="506"
  
 [HKEY_USERS\.DEFAULT\Control Panel\Accessibility\Keyboard Response]
-“Flags”=”122”
+"Flags"="122"
  
 [HKEY_USERS\.DEFAULT\Control Panel\Accessibility\ToggleKeys]
-“Flags”=”58”
+"Flags"="58"
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Multimedia\Audio]
 "UserDuckingPreference"=dword:00000003
