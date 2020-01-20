@@ -27,6 +27,7 @@ Credits to everyone in those communitys
  - [Memory tweaks](#memory-tweaks)
  - [NVIDIA settings](#nvidia-settings)
  - [GPU tweaks](#gpu-tweaks)
+ - [DWM disabler](#dwm-disabler)
  - [Boost and Unboost.bat](#boost-and-unboostbat-currently-for-windows-7)
  - [Useful links](#useful-links)
 
@@ -305,6 +306,12 @@ Here i try to block some minimal telemetry without hurt any connection <br/>
 This .bat sets your card to P0 State and enable K-boost, <br/>
 [Download GPU.bat](files/gpu.bat) <br/>
 Optionally you can also install a custom GPU Bios to improve stability/performance
+
+##   DWM disabler (Currently only for Windows 8.1)
+
+This .bat will delete system files and disable Desktop Window Manager, <br/>
+It is optional and only really necessary if you play in windowed mode.
+[Download DWMdisablerBYdreamjow.bat](files/DWMdisablerBYdreamjow.bat) <br/>
 
 ##  Boost and Unboost.bat (Currently only for Windows 7)
 
