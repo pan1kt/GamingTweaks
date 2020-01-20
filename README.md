@@ -310,8 +310,8 @@ Optionally you can also install a custom GPU Bios to improve stability/performan
 ##   DWM disabler (Currently only for Windows 8.1)
 
 This .bat will delete system files and disable Desktop Window Manager, <br/>
-It is optional and only really necessary if you play in windowed mode.
-[Download DWMdisablerBYdreamjow.bat](files/DWMdisablerBYdreamjow.bat) <br/>
+It is optional and only really necessary if you play in windowed mode. <br/>
+[Download DWMdisablerBYdreamjow.bat](files/DWMdisablerBYdreamjow.bat)
 
 ##  Boost and Unboost.bat (Currently only for Windows 7)
 
