@@ -27,8 +27,8 @@ Credits to everyone in those communitys
  - [Memory tweaks](#memory-tweaks)
  - [NVIDIA settings](#nvidia-settings)
  - [GPU tweaks](#gpu-tweaks)
- - [DWM disabler](#dwm-disabler)
- - [Boost and Unboost.bat](#boost-and-unboostbat-currently-for-windows-7)
+ - [DWM disabler](#dwm-disabler-currently-only-for-windows-81)
+ - [Boost and Unboost.bat](#boost-and-unboostbat-currently-only-for-windows-7)
  - [Useful links](#useful-links)
 
 ## Custom ISOs
