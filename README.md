@@ -145,10 +145,10 @@ To set Win32PrioritySeparation to 42 Decimal (2A Hex), paste this to Command Pro
 
 ##  Power Options
 
-Custom Power Plans: <br/>
+I edited the normal Balanced and Performance, and added Bitsum as optional choice: <br/>
 Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings and more. <br/>
 
-![p](/img/power1.png)
+![p](/img/pplans.png)
 
 [Download Power Plans](files/power.reg)
 
