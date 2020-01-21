@@ -273,6 +273,8 @@ Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
 `netsh int tcp set global ecncapability=enabled` <br/>
 `netsh int tcp set global fastopen=enabled` <br/>
 
+**Note:** This can possibily disable your VPN, cause it disables isatap. Remove isatap line and it should probably work
+
 **Use the file for referent your Windows version:**
 
 [Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
