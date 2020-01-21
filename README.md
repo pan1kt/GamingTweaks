@@ -7,6 +7,8 @@ Credits to everyone in those communitys
 
 *Read this in other languages: [English](README.md), Portuguese.*
 
+**NOTE** If your tweaks are not working, use them in Safe Mode.
+
 ## Table of Contents
 
  - [**Custom ISOs**](#custom-isos)
@@ -36,14 +38,14 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 
 [ISO for Windows 7 by unlimitedOS 0.2.0](https://drive.google.com/file/d/1XlaT1gwsdYq5ecTpM3zqOOd668K3yOY_/view?usp=sharing)
 
-[ISO for Windows 8.1 by canardo-TeamOS](https://www.teamos-hkrg.com/index.php?threads/windows-8-1-x64-ultra-lite-october-2019-net-4-8-no-softwares-original-theme.89903/)
+[ISO for Windows 8.1](https://the-eye.eu/public/MSDN/Windows%208.1/)
 
 [ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
-Installing them in MBR or GPT shouldnt make a difference. Dont worry about this. <br/>
+**Note:** Installing them in MBR or GPT might give you different feel ingame. Experiment between each other <br/>
 If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
-Windows 7 is by far the best for performance, but theres more to care about and user preference. <br/>
+TL;DR Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions also.<br/>
 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
@@ -134,12 +136,17 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 
 ![w](/img/w32.png)
 
-**Try to understand the values, try to test the values, choose your desired value.<br/>
+**Try to understand the values, try to test the values, choose your desired value.**<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
 But seems like those values are the ones people like more: 42, 37, 26, 22, 16 <br/>
-To set Win32PrioritySeparation to 42 Decimal (2A Hex), paste this to Command Promt:**
+
+**To set Win32PrioritySeparation to 42 Decimal (2A Hex), paste this to Command Promt:**
 
 `reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f`
+
+**To set Win32PrioritySeparation to 22 Decimal (16 Hex), paste this to Command Promt:**
+
+`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000022 /f`
 
 [*Read more about Process Scheduling and Win32PrioritySeparation*](http://recoverymonkey.org/2007/08/17/processor-scheduling-and-quanta-in-windows-and-a-bit-about-unixlinux/)
 
