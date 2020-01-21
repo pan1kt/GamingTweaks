@@ -7,7 +7,7 @@ Credits to everyone in those communitys
 
 *Read this in other languages: [English](README.md), Portuguese.*
 
-**NOTE** If your tweaks are not working, use them in Safe Mode.
+**Note:** If your tweaks are not working, use them in Safe Mode.
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 
 **Note:** Installing them in MBR or GPT might give you different feel ingame. Experiment between each other <br/>
 If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
-TL;DR Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions also.<br/>
+Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions also.<br/>
 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
@@ -242,7 +242,7 @@ This is a power saving feature and should be disabled
 ##   ContextMenu
 
 My own right click to desktop,<br/>
-Features: Easy switch of Power Plans and Game Booster<br/>
+Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
 ![p](/img/conmenu.png)<br/>
 [Download ContextMenu.reg](files/contextmenu.reg)
 
