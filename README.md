@@ -322,7 +322,7 @@ This .bat will delete system files and disable Desktop Window Manager, <br/>
 It is optional and only really necessary if you play in windowed mode. <br/>
 [Download DWMdisablerBYdreamjow.bat](files/DWMdisablerBYdreamjow.bat)
 
-**To fix chrome window add this parameters to chrome shortcut:**
+**To fix chrome window add this parameters to chrome shortcut:** <br/>
 --disable-dwm-composition --disable-gpu-compositing
 
 ##  Boost and Unboost.bat (Currently only for Windows 7)
