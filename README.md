@@ -49,9 +49,28 @@ Windows 7 is by far the best for performance, but you can wisely pick and tweak 
 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
-If you dont have compatibility issues or the needs of DX12/RTX its recommended to use previous versions. <br/> 
+If you want to change Windows Timers to possibily "better" ones, you need use older windows versions. <br/> 
+Windows Timers is a complex thing, there are many types and results can vary.
 
-**For best common configuration, paste this in Command Promt:**
+**ACPI PMT** is highly stable and high frequency clock, it doesnt sync, they are programmed not by measure amounts of time, they're frequency based, which means that it will never delay another tick from happening. This would possibily eliminate the chance of having stutters.
+
+HPET is highly stable and high frequency clock, but he is programmed to be synced up perfectly since he is programmed to tick every x amount of time, regardless of hardware configuration, HPET would be good if all cores tick at the exact same speed and are naturally synced, since hpet is hardware and synthetic, but that is something that rarely ever happens which is why it is shit for so many people.
+
+On the other hand, TSC timer is also prooved to be consistently good enough (Windows Default), you really have to experiment what you can actually feel, if you feel some changes testing them.
+
+**For ACPI PMT (HPET OFF IN BIOS):**
+
+`bcdedit /set disabledynamictick no` <br/>
+`bcdedit /set useplatformclock yes` <br/>
+`bcdedit /set useplatformtick yes` <br/>
+
+**For HPET (HPET ON in BIOS):**
+
+`bcdedit /set disabledynamictick no` <br/>
+`bcdedit /set useplatformclock yes` <br/>
+`bcdedit /set useplatformtick yes` <br/>
+
+**For TSC (HPET ON/OFF IN BIOS):**
 
 `bcdedit /set disabledynamictick yes` <br/>
 `bcdedit /set useplatformclock no` <br/>
