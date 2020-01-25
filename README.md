@@ -198,7 +198,7 @@ This is a super powerfull tool that can enable/disable/stop/delete Devices and D
 
 [Download Services Tweak for Windows 7](files/7services.bat) <br/>
 [Download Services Tweak for Windows 8.1](files/8services.bat) <br/>
-[Download Services Tweak for Windows 10](files/10services.bat)
+[Download Services Tweak for Windows 10](files/services10.bat)
 
 ##   BIOS
 
