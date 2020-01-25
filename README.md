@@ -175,21 +175,13 @@ Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savin
 
 [Download Power Plans](files/power.bat)
 
-###  Device Remover
+###  Device Clean Up Tool
 
-This is a super powerfull tool that can enable/disable/stop/delete Devices and Drivers
+This is a usefull utility to remove detached/ghost devices, very safe to do.
 
-**Set to show only hidden/detached devices**
+![wake](/img/devicecleanup.png)
 
-![wake](/img/device1.png)
-
-**Remove all**<br/>
-
-![wake](/img/device2.png)
-
-**Delete devices that dont cause problems**
-
-![AFF](/img/devices.png)
+[Download Device Clean Up Tool](https://www.uwe-sieber.de/files/devicecleanup.zip)
 
 ##   Services
 
@@ -243,7 +235,7 @@ Disable Legacy USB
 ##   Overclocks
 
 Overclocks increase system performance and decreases latency,<br/>
-No secret right? BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
+BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
 Test stability with: <br/>
 [Download OCCT 5.4.2](https://www.ocbase.com/download.php) <br/>
 [Download MEMTest64](https://drive.google.com/file/d/12ga7LsEogbp8yQIUhPKRHTmxNh8fFS5s/view?usp=sharing)
@@ -258,7 +250,7 @@ This is a power saving feature and should be disabled
 ##   ContextMenu
 
 My own right click to desktop,<br/>
-Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
+Features: Easy switch of Power Plans, Notepad++, Regedit and Command Promt<br/>
 ![p](/img/conmenu.png)<br/>
 [Download ContextMenu.reg](files/contextmenu.reg)
 
@@ -269,7 +261,7 @@ Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
 **Works for all Windows Versions:**
 
 [Download Internet Tweaker.bat](files/internet.bat) <br/>
-[Download Adapter Tweaker.bat](files/adapter.bat) + 
+[Download Adapter Tweaker.bat](files/adapter.bat)
 
 ##   Memory tweaks
 
