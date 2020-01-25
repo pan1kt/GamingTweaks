@@ -264,39 +264,12 @@ Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
 
 ##   Network tweaks + Intel Ethernet Adapter tweaks
 
-**Paste netsh stuff in Command Promt:**
-
-`netsh winsock set autotuning off` <br/>
-`netsh int teredo set state disabled` <br/>
-`netsh int 6to4 set state disabled` <br/>
-`netsh int isatap set state disabled` <br/>
-`netsh int ip set global taskoffload=disabled` <br/>
-`netsh int ip set global neighborcachelimit=4096` <br/>
-`netsh int tcp set heuristics disabled` <br/>
-`netsh int tcp set global congestionprovider=ctcp` <br/>
-`netsh int tcp set supplemental Internet congestionprovider=ctcp` <br/>
-`netsh int tcp set supplemental custom congestionprovider=ctcp` <br/>
-`netsh int tcp set supplemental InternetCustom congestionprovider=ctcp` <br/>
-`netsh int tcp set global rss=enabled` <br/>
-`netsh int tcp set global rsc=disabled` <br/>
-`netsh int tcp set global dca=enabled` <br/>
-`netsh int tcp set global netdma=enabled` <br/>
-`netsh int tcp set global chimney=disabled` <br/>
-`netsh int tcp set global timestamps=disabled` <br/>
-`netsh int tcp set global nonsackrttresiliency=disabled` <br/>
-`netsh int tcp set global maxsynretransmissions=2` <br/>
-`netsh int tcp set global autotuninglevel=disabled` <br/>
-`netsh int tcp set global ecncapability=enabled` <br/>
-`netsh int tcp set global fastopen=enabled` <br/>
-
 **Note:** This can possibily disable your VPN, cause it disables isatap. Remove isatap line and it should probably work
 
-**Use the file for referent your Windows version:**
+**Works for all Windows Versions:**
 
-[Download Windows 7 Network+Adapter.bat](files/net7.bat) <br/>
-[Download Windows 8.1 Network.reg](files/net8.reg) + 
-[Windows 8.1 Adapter.reg](files/adapter8.reg) <br/>
-[Download Windows 10 Network+Adapter.bat](files/net10.bat)
+[Download Internet Tweaker.bat](files/internet.bat) <br/>
+[Download Adapter Tweaker.bat](files/adapter.bat) + 
 
 ##   Memory tweaks
 
