@@ -17,7 +17,7 @@ Credits to everyone in those communitys
  - [**Affinity Policy Tool**](#affinity-policy-tool)
  - [**Process Scheduling**](#process-scheduling)
  - [**Power Options**](#power-options)
- - [**Device Remover**](#device-remover)
+ - [**Device Clean Up Tool**](#device-clean-up-tool)
  - [**Services**](#services)
  - [**BIOS**](#bios)
  - [**Unpark Cores**](#unpark-cores)
