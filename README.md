@@ -24,13 +24,10 @@ Credits to everyone in those communitys
  - [Overclocks](#overclocks)
  - [ContextMenu](#contextmenu)
  - [Network tweaks](#network-tweaks--intel-ethernet-adapter-tweaks)
- - [Hosts file](#hosts-file)
- - [Schtasks's tasks removal](#schtaskss-tasks-removal)
  - [Memory tweaks](#memory-tweaks)
  - [NVIDIA settings](#nvidia-settings)
  - [GPU tweaks](#gpu-tweaks)
  - [DWM disabler](#dwm-disabler-currently-only-for-windows-81)
- - [Boost and Unboost.bat](#boost-and-unboostbat-currently-only-for-windows-7)
  - [Useful links](#useful-links)
 
 ## Custom ISOs
@@ -176,7 +173,7 @@ Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savin
 
 ![p](/img/pplans.png)
 
-[Download Power Plans](files/power.reg)
+[Download Power Plans](files/power.bat)
 
 ###  Device Remover
 
@@ -301,18 +298,6 @@ Features: Easy switch of Power Plans, Game Booster and Notepad++<br/>
 [Windows 8.1 Adapter.reg](files/adapter8.reg) <br/>
 [Download Windows 10 Network+Adapter.bat](files/net10.bat)
 
-##   Hosts file
-
-You can block internet adresses from windows hosts file, <br/>
-Here i try to block some minimal telemetry without hurt any connection <br/>
-[Download Hosts.bat](files/hosts.bat)
-
-##   Schtasks's tasks removal
-
-[Download Windows 7 Schtasks Removal.bat](files/7tasks.bat) <br/>
-[Download Windows 8.1 Schtasks Removal.bat](files/8tasks.bat) <br/>
-[Download Windows 10 Schtasks Removal.bat](files/10tasks.bat)
-
 ##   Memory tweaks
 
 [Download Memory.bat](files/memory.bat)
@@ -320,7 +305,7 @@ Here i try to block some minimal telemetry without hurt any connection <br/>
 ##   NVIDIA settings
 
 **Uninstall current driver with DisplayDriverUninstaller(DDU)** <br/>
-**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41**
+**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41 441.87**
 
 [Download Windows 7/8.1 NVSlimmed 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing) <br/>
 [Download Windows 10 NVSlimmed 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
@@ -343,13 +328,6 @@ It is optional and only really necessary if you play in windowed mode. <br/>
 
 **To fix chrome window add this parameters to chrome shortcut:** <br/>
 --disable-dwm-composition --disable-gpu-compositing
-
-##  Boost and Unboost.bat (Currently only for Windows 7)
-
-This is something i have been working on, **AND STILL NEED MUCH WORK, VERY ALPHA VERSION**<br/>
-Here i try to stop maximum of services, terminate some services, set prioritys when i gonna game <br/>
-[Download Boost7.bat](files/Boost.bat)<br/>
-[Download UnBoost7.bat](files/UnBoost.bat)
 
 ## Useful links
 
