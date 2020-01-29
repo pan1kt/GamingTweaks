@@ -1,7 +1,7 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks <br/>
 This is heavily inspired by *RevisionOS* and *Fr33thy* discords. <br/>
-Credits to everyone in those communitys
+Credits to everyone in those communities
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
@@ -40,20 +40,20 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 [ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
 [*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
 
-**Note:** Installing them in MBR or GPT might give you different feel ingame. Experiment between each other <br/>
+**Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between with those two options<br/>
 If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
-Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions also.<br/>
+Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions as well.<br/>
 
 ## Windows Timers
 After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
-If you want to change Windows Timers to possibily "better" ones, you need use older windows versions. <br/> 
-Windows Timers is a complex thing, there are many types and results can vary.
+If you want to change Windows Timers to possibily "better" ones, you need use older windows versions.<br/> 
+Windows timers are a complex topic. There are different types and results may vary.
 
-**ACPI PMT** is highly stable and high frequency clock, it doesnt sync, they are programmed not by measure amounts of time, they're frequency based, which means that it will never delay another tick from happening. This would possibily eliminate the chance of having stutters.
+ACPI PMT is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.
 
-HPET is highly stable and high frequency clock, but he is programmed to be synced up perfectly since he is programmed to tick every x amount of time, regardless of hardware configuration, HPET would be good if all cores tick at the exact same speed and are naturally synced, since hpet is hardware and synthetic, but that is something that rarely ever happens which is why it is shit for so many people.
+HPET is highly stable high frequency clock, but it is programmed to be synced tightly, since it is set to tick every x amount of time, regardless of hardware configuration. HPET would be good if all cores ticked at the exact same speed and were naturally synced, but that is something that rarely ever happens which is why it is bad for so many people. HPET is a hardware based, synthetic timer.
 
-On the other hand, TSC timer is also prooved to be consistently good enough (Windows Default), you really have to experiment what you can actually feel, if you feel some changes testing them.
+On the other hand, TSC timer is also proven to be consistently good enough. It is the Windows default timer. I suggest experimenting and chosing a timer based on which feels best for you.
 
 **For ACPI PMT (HPET OFF IN BIOS):**
 
@@ -75,7 +75,7 @@ On the other hand, TSC timer is also prooved to be consistently good enough (Win
 
 **Install SetTimerResolutionService**
 
-This service increases the resolution of the Windows kernel timer, which will significantly lower latency <br/>
+This service increases the resolution of the Windows kernel timer, which will significantly lower latency.<br/>
 Drop this file in C:/ folder, the file must be there to service work <br/>
 Open command promt and paste: <br/>
 
@@ -113,7 +113,7 @@ Some drivers default to using legacy pin-triggered interrupts, which are now emu
 
 ![MSI](/img/msi1.png)<br/>
 
-You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear in the list if you want.
+Changing the values of PCI ISA Bridge and PCI CPU Host with the Interrupt Affinity Policy tool will make them appear in the list if you want. Simple set and unset affinities.
 
 [Download MSI-mode utility v2](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file) <br/>
 [*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
@@ -121,7 +121,7 @@ You need to Affinity tool in PCI ISA Bridge and PCI CPU Host to make they appear
 ## Affinity Policy Tool
 
 This tool sets affinity for a driver’s interrupts, <br/>
-Using only one CPU affinity for usb and gpu make improvement in performance and responsiveness
+Using only one CPU affinity for usb and gpu can yield improvements in performance and responsiveness
 
 **Mouse device and correspondent USB controler/hub to one single CPU (I use CPU1)** <br/>
 **GPU and correspondent PCI to a different one single CPU (I use CPU3)**
@@ -234,7 +234,7 @@ Disable Legacy USB
 
 ##   Overclocks
 
-Overclocks increase system performance and decreases latency,<br/>
+Stable overclocks increase system performance and decrease latency,<br/>
 BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
 Test stability with: <br/>
 [Download OCCT 5.4.2](https://www.ocbase.com/download.php) <br/>
@@ -242,9 +242,10 @@ Test stability with: <br/>
 
 ##   Unpark Cores
 
-Core parking allows an operating system to completely shut off a core, <br/>
-so that it no longer performs any function, and draws little to no power. <br/>
+Core parking allows an operating system to completely shut off a core,<br/>
+so that it no longer performs any function, and draws little to no power.<br/>
 This is a power saving feature and should be disabled
+
 [Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   ContextMenu
