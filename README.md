@@ -271,10 +271,10 @@ Features: Easy switch of Power Plans, Notepad++, Regedit and Command Promt<br/>
 ##   NVIDIA settings
 
 **Uninstall current driver with DisplayDriverUninstaller(DDU)** <br/>
-**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41 441.87**
+**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41 441.87 442.19**
 
-[Download Windows 7/8.1 NVSlimmed 441.41](https://drive.google.com/file/d/1nI0hmfm0Z0v6gAyt60qL1kKZ3dfwoaWo/view?usp=sharing) <br/>
-[Download Windows 10 NVSlimmed 441.41](https://drive.google.com/file/d/1hPNdFPPbt42qEXsZs7F-uSMndc5P_EmP/view?usp=sharing)
+[Download Windows 7/8.1 NVSlimmed 442.19](https://drive.google.com/file/d/18WbJKdcva93n0yN4i4EFET93amdfRYBS/view?usp=sharing) <br/>
+[Download Windows 10 NVSlimmed 442.19](https://drive.google.com/file/d/1DZL94aXoFoOYlQmzb4HWn9yhAkn6LFwH/view?usp=sharing)
 
 ![MSI](/img/nvid.png)
 
