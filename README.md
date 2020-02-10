@@ -22,11 +22,8 @@ Credits to everyone in those communities
  - [**BIOS**](#bios)
  - [**Unpark Cores**](#unpark-cores)
  - [Overclocks](#overclocks)
- - [ContextMenu](#contextmenu)
- - [Network tweaks](#network-tweaks--intel-ethernet-adapter-tweaks)
- - [Memory tweaks](#memory-tweaks)
+ - [Compilation of Bat Tweaks](#bat-tweaks)
  - [NVIDIA settings](#nvidia-settings)
- - [GPU tweaks](#gpu-tweaks)
  - [DWM disabler](#dwm-disabler-currently-only-for-windows-81)
  - [Useful links](#useful-links)
 
@@ -255,25 +252,13 @@ This is a power saving feature and should be disabled
 
 [Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
-##   ContextMenu
+##   Bat Tweaks
 
-My own right click to desktop,<br/>
-Features: Easy switch of Power Plans, Notepad++, Regedit and Command Promt<br/>
-![p](/img/conmenu.png)<br/>
-[Download ContextMenu.reg](files/contextmenu.reg)
-
-##   Network tweaks + Intel Ethernet Adapter tweaks
-
-**Note:** This can possibily disable your VPN, cause it disables isatap. Remove isatap line and it should probably work
-
+**Note:** I would love you to read the file first before using it, its open-source and easy to check what he will do.<br/>
+It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts block and misc stuff <br/>
 **Works for all Windows Versions:**
 
-[Download Internet Tweaker.bat](files/internet.bat) <br/>
-[Download Adapter Tweaker.bat](files/adapter.bat)
-
-##   Memory tweaks
-
-[Download Memory.bat](files/memory.bat)
+[Download Bat Tweaks.bat](files/compilation.bat)
 
 ##   NVIDIA settings
 
@@ -286,12 +271,6 @@ Features: Easy switch of Power Plans, Notepad++, Regedit and Command Promt<br/>
 ![MSI](/img/nvid.png)
 
 ![MSI](/img/scaling.png)
-
-##   GPU tweaks
-
-This .bat sets your card to P0 State and enable K-boost, <br/>
-[Download GPU.bat](files/gpu.bat) <br/>
-Optionally you can also install a custom GPU Bios to improve stability/performance
 
 ##   DWM disabler (Currently only for Windows 8.1)
 
