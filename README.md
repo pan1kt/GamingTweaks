@@ -42,33 +42,35 @@ If you play games at any windowed mode, use Windows 7 or you will have to deal w
 Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions as well.<br/>
 
 ## Windows Timers
-After Windows 10 1809+, we have a forced synthetic QPC timer of 10mhz, <br/>
-If you want to change Windows Timers to possibily "better" ones, you need use older windows versions.<br/> 
+
+To undo a command in BCDEdit, do bcdedit /deletevalue X (where X is useplatformclock, x2apicpolicy, etc.)
+
+bcdedit /set disabledynamictick yes (Windows 8+)
+This command forces the kernel timer to constantly poll for interrupts instead of wait for them; dynamic tick was implemented as a power saving feature for laptops but hurts desktop performance
+
+bcdedit /set useplatformtick yes (Windows 8+)
+Forces the clock to be backed by a platform source, no synthetic timers are allowed
+Potentially better performance, lowers timer resolution to .488 instead of .5ms
+
+Alternate clock sources
+By default, Windows uses the Time Stamp Counter (TSC) which is a timer located directly on the processor. Along with the TSC, Windows uses either the High Precision Event Timer (HPET) or ACPI Power Management Timer (PMT) for multimedia applications, both of which are located in the platform controller hub (PCH) on the motherboard. Normally the TSC is the default timer; however, you can set either the HPET or PMT to be the default timers in Windows. The HPET and PMT are both highly stable and high frequency clocks that may potentially allow for smoother gameplay and better synchronization throughout the system at the expense of latency. 
+
+To force these external timers in Windows, paste this command:
+bcdedit /set useplatformclock true
+Forces either HPET (10MHz, 14.318MHz, or 24MHz) or the PMT (~3.579MHz) if HPET is disabled in BIOS
+
+This will result in higher latency and lower FPS in exchange for potentially better smoothness.
+Your mileage may vary, so be sure to test TSC+HPET / TSC+PMT / HPET only / PMT only. Different games may also like different timers. 
+
+Different Windows versions (7/8/8.1/10) all have different ways of using the TSC
+If you would like to switch between the HPET or PMT, you would have to disable the HPET in BIOS to let Windows use the PMT
+Some motherboards have no option to disable HPET, if so, you’re out of luck or need a custom BIOS.
+
 Windows timers are a complex topic. There are different types and results may vary.
 
-ACPI PMT is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.
+ACPI (PMT) is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.<br/>
 
-HPET is highly stable high frequency clock, but it is programmed to be synced tightly, since it is set to tick every x amount of time, regardless of hardware configuration. HPET would be good if all cores ticked at the exact same speed and were naturally synced, but that is something that rarely ever happens which is why it is bad for so many people. HPET is a hardware based, synthetic timer.
-
-On the other hand, TSC timer is also proven to be consistently good enough. It is the Windows default timer. I suggest experimenting and chosing a timer based on which feels best for you.
-
-**For ACPI PMT (HPET OFF IN BIOS):**
-
-`bcdedit /set disabledynamictick no` <br/>
-`bcdedit /set useplatformclock yes` <br/>
-`bcdedit /set useplatformtick yes` <br/>
-
-**For HPET (HPET ON in BIOS):**
-
-`bcdedit /set disabledynamictick no` <br/>
-`bcdedit /set useplatformclock yes` <br/>
-`bcdedit /set useplatformtick yes` <br/>
-
-**For TSC (HPET ON/OFF IN BIOS):**
-
-`bcdedit /set disabledynamictick yes` <br/>
-`bcdedit /set useplatformclock no` <br/>
-`bcdedit /set useplatformtick no` <br/>
+HPET is highly stable high frequency clock, but it is programmed to be synced tightly, since it is set to tick every x amount of time, regardless of hardware configuration. HPET would be good if all cores ticked at the exact same speed and were naturally synced, but that is something that rarely ever happens which is why it is bad for so many people. HPET is a hardware based, synthetic timer, windows made it for debugging purposes and most of the time almost everytime it shouldnt be used.
 
 **Install SetTimerResolutionService**
 
@@ -81,8 +83,11 @@ Open command promt and paste: <br/>
 
 [Download SetTimerResolutionService](files/SetTimerResolutionService.exe)
 
-**You can optionally paste those commands for system improvement,**
+**You can optionally use my settings, but i would love you to understand and try out what i just writed.**
 
+`bcdedit /set useplatformclock no` <br/>
+`bcdedit /set useplatformtick yes` <br/>
+`bcdedit /set disabledynamictick yes` <br/>
 `bcdedit /set bootmenupolicy standard` <br/>
 `bcdedit /set bootux disabled` <br/>
 `bcdedit /set hypervisorlaunchtype off` <br/>
@@ -98,7 +103,7 @@ Open command promt and paste: <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
-If you still see stuttering/problems, you can try changing HPET (BIOS) to ON/OFF. Default is ON
+If you see stutterings, you need to figure out better settings.
 
 ## MSI-Mode
 
@@ -159,10 +164,6 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 **Try to understand the values, try to test the values, choose your desired value.**<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
 But seems like those values are the ones people like more: 42, 37, 26, 22, 16 <br/>
-
-**To set Win32PrioritySeparation to 42 Decimal (2A Hex), paste this to Command Promt:**
-
-`reg add "hklm\system\controlset001\control\prioritycontrol" /v win32priorityseparation /t reg_dword /d 00000042 /f`
 
 **To set Win32PrioritySeparation to 22 Decimal (16 Hex), paste this to Command Promt:**
 
