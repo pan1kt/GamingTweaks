@@ -88,18 +88,19 @@ Open command promt and paste: <br/>
 `bcdedit /set useplatformclock no` <br/>
 `bcdedit /set useplatformtick yes` <br/>
 `bcdedit /set disabledynamictick yes` <br/>
-`bcdedit /set bootmenupolicy standard` <br/>
+`bcdedit /set nointegritychecks yes` <br/>
+`bcdedit /set bootmenupolicy legacy` <br/>
 `bcdedit /set bootux disabled` <br/>
 `bcdedit /set hypervisorlaunchtype off` <br/>
 `bcdedit /set nx optout` <br/>
 `bcdedit /set quietboot yes` <br/>
-`bcdedit /set tpmbootentropy forcedisable` <br/>
+`bcdedit /set tpmbootentropy default` <br/>
 `bcdedit /set {globalsettings} custom:16000067 true` <br/>
 `bcdedit /set {globalsettings} custom:16000068 true` <br/>
 `bcdedit /set {globalsettings} custom:16000069 true` <br/>
-`bcdedit /timeout 0` <br/>
+`bcdedit /timeout 5` <br/>
 `bcdedit /set uselegacyapicmode no` <br/>
-`bcdedit /set usefirmwarepcisettings no` <br/>
+`bcdedit /set usefirmwarepcisettings yes` <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
