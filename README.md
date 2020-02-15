@@ -334,3 +334,4 @@ It is optional and only really necessary if you play in windowed mode. <br/>
 
 **Game Configs** </br>
 [*Quake Live Config*](files/fe.7z)
+[*CSGO Config*](files/autoexec.cfg)
