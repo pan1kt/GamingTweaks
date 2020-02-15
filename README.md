@@ -333,5 +333,5 @@ It is optional and only really necessary if you play in windowed mode. <br/>
 [*MSI-Mode v2 + Affinity Policy Tool*](files/Tweaks.7z)
 
 **Game Configs** </br>
-[*Quake Live Config*](files/fe.7z)
+[*Quake Live Config*](files/fe.7z) </br>
 [*CSGO Config*](files/autoexec.cfg)
