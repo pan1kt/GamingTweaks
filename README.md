@@ -321,14 +321,14 @@ It is optional and only really necessary if you play in windowed mode. <br/>
 [*Blurbusters Monitor Stuff*](https://blurbusters.com/)
 
 **Files/Tools** </br>
-[*MouseTester*](files/MouseTester.7z) </br>
-[*LatencyMonitor*](files/LatencyMon.7z) </br>
-[*DeviceRemover*](files/DeviceRemover.7z) </br>
-[*NVIDIA Inspector Pack*](files/InspectorPack.7z) </br>
-[*IO Bit Unlocker*](files/IO%20Bit%20Unlocker.7z) </br>
-[*Power Run*](files/PowerRun.7z) </br>
-[*DNSBenchmark*](files/DNSBench.7z) <br/>
-[*Autoruns*](files/Autoruns.7z) <br/>
+[*MouseTester*](https://www.overclock.net/forum/attachment.php?attachmentid=38838&d=1455148519) </br>
+[*LatencyMonitor*](https://www.resplendence.com/latencymon) </br>
+[*DeviceRemover*](https://www.majorgeeks.com/files/details/device_remover_543c.html) </br>
+[*NVIDIA Inspector*](https://github.com/Orbmu2k/nvidiaProfileInspector/releases) </br>
+[*IO Bit Unlocker*](https://www.iobit.com/pt/iobit-unlocker.php) </br>
+[*Power Run*](https://www.sordum.org/downloads/?power-run) </br>
+[*DNSBenchmark*](https://www.grc.com/dns/benchmark.htm) <br/>
+[*Autoruns*](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns) <br/>
 [*CPU-Z + GPU-Z + HWINFO*](files/Tools.7z) </br>
 [*MSI-Mode v2 + Affinity Policy Tool*](files/Tweaks.7z)
 
