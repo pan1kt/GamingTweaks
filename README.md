@@ -275,7 +275,7 @@ It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts b
 ![MSI](/img/scaling.png)
 
 Adittionally you can use Nvidia Inspector with this profile:<br/>
-[Download Inspector Base Profile.nip](files/datobaseprofile.nip) 
+[Download Inspector Base Profile.nip](files/DatoBaseProfile.nip) 
 
 ##   DWM disabler (Currently only for Windows 8.1)
 
