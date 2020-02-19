@@ -30,12 +30,14 @@ Credits to everyone in those communities
 ## Custom ISOs
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
-[ISO for Windows 7 UnlimitedOS_E3.0](https://drive.google.com/file/d/1OZycGdn_ndgC6Myk1iTrPNF3TjAZgt8Z/view)
+[ISO for Windows 7 by Evolve 4.0](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
+[*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)
 
-[ISO for Windows 8.1](https://the-eye.eu/public/MSDN/Windows%208.1/)
+[ISO for Windows 8.1 by Revision BETA 0.1](https://mega.nz/#!4bJ1FCKZ!RSDkxCNXtiL0W5J4uWkgxzaJpOKyXns50J835BUI77o)
+[*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ) <br/>
 
-[ISO for Windows 10 by Revision](https://sites.google.com/view/meetrevision/revios/download?authuser=0) <br/>
-[*Learn more about them in Revision discord/community.*](https://discordapp.com/invite/CCxWegZ)
+[ISO for Windows 10 by Revision 1809 S1.8](https://drive.google.com/file/d/1Q_Rzwbdx5qCPnQqDARtn41j7c8Y2AQPy/view?usp=sharing) <br/>
+[*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
 **Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between with those two options<br/>
 If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
