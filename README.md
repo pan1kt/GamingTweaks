@@ -45,30 +45,26 @@ Windows 7 is by far the best for performance, but you can wisely pick and tweak 
 
 To undo a command in BCDEdit, do bcdedit /deletevalue X (where X is useplatformclock, x2apicpolicy, etc.)
 
-bcdedit /set disabledynamictick yes (Windows 8+)
+bcdedit /set disabledynamictick yes (Windows 8+) <br/>
 This command forces the kernel timer to constantly poll for interrupts instead of wait for them; dynamic tick was implemented as a power saving feature for laptops but hurts desktop performance
 
-bcdedit /set useplatformtick yes (Windows 8+)
-Forces the clock to be backed by a platform source, no synthetic timers are allowed
+bcdedit /set useplatformtick yes (Windows 8+) <br/>
+Forces the clock to be backed by a platform source, no synthetic timers are allowed <br/>
 Potentially better performance, lowers timer resolution to .488 instead of .5ms
 
-Alternate clock sources
-By default, Windows uses the Time Stamp Counter (TSC) which is a timer located directly on the processor. Along with the TSC, Windows uses either the High Precision Event Timer (HPET) or ACPI Power Management Timer (PMT) for multimedia applications, both of which are located in the platform controller hub (PCH) on the motherboard. Normally the TSC is the default timer; however, you can set either the HPET or PMT to be the default timers in Windows. The HPET and PMT are both highly stable and high frequency clocks that may potentially allow for smoother gameplay and better synchronization throughout the system at the expense of latency. 
-
-To force these external timers in Windows, paste this command:
-bcdedit /set useplatformclock true
-Forces either HPET (10MHz, 14.318MHz, or 24MHz) or the PMT (~3.579MHz) if HPET is disabled in BIOS
-
-This will result in higher latency and lower FPS in exchange for potentially better smoothness.
-Your mileage may vary, so be sure to test TSC+HPET / TSC+PMT / HPET only / PMT only. Different games may also like different timers. 
-
-Different Windows versions (7/8/8.1/10) all have different ways of using the TSC
-If you would like to switch between the HPET or PMT, you would have to disable the HPET in BIOS to let Windows use the PMT
-Some motherboards have no option to disable HPET, if so, you’re out of luck or need a custom BIOS.
+Clock Options <br/>
+(default) Time Stamp Counter (TSC) - located in processor (bcdedit /set useplatformclock false) <br/>
+High Precision Event Timer (HPET) - located in motherboard pch (bcdedit /set useplatformclock true + HPET BIOS ON) <br/>
+ACPI Power Management Timer (PMT) - located in motherboard pch (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
+High frequency clocks like HPET may potentially allow for smoother gameplay and better sync at the expense of latency. <br/>
+Different Windows versions (7/8/8.1/10) all have different ways of using the TSC <br/>
+Some motherboards have no option to disable HPET, if you are advanced there is custom bios.
 
 Windows timers are a complex topic. There are different types and results may vary.
 
-ACPI (PMT) is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.<br/>
+TSC is reliable and can be used. more info i will edit later.
+
+ACPI (PMT) is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.
 
 HPET is highly stable high frequency clock, but it is programmed to be synced tightly, since it is set to tick every x amount of time, regardless of hardware configuration. HPET would be good if all cores ticked at the exact same speed and were naturally synced, but that is something that rarely ever happens which is why it is bad for so many people. HPET is a hardware based, synthetic timer, windows made it for debugging purposes and most of the time almost everytime it shouldnt be used.
 
@@ -104,6 +100,7 @@ Open command promt and paste: <br/>
 `bcdedit /set tscsyncpolicy Legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
+This is my current settings and with HPET BIOS OFF <br/>
 If you see stutterings, you need to figure out better settings.
 
 ## MSI-Mode
