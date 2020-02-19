@@ -31,11 +31,8 @@ Credits to everyone in those communities
 This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
 
 [ISO for Windows 7 by Evolve 4.0](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
-[*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)
-
-[ISO for Windows 8.1 by Revision BETA 0.1](https://mega.nz/#!4bJ1FCKZ!RSDkxCNXtiL0W5J4uWkgxzaJpOKyXns50J835BUI77o)
-[*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ) <br/>
-
+[*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
+[ISO for Windows 8.1 by Revision BETA 0.1](https://mega.nz/#!4bJ1FCKZ!RSDkxCNXtiL0W5J4uWkgxzaJpOKyXns50J835BUI77o) <br/>
 [ISO for Windows 10 by Revision 1809 S1.8](https://drive.google.com/file/d/1Q_Rzwbdx5qCPnQqDARtn41j7c8Y2AQPy/view?usp=sharing) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
