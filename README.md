@@ -52,9 +52,9 @@ bcdedit /set useplatformtick yes (Windows 8+) <br/>
 Forces the clock to be backed by a platform source, no synthetic timers are allowed <br/>
 Potentially better performance, lowers timer resolution to .488 instead of .5ms
 
-*Time Stamp Counter* (TSC) (default) (bcdedit /set useplatformclock false) <br/>
-*High Precision Event Timer* (HPET) (bcdedit /set useplatformclock true + HPET BIOS ON) <br/>
-*ACPI Power Management Timer* (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
+**Time Stamp Counter** (TSC) (default) (bcdedit /set useplatformclock false) <br/>
+**High Precision Event Timer** (HPET) (bcdedit /set useplatformclock true + HPET BIOS ON) <br/>
+**ACPI Power Management Timer** (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
 
 High frequency clocks like HPET may potentially allow for smoother gameplay and better sync at the expense of latency. <br/>
 Different Windows versions (7/8/8.1/10) all have different ways of using the TSC <br/>
