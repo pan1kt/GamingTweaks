@@ -1,13 +1,12 @@
 # Felipe#8581 at discord [![GamingTweaks](https://img.shields.io/badge/support-me-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53DKRDTP43ZAG&source=url)
 A collection of cool hidden and not so hidden tweaks <br/>
-This is heavily inspired by *RevisionOS* and *Fr33thy* discords. <br/>
-Credits to everyone in those communities
+This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
 *Read this in other languages: [English](README.md), Portuguese.*
 
-**Note:** If your tweaks are not working, use them in Safe Mode.
+**Note:** Some minimal stuff is Administrator protected/Windows protected, like disabling Scheduler service for example, best and easy method to make everything work in tweaking in Safe Mode.
 
 ## Table of Contents
 
@@ -28,7 +27,7 @@ Credits to everyone in those communities
  - [Useful links](#useful-links)
 
 ## Custom ISOs
-This is such a important move, **TL;DR** this will make `50%` of work done. This is also hard to do professionally, so choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed.
+This is such a important move, will make `50%` of work done. Choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed, i blindly trust those two ISO community creators because they have much experience.
 
 [Windows 7 by Evolve 4.0.iso](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
 [*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
@@ -38,12 +37,13 @@ This is such a important move, **TL;DR** this will make `50%` of work done. This
 [Windows 10 by Revision 1809 S1.8.iso](https://drive.google.com/file/d/1Q_Rzwbdx5qCPnQqDARtn41j7c8Y2AQPy/view?usp=sharing) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
-**Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between with those two options<br/>
-If you play games at any windowed mode, use Windows 7 or you will have to deal with DWM. <br/>
-Windows 7 is by far the best for performance, but you can wisely pick and tweak newer versions as well.<br/>
+**Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between those two options<br/>
+DWM (Desktop Window Manager) is prooved to be bad in every scenario, you should remove it in any win version. <br/>
+Windows 7 is by far the best for performance, but you can wisely pick, experiment and tweak newer versions as well.<br/>
 
 ## Windows Timers
 
+Windows timers are a complex topic. There are different types and results may vary. <br/>
 To undo a command in BCDEdit, do bcdedit /deletevalue X (where X is useplatformclock, x2apicpolicy, etc.)
 
 bcdedit /set disabledynamictick yes (Windows 8+) <br/>
@@ -54,21 +54,20 @@ Forces the clock to be backed by a platform source, no synthetic timers are allo
 Potentially better performance, lowers timer resolution to .488 instead of .5ms
 
 **Time Stamp Counter** (TSC) (default) (bcdedit /set useplatformclock false) <br/>
-**ACPI Power Management Timer** (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
-**High Precision Event Timer** (HPET) (bcdedit /set useplatformclock true + HPET BIOS ON) <br/>
-
-
-High frequency clocks like HPET may potentially allow for smoother gameplay and better sync at the expense of latency. <br/>
-Different Windows versions (7/8/8.1/10) all have different ways of using the TSC <br/>
-Some motherboards have no option to disable HPET, if you are advanced there is custom bios.
-
-Windows timers are a complex topic. There are different types and results may vary.
 
 TSC is reliable and can be used. more info i will edit later.
 
+**ACPI Power Management Timer** (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
+
 PMT is a highly stable high frequency clock, it doesn't sync, because it is not set to a fixed heartbeat. It is frequency based, which means that it will never delay another tick from happening. This can eliminate the chance of having stutters.
 
+**High Precision Event Timer** (HPET) (bcdedit /set useplatformclock true + HPET BIOS ON) <br/>
+
 HPET is highly stable high frequency clock, but it is programmed to be synced tightly, since it is set to tick every x amount of time, regardless of hardware configuration. HPET would be good if all cores ticked at the exact same speed and were naturally synced, but that is something that rarely ever happens which is why it is bad for so many people. HPET is a hardware based, synthetic timer, windows made it for debugging purposes and most of the time almost everytime it shouldnt be used.
+High frequency clocks like HPET may potentially allow for smoother gameplay and better sync at the expense of latency. <br/>
+
+Different Windows versions (7/8/8.1/10) all have different ways of using the TSC <br/>
+Some motherboards have no option to disable HPET, if you are advanced there is custom bios.
 
 **Install SetTimerResolutionService**
 
@@ -111,11 +110,10 @@ MSI is Message Signaled-Based Interrupts, a faster and better method that replac
 Some drivers default to using legacy pin-triggered interrupts, which are now emulated and are slower than using MSI.
 
 **Only set sata if you have sure its compatible, if you set it wrong you will BSOD** <br/>
-**KILLER Ethernet cards are reported to be bad with MSI-mode**
 
 ![MSI](/img/msi1.png)<br/>
 
-Changing the values of PCI ISA Bridge and PCI CPU Host with the Interrupt Affinity Policy tool will make them appear in the list if you want. Simple set and unset affinities.
+Changing the values of PCI ISA Bridge and PCI CPU Host with the Interrupt Affinity Policy tool will make them appear in the list if you want. Simple set and unset affinities, most of the time messing with this should be minimal changes for best results.
 
 [Download MSI-mode utility v2](http://www.mediafire.com/file/2kkkvko7e75opce/MSI_util_v2.zip/file) <br/>
 [*Read more Windows Line Based vs MSI Based.*](https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/)
@@ -136,13 +134,13 @@ Using only one CPU affinity for usb and gpu can yield improvements in performanc
 
 ##  Process Scheduling
 
-newinfo by nimble:
+New info by Nimble:
 Calypto's guide is written based on mouse interrupts being a background process
 Thus no foreground boost, but from what I gather its the other way around. That mouse or keyboard determines what is the foreground, and then boost value determines how much more priority that thread gets
 Which if its a game that uses raw input, the game gets boosted shunning background processes, while polling through raw input with higher priority, thus taking further mouse input over other background processes
 So the one for smoothness(as he writes), would also be the best for input, on the condition that program is in exclusive fullscreen and using rawinput (not direct input)
 
-**TL;DR** of what is Win32Priority:
+What is Win32Priority:
 
 is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
@@ -306,7 +304,8 @@ It is optional and only really necessary if you play in windowed mode. <br/>
 [*Hydro Stripping NVIDIA Driver Guide*](https://docs.google.com/document/d/1Wm2EbUdG_qFODvS6kArCajBSzDZEvcVqSRu9bzr4KDw/edit) </br>
 [*Calypto Tweak Guide*](https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit?usp=sharing) </br>
 [*Fr33thy Youtube*](https://www.youtube.com/user/chrisfreeth/videos) </br>
-[*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/)
+[*n1kobg.blogspot.com*](http://n1kobg.blogspot.com/) </br>
+[*Bunny Guides*](https://sites.google.com/view/winshit/overview)
 
 **Peripherals/Aiming/Gaming Stuff** </br>
 [*Sparky Aim discord*](https://discord.gg/sparky) </br>
