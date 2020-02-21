@@ -140,18 +140,18 @@ O que eh Win32Priority:
 
 é a quantidade de tempo que o agendador de processos do Windows aloca para um programa. O quantum curto melhorará a capacidade de resposta às custas de mais alternância de contexto ou alternância de tarefas, o que é computacionalmente caro. O quantum longo melhorará o desempenho dos programas em detrimento da menor capacidade de resposta. Por que você quer quantum longo, então? Bem, minimiza a alternância de contexto e tornará o jogo mais suave, resultando em melhor consistência ao apontar. No entanto, quantum curto poderia potencialmente diminuir o atraso de entrada, o que também melhoraria a consistência. Quanto maior o impulso, melhor será o FPS e a suavidade, mas você poderá enfrentar uma resposta de entrada degradada com alto impulso. Geralmente, o quantum longo resulta em melhor suavidade, mas a resposta do mouse é ligeiramente degradada, enquanto o oposto é verdadeiro para o quantum curto.<br/>
 
-** 42 Decimal ** = Impulso de primeiro plano curto, fixo, alto. 2A Hex <br/>
-** 41 decimal ** = Curto, fixo, aumento médio do primeiro plano. 29 Hex <br/>
-** 40 decimal ** = Curto, Fixo, Sem aumento de primeiro plano. 28 Hex <br/>
-** 38 Decimal ** = Curto, variável, aumento do primeiro plano. 26 Hex <br/>
-** 37 decimal ** = Curto, variável, aumento médio do primeiro plano. 25 Hex <br/>
-** 36 Decimal ** = Curto, Variável, Sem aumento do primeiro plano. 24 Hex <br/>
-** 26 decimal ** = Impulso longo, fixo, alto em primeiro plano. 1A Hex <br/>
-** 25 decimal ** = Longo, fixo, aumento médio do primeiro plano. 19 Hex <br/>
-** 24 decimal ** = longo, fixo, sem aumento de primeiro plano. 18 Hex <br/>
-** 22 decimal ** = Longo, variável, aumento de primeiro plano alto. 16 Hex <br/>
-** 21 decimal ** = Longo, variável, aumento médio do primeiro plano. 15 Hex <br/>
-** 20 decimal ** = Longo, variável, sem aumento de primeiro plano. 14 Hex <br/>
+** 42 decimal ** = Curto, fixo, 3:1 Boost. 2A Hex <br/>
+** 41 decimal ** = Curto, fixo, 2:1 Boost. 29 Hex <br/>
+** 40 decimal ** = Curto, Fixo, 1:1 Boost. 28 Hex <br/>
+** 38 decimal ** = Curto, variável, 3:1 Boost. 26 Hex <br/>
+** 37 decimal ** = Curto, variável, 2:1 Boost. 25 Hex <br/>
+** 36 decimal ** = Curto, Variável, 1:1 Boost. 24 Hex <br/>
+** 26 decimal ** = Longo, fixo, 3:1 Boost. 1A Hex <br/>
+** 25 decimal ** = Longo, fixo, 2:1 Boost. 19 Hex <br/>
+** 24 decimal ** = Longo, fixo, 1:1 Boost. 18 Hex <br/>
+** 22 decimal ** = Longo, variável, 3:1 Boost. 16 Hex <br/>
+** 21 decimal ** = Longo, variável, 2:1 Boost. 15 Hex <br/>
+** 20 decimal ** = Longo, variável, 1:1 Boost. 14 Hex <br/>
 
 ![w](/img/w32.png)
 
