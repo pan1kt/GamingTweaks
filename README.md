@@ -55,7 +55,9 @@ Potentially better performance, lowers timer resolution to .488 instead of .5ms
 
 **Time Stamp Counter** (TSC) (default) (bcdedit /set useplatformclock false) <br/>
 
-TSC is reliable and can be used. more info i will edit later.
+TSC is reliable and will give you the lowest latency and highest fps<br/>
+The HPET option in bios does not matter if this is set in cmd<br/>
+The HPET option in bios should be ON to make the timer resolution more accurate 
 
 **ACPI Power Management Timer** (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
 
