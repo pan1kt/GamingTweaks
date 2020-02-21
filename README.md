@@ -4,7 +4,7 @@ This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
 
 *Shortlink: [`https://git.io/JvfJ6`](https://git.io/JvfJ6)*
 
-*Read this in other languages:* [English](README.md), [Portuguese](READMEpt.md) 
+*Read this in other languages: [English](README.md), [Portuguese](READMEpt.md)*
 
 **Note:** Some minimal stuff is Administrator protected/Windows protected, like disabling Scheduler service for example, best and easy method to make everything work in tweaking in Safe Mode.
 
