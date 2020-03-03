@@ -175,12 +175,12 @@ I actually prefer those values: 22dec/26dec
 
 ##  Power Options
 
-I edited the normal Balanced and Performance, and added Bitsum as optional choice: <br/>
-Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings and more. <br/>
+Credit goes to n1kobg who writed this program to merge a good power plan: <br/>
+What it does: Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings and more. <br/>
 
 ![p](/img/pplans.png)
 
-[Download Power Plans](files/power.bat)
+[Download Import Xtreme Performance.exe](files/Import Xtreme Performance.exe)
 
 ###  Device Clean Up Tool
 
