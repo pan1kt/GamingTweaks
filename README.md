@@ -23,7 +23,7 @@ This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
  - [Overclocks](#overclocks)
  - [Compilation of Bat Tweaks](#bat-tweaks)
  - [NVIDIA settings](#nvidia-settings)
- - [DWM disabler](#dwm-disabler-currently-only-for-windows-81)
+ - [DWM disabler](#dwm-disabler)
  - [Useful links](#useful-links)
 
 ## Custom ISOs
