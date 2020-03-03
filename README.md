@@ -24,6 +24,7 @@ This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
  - [Compilation of Bat Tweaks](#bat-tweaks)
  - [NVIDIA settings](#nvidia-settings)
  - [DWM disabler](#dwm-disabler)
+ - [KMS activator](#kms-activator)
  - [Useful links](#useful-links)
 
 ## Custom ISOs
@@ -295,7 +296,11 @@ Soon <br/>
 **To fix chrome window add this parameters to chrome shortcut:** <br/>
 --disable-dwm-composition --disable-gpu-compositing
 
-## Useful links
+##   KMS activator
+
+[KMS_VL_ALL_AIO.cmd](files/KMS_VL_ALL_AIO.cmd) 
+
+##   Useful links
 
 **PC/Windows Stuff** </br>
 [*RevisionOS discord*](https://discord.gg/CCxWegZ) </br>
