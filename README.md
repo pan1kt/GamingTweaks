@@ -32,9 +32,9 @@ This is such a important move, will make `50%` of work done. Choose your ISO wis
 [Windows 7 by Evolve 4.0.iso](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
 [*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
 
-[Windows 8.1 by UnifyOS 0.9.1 BETA.iso](https://e312ee1-my.sharepoint.com/personal/ms11_365-tl_club/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fms11%5F365%2Dtl%5Fclub%2FDocuments%2FRevision%2FISO%2FUnifyOS%5FBeta%2FUnifyOS%5F0%2E9%2E1%5FBeta%5Fx64%2Eiso&parent=%2Fpersonal%2Fms11%5F365%2Dtl%5Fclub%2FDocuments%2FRevision%2FISO%2FUnifyOS%5FBeta&originalPath=aHR0cHM6Ly9lMzEyZWUxLW15LnNoYXJlcG9pbnQuY29tLzp1Oi9nL3BlcnNvbmFsL21zMTFfMzY1LXRsX2NsdWIvRVF5VTRIbDd2cEZCbDZQZHdYSFJxRWdCNVowYmE4X2gwdlVTcUhMUEJVdjYwdz9ydGltZT1LOUZJN1ZPMjEwZw) <br/>
+[Windows 8.1 by UnifyOS [SOON, ALMOST FINISHED AND RELEASED].iso](https://) <br/>
 
-[Windows 10 by Revision 1809 S1.8.iso](https://drive.google.com/file/d/1Q_Rzwbdx5qCPnQqDARtn41j7c8Y2AQPy/view?usp=sharing) <br/>
+[Windows 10 by Revision 1809 S2.0.iso](https://drive.google.com/file/d/1LzG5vw9_d_FKqujt1P-gqrzKlzbpsLrN/view?usp=sharing) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
 **Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between those two options<br/>
@@ -164,6 +164,7 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 **Try to understand the values, try to test the values, choose your desired value.**<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
 But seems like those values are the ones people like more: 42, 37, 26, 22, 16 <br/>
+I actually prefer those values: 22dec/26dec
 
 **To set Win32PrioritySeparation to 22 Decimal (16 Hex), paste this to Command Promt:**
 
@@ -190,13 +191,27 @@ This is a usefull utility to remove detached/ghost devices, very safe to do.
 
 ##   Services
 
-[Download Services Tweak for Windows 7](files/7services.bat) <br/>
-[Download Services Tweak for Windows 8.1](files/8services.bat) <br/>
-[Download Services Tweak for Windows 10](files/services10.bat)
+[Download Services Tweak for Windows 7 REWORKED SOON]() <br/>
+[Download Services Tweak for Windows 8.1 REWORKED SOON]() <br/>
+[Download Services Tweak for Windows 10 REWORKED SOON]()
 
 ##   BIOS
 
 This is very important for your system, make sure to check every setting <br/>
+
+**Must do:**
+
+Disable C-State (CPU Enhanced Halt (C1E), C3, C6, C7, C8)<br/>
+Disable Intel (R) Speed Shift Technology<br/>
+Disable CPU Enhanced Intel Speedstep Technology (EIST) Function<br/>
+Disable any Active State Power Management (ASPM)/Aggressive Link Power Management (ALPM) settings<br/>
+Disable OnBoard Video, Audio or Lan Controller if you have a PCI/USB one that is or will be installed.<br/>
+Disable Platform Power Management<br/>
+Disable Legacy USB Support, Port 60/64 Emulation<br/>
+Disable any onboard LED traces/lightsEnable Turbo Boost<br/>
+Enable XMP<br/>
+Set any Fast Boot Settings to OFF<br/>
+Set your PCI Express Max Link Speed to Gen3<br/>
 
 **Remove all protections and power savings, enable max performance/power** <br/>
 
@@ -266,9 +281,6 @@ It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts b
 **Uninstall current driver with DisplayDriverUninstaller(DDU)** <br/>
 **You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41 441.87 442.19**
 
-[Download Windows 7/8.1 NVSlimmed 442.19](https://drive.google.com/file/d/18WbJKdcva93n0yN4i4EFET93amdfRYBS/view?usp=sharing) <br/>
-[Download Windows 10 NVSlimmed 442.19](https://drive.google.com/file/d/1DZL94aXoFoOYlQmzb4HWn9yhAkn6LFwH/view?usp=sharing)
-
 ![MSI](/img/nvid.png)
 
 ![MSI](/img/scaling.png)
@@ -276,11 +288,9 @@ It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts b
 Adittionally you can use Nvidia Inspector with this profile:<br/>
 [Download Inspector Base Profile.nip](files/DatoBaseProfile.nip) 
 
-##   DWM disabler (Currently only for Windows 8.1)
+##   DWM disabler
 
-This .bat will delete system files and disable Desktop Window Manager, <br/>
-It is optional and only really necessary if you play in windowed mode. <br/>
-[Download DWMdisablerBYdreamjow.bat](files/DWMdisablerBYdreamjow.bat)
+Soon <br/>
 
 **To fix chrome window add this parameters to chrome shortcut:** <br/>
 --disable-dwm-composition --disable-gpu-compositing
