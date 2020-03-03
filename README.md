@@ -180,7 +180,7 @@ What it does: Disable wake timers, USB Suspend setting, Controls CPU Idle, Disab
 
 ![p](/img/pplans.png)
 
-[Download Import Xtreme Performance.exe](files/Import Xtreme Performance.exe)
+[Download Import Xtreme Performance.exe](files/Import%20Xtreme%20Performance.exe)
 
 ###  Device Clean Up Tool
 
