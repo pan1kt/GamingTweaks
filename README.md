@@ -28,14 +28,18 @@ This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
  - [Useful links](#useful-links)
 
 ## Custom ISOs
-This is such a important move, will make `50%` of work done. Choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed, i blindly trust those two ISO community creators because they have much experience.
+This is such a important move, will make `50%` of work done. Choose your ISO wisely. Removing/stripping too much cause more issues and incompatibility and doesnt help with performance or speed, i blindly trust those ISO community creators because they have much experience.
 
-[Windows 7 by Evolve 4.0.iso](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
+[**Windows 7** by EvolveOS 4.0.iso](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
 [*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
 
-[Windows 8.1 by UnifyOS [SOON, ALMOST FINISHED AND RELEASED].iso](https://) <br/>
+[**Windows 8.1** by UnifyOS 1.0.iso](https://) <br/>
 
-[Windows 10 by Revision 1809 S2.0.iso](https://drive.google.com/file/d/1LzG5vw9_d_FKqujt1P-gqrzKlzbpsLrN/view?usp=sharing) <br/>
+[**Windows 10 1709** by EvolveOS 0.3.0.iso](https://drive.google.com/file/d/1LzG5vw9_d_FKqujt1P-gqrzKlzbpsLrN/view?usp=sharing) <br/>
+[**Windows 10 1809** by EvolveOS 0.1.0.iso](https://drive.google.com/file/d/1qc2y7RnrsoiK2CImhYTD5xdJvuqoEcm4/view) <br/>
+[*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ) <br/>
+
+[**Windows 10 1809** by RevisionOS S2.0.iso](https://drive.google.com/file/d/1LzG5vw9_d_FKqujt1P-gqrzKlzbpsLrN/view?usp=sharing) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
 **Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between those two options<br/>
@@ -45,7 +49,7 @@ Windows 7 is by far the best for performance, but you can wisely pick, experimen
 ## Windows Timers
 
 Windows timers are a complex topic. There are different types and results may vary. <br/>
-To undo a command in BCDEdit, do bcdedit /deletevalue X (where X is useplatformclock, x2apicpolicy, etc.)
+To undo a command in bcdedit, do bcdedit /deletevalue X (where X is useplatformclock, x2apicpolicy, etc.)
 
 bcdedit /set disabledynamictick yes (Windows 8+) <br/>
 This command forces the kernel timer to constantly poll for interrupts instead of wait for them; dynamic tick was implemented as a power saving feature for laptops but hurts desktop performance
@@ -56,9 +60,7 @@ Potentially better performance, lowers timer resolution to .488 instead of .5ms
 
 **Time Stamp Counter** (TSC) (default) (bcdedit /set useplatformclock false) <br/>
 
-TSC is reliable and will give you the lowest latency and highest fps<br/>
-The HPET option in bios does not matter if this is set in cmd<br/>
-The HPET option in bios should be ON to make the timer resolution more accurate 
+TSC is reliable and will give you the lowest latency and highest fps, but not sure if best mouse feeling<br/>
 
 **ACPI Power Management Timer** (PMT) (bcdedit /set useplatformclock true + HPET BIOS OFF) <br/>
 
@@ -98,10 +100,10 @@ Open command promt and paste: <br/>
 `bcdedit /set {globalsettings} custom:16000067 true` <br/>
 `bcdedit /set {globalsettings} custom:16000068 true` <br/>
 `bcdedit /set {globalsettings} custom:16000069 true` <br/>
-`bcdedit /timeout 5` <br/>
+`bcdedit /timeout 3` <br/>
 `bcdedit /set uselegacyapicmode no` <br/>
 `bcdedit /set usefirmwarepcisettings yes` <br/>
-`bcdedit /set tscsyncpolicy Legacy` <br/>
+`bcdedit /set tscsyncpolicy legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
 
 This is my current settings and with HPET BIOS OFF <br/>
@@ -137,15 +139,15 @@ Using only one CPU affinity for usb and gpu can yield improvements in performanc
 
 ##  Process Scheduling
 
+What is Win32Priority:
+
+is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum.
+
 New info by Nimble:
-Calypto's guide is written based on mouse interrupts being a background process
+Calypto's guide and this text created based on him is written based on mouse interrupts being a background process
 Thus no foreground boost, but from what I gather its the other way around. That mouse or keyboard determines what is the foreground, and then boost value determines how much more priority that thread gets
 Which if its a game that uses raw input, the game gets boosted shunning background processes, while polling through raw input with higher priority, thus taking further mouse input over other background processes
 So the one for smoothness(as he writes), would also be the best for input, on the condition that program is in exclusive fullscreen and using rawinput (not direct input)
-
-What is Win32Priority:
-
-is the amount of time the Windows process scheduler allocates to a program. Short quantum will improve responsiveness at the expense of more context switching, or switching between tasks, which is computationally expensive. Long quantum will improve performance of programs at the expense of lower responsiveness. Why would you want long quantum, then? Well, it minimizes context switching and will make the game run smoother, resulting in better consistency when aiming. However, short quantum could potentially decrease input lag which would improve consistency as well. The higher the boost, the better the FPS and smoothness will be, but you may experience degraded input response with high boost. Generally, long quantum results in better smoothness but slightly degraded mouse response, whereas the opposite is true for short quantum. <br/>
 
 **42 Decimal** = Short, Fixed, High foreground boost. 2A Hex<br/>
 **41 Decimal** = Short, Fixed, Medium foreground boost. 29 Hex<br/>
@@ -165,7 +167,6 @@ is the amount of time the Windows process scheduler allocates to a program. Shor
 **Try to understand the values, try to test the values, choose your desired value.**<br/>
 I will no more recommend a single value, i can barely feel difference, tests in latency barely prove anything.<br/>
 But seems like those values are the ones people like more: 42, 37, 26, 22, 16 <br/>
-I actually prefer those values: 22dec/26dec
 
 **To set Win32PrioritySeparation to 22 Decimal (16 Hex), paste this to Command Promt:**
 
@@ -210,6 +211,7 @@ Disable OnBoard Video, Audio or Lan Controller if you have a PCI/USB one that is
 Disable Platform Power Management<br/>
 Disable Legacy USB Support, Port 60/64 Emulation<br/>
 Disable any onboard LED traces/lightsEnable Turbo Boost<br/>
+Disable not used features<br/>
 Enable XMP<br/>
 Set any Fast Boot Settings to OFF<br/>
 Set your PCI Express Max Link Speed to Gen3<br/>
@@ -251,7 +253,7 @@ Execute Disable Bit Disabled<br/>
 Intel Virtualization Technology Disabled<br/>
 Disable USB xHCI<br/>
 Disable USB EHCI Hand-Off<br/>
-Disable Legacy USB
+Disable Legacy USB(after installing OS, cause you need this i guess for MBR install)
 
 ##   Overclocks
 
