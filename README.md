@@ -309,7 +309,7 @@ Soon <br/>
 [*Calypto discord*](https://discord.gg/PfsdHaP) </br>
 [*Fr33thy discord*](https://discord.gg/pTc37y7) </br>
 [*n1kobg discord*](https://discord.gg/8KSHTZ3) </br>
-[*UnlimitedOS discord*](https://discord.gg/KXYyq4B) </br>
+[*EvolveOS discord*](https://discord.gg/KXYyq4B) </br>
 [*The-Eye.eu*](https://the-eye.eu/public/MSDN/) </br>
 [*PrivacyTools.io*](https://www.privacytools.io) </br>
 [*CHEF-KOCH github*](https://github.com/CHEF-KOCH) </br>
