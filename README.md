@@ -105,7 +105,7 @@ Open command promt and paste: <br/>
 `bcdedit /set usefirmwarepcisettings yes` <br/>
 `bcdedit /set tscsyncpolicy legacy` <br/>
 `bcdedit /set x2apicpolicy enable` <br/>
-`add reg HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability /v TimeStampInterval /t reg_dword /d 00000000 /f`
+`add reg HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability /v TimeStampInterval /t reg_dword /d 0 /f`
 
 This is my current settings and with HPET BIOS OFF <br/>
 If you see stutterings, you need to figure out better settings.
