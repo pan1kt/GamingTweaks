@@ -352,4 +352,5 @@ Soon <br/>
 
 **Game Configs** </br>
 [*Quake Live Config*](files/fe.7z) </br>
+[*DIABOTICAL Config*](https://pastebin.com/hVGer9WF) </br>
 [*CSGO Config*](files/autoexec.cfg)
