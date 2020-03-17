@@ -33,7 +33,8 @@ This is such a important move, will make `50%` of work done. Choose your ISO wis
 [**Windows 7** by EvolveOS 4.0.iso](https://drive.google.com/file/d/1ufV_hS9_KhgBsK78K2p9Vwc-zedVi53Z/view?usp=sharing) <br/>
 [*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
 
-[S O O N **Windows 8.1** by UnifyOS 1.0.iso](https://) <br/>
+[**Windows 8.1** by UnifyOS 1.0.iso](https://www.google.com/url?q=https%3A%2F%2Fe312ee1-my.sharepoint.com%2F%3Au%3A%2Fg%2Fpersonal%2Fms11_365-tl_club%2FEXV4lT1HKtBNnQmrFNgxoSABNMsH2FXhsnhL4gZ2pA-9vA%3Fe%3DpTIB3Q&sa=D&sntz=1&usg=AFQjCNGo9CdGaMAmtSnkIp0X5EIz7_nrpw) <br/>
+[*Learn more about Unify in his page*](https://sites.google.com/view/meetrevision/unifyos/download)
 
 [**Windows 10 1709** by EvolveOS 0.3.0.iso](https://drive.google.com/open?id=1mmusPRhI_BMNxtFM_nZs2IraKkBTne8V) <br/>
 [**Windows 10 1809** by EvolveOS 0.1.0.iso](https://drive.google.com/file/d/1qc2y7RnrsoiK2CImhYTD5xdJvuqoEcm4/view) <br/>
@@ -294,7 +295,8 @@ Adittionally you can use Nvidia Inspector with this profile:<br/>
 
 ##   DWM disabler
 
-Soon <br/>
+Disabler for ONLY WINDOWS 8 UNIFY<br/>
+https://sites.google.com/view/meetrevision/unifyos/dwm
 
 **To fix chrome window add this parameters to chrome shortcut:** <br/>
 --disable-dwm-composition --disable-gpu-compositing
