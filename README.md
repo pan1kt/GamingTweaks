@@ -292,7 +292,7 @@ It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts b
 ![MSI](/img/scaling.png)
 
 Adittionally you can use Nvidia Inspector with this profile:<br/>
-[Download Inspector Base Profile.nip](https://cdn.discordapp.com/attachments/670037858933014533/691825869844381807/Base_Profile.nip) 
+[Download Inspector Base Profile.nip](files/Base%20Profile.nip) 
 
 ##   DWM disabler
 
