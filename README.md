@@ -191,9 +191,14 @@ This is a usefull utility to remove detached/ghost devices, very safe to do.
 
 ##   Services
 
-[Download Services Tweak for Windows 7 REWORKED SOON]() <br/>
-[Download Services Tweak for Windows 8.1 REWORKED SOON]() <br/>
-[Download Services Tweak for Windows 10 REWORKED SOON]()
+Listen, use regedit, remove the necessary dependencys
+
+Windows 7 REWORKED SOON <br/>
+
+FINAL STAGE OF SERVICES WINDOWS 8.1 UNIFYOS
+![MSI](/img/win8serv.png)
+
+Windows 10 REWORKED SOON
 
 ##   BIOS
 
