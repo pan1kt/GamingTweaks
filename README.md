@@ -176,10 +176,10 @@ Credit goes to n1kobg who writed this program to merge a good power plan: <br/>
 What it does: Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings, Unpark cores and more. <br/>
 
 Open command promt and type: <br/>
-powercfg -import C:/2.704.pow <br/>
+powercfg -import C:/2.7.pow <br/>
 Open Power Options and select Revision <br/>
 
-[Download Revision 2.704 beta power plan.pow](files/2.704.pow)
+[Download Revision 2.7 power plan.pow](files/2.7.pow)
 
 
 ###  Device Clean Up Tool
