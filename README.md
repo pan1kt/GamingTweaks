@@ -269,10 +269,10 @@ All tools necessary: <br/>
 ##   Bat Tweaks
 
 **Note:** I would love you to read the file first before using it, its open-source and easy to check what he will do.<br/>
-It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts block and misc stuff <br/>
+It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, and misc stuff <br/>
 **Works for all Windows Versions:**
 
-[Download Bat Tweaks.bat](files/compilation.bat)
+[Download Reg Tweaks.reg](files/regtweaks.reg)
 
 ##   NVIDIA settings
 
