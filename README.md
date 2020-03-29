@@ -19,11 +19,9 @@ This is heavily inspired by *RevisionOS* discord and Calypto's Guide.<br/>
  - [**Device Clean Up Tool**](#device-clean-up-tool)
  - [**Services**](#services)
  - [**BIOS**](#bios)
- - [**Unpark Cores**](#unpark-cores)
  - [Overclocks](#overclocks)
  - [Compilation of Bat Tweaks](#bat-tweaks)
  - [NVIDIA settings](#nvidia-settings)
- - [DWM disabler](#dwm-disabler)
  - [KMS activator](#kms-activator)
  - [Useful links](#useful-links)
 
@@ -175,11 +173,14 @@ But seems like those values are the ones people like more: 42, 37, 26, 22, 16 <b
 ##  Power Options
 
 Credit goes to n1kobg who writed this program to merge a good power plan: <br/>
-What it does: Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings and more. <br/>
+What it does: Disable wake timers, USB Suspend setting, Controls CPU Idle, Disable Power Savings, Unpark cores and more. <br/>
 
-![p](/img/pplans.png)
+Open command promt and type: <br/>
+powercfg -import C:/2.701.pow <br/>
+Open Power Options and select Revision <br/>
 
-[Download Import Xtreme Performance.exe](files/Import%20Xtreme%20Performance.exe)
+[Download Revision 2.701 beta power plan.pow](files/2.701.pow)
+
 
 ###  Device Clean Up Tool
 
@@ -261,19 +262,9 @@ Disable Legacy USB(after installing OS, cause you need this i guess for MBR inst
 
 ##   Overclocks
 
-Stable overclocks increase system performance and decrease latency,<br/>
-BIOS for CPU and RAM oc, Afterburner/Inspector for GPU oc <br/>
-Test stability with: <br/>
+All tools necessary: <br/>
 [Download OCCT 5.4.2](https://www.ocbase.com/download.php) <br/>
 [Download MEMTest64](https://drive.google.com/file/d/12ga7LsEogbp8yQIUhPKRHTmxNh8fFS5s/view?usp=sharing)
-
-##   Unpark Cores
-
-Core parking allows an operating system to completely shut off a core,<br/>
-so that it no longer performs any function, and draws little to no power.<br/>
-This is a power saving feature and should be disabled
-
-[Download Unpark CPU App](https://mega.nz/#!zsJhhT6K!qukmF8hU7IMogt5Gm2IFV8XT0ZBLAHogjgyBqV4DKvQ)
 
 ##   Bat Tweaks
 
@@ -286,22 +277,17 @@ It contains: Network and adapter tweaks, memory tweaks, gpu tweaks, some hosts b
 ##   NVIDIA settings
 
 **Uninstall current driver with DisplayDriverUninstaller(DDU)** <br/>
-**You should use NVSlimmer with any of those drivers: 391.35 419.35 425.31 441.41 441.87 442.19 442.59**
+**You should download and use my pre-debloated drivers**
+
+[Download NVIDIA 445.75 win7 or win8.exe](https://drive.google.com/file/d/1x7iKKDHsbVYNSQBXjk0_B7Uv1bvXybT9/view?usp=sharing) <br/>
+[Download NVIDIA 445.75 win10.exe](https://drive.google.com/file/d/1gpleqn8IkMavGJyNQOIuCRgeEAqyg1Lk/view?usp=sharing) 
 
 USE DATO BASE PROFILE SETTINGS
 
 ![MSI](/img/scaling.png)
 
 Adittionally you can use Nvidia Inspector with this profile:<br/>
-[Download Inspector Base Profile.nip](files/Base%20Profile.nip) 
-
-##   DWM disabler
-
-Disabler for ONLY WINDOWS 8 UNIFY<br/>
-https://sites.google.com/view/meetrevision/unifyos/dwm
-
-**To fix chrome window add this parameters to chrome shortcut:** <br/>
---disable-dwm-composition --disable-gpu-compositing
+[Download Inspector Dato Base Profile.nip](files/Dato_Profile.nip) 
 
 ##   KMS activator
 
