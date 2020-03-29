@@ -37,6 +37,9 @@ This is such a important move, will make `50%` of work done. Choose your ISO wis
 [**Windows 10 1709** by Revision U3.5.iso](https://sites.google.com/view/meetrevision/revios/download) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
+[**Windows 10 2004** by Revision BETA.iso](https://drive.google.com/open?id=10WuiJOGlN7qgvo0RBprn2wJYrUkJ_Tb0) <br/>
+[*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
+
 **Note:** Installing them in MBR or GPT might give you different feels ingame. Experiment between those two options<br/>
 DWM (Desktop Window Manager) is prooved to be bad in every scenario, you should remove it in any win version. <br/>
 Windows 7 is by far the best for performance, but you can wisely pick, experiment and tweak newer versions as well.<br/>
