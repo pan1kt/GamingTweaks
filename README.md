@@ -32,7 +32,7 @@ This is such a important move, will make `50%` of work done. Choose your ISO wis
 [*Learn more about them in Evolve discord*](https://discordapp.com/invite/bkXwSNJ)<br/>
 
 [**Windows 8.1** by UnifyOS 1.5.iso](https://sites.google.com/view/meetrevision/unifyos/download) <br/>
-[*Learn more about them in Revision discord*]((https://discordapp.com/invite/CCxWegZ)
+[*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
 
 [**Windows 10 1709** by Revision U3.5.iso](https://sites.google.com/view/meetrevision/revios/download) <br/>
 [*Learn more about them in Revision discord*](https://discordapp.com/invite/CCxWegZ)
