@@ -184,6 +184,8 @@ Open Power Options and select Revision <br/>
 
 [Download Revision 2.7 power plan.pow](files/2.7.pow)
 
+[**IF AMD RYZEN**](files/1usmus%20Ryzen%20Universal%20Power%20Plan.pow)
+
 
 ###  Device Clean Up Tool
 
